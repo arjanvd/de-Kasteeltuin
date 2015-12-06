@@ -1,0 +1,1 @@
+!function($){$(".swipebox").swipebox({hideCloseButtonOnMobile:!0,hideBarsDelay:3e3})}(jQuery);

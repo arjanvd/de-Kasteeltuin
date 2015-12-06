@@ -1,0 +1,26 @@
+.l-sidebar {
+
+  &__faq {
+    
+ /*   @include bp(x-small) {
+      @include span(12 of 12);
+    }*/
+    
+    @include bp(small) {
+      @include span(4 at 9 of 12);
+    }
+  }
+  
+  &__about {
+    
+    display: none;
+    
+    @include bp(medium) {
+      display: block;
+      padding-top: 20px; // gelijk aan offset in sticky-block.js
+      @include span(4 of 12);
+    }
+    
+  }
+
+}

@@ -1,0 +1,15 @@
+// For autoHideHeader.js
+
+.js-header {
+  background-color: $white;
+  opacity: 0.9;
+  width: 100%;
+  height: $height-header;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  transition-duration: .35s;
+  transition-timing-function: cubic-bezier( 0.215, 0.610, 0.355, 1.000 );
+  transition-property: transform;
+}

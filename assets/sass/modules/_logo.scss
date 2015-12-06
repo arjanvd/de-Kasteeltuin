@@ -1,0 +1,9 @@
+.o-logo__small {
+  background: url(img/logo2.png) 0 0 no-repeat;
+  height: 100px; //let op: rekening houden met totale hoogte van de header; zie ook $height-header in variables.scss
+  width: 315px;    
+  
+  h1 {
+    margin-left: -9999px;
+  }
+}

@@ -1,0 +1,62 @@
+/**
+
+  @blocks
+--------------------------------------------------------
+  modules/_blocks.scss
+--------------------------------------------------------
+
+  Blocks contain sections of content.  Blocks can have
+  different visual styling, but usually have the same
+  structure; one spacing unit margin at the bottom,
+  and some have borders, and padding, etc.
+
+-----------------------------------------------------  */
+
+// Blocks add bottom margin
+//
+
+.o-block {
+  padding: vr(4);
+  margin-bottom: vr(4);
+  border-radius: 5px;
+//  background-color: $grey40;
+}
+
+.c-block {
+    &--categories {
+      display: none;
+      
+      @include bp(small) {
+        display: block;
+        background-color: mix($white, $green-yellow, 60%);
+      }
+ /*     @include bp(x-small) {
+        @include span(6 of 12);
+      }
+ 
+      @include bp(small) {
+        @include span(12 of 12);
+      }
+*/
+    }
+    &--helpdesk {
+      background-color: mix($white, $green-yellow, 80%);
+
+ /*     @include bp(x-small) {
+        @include span(6 at 7 of 12);
+      }
+      
+      @include bp(small) {
+        @include span(12 of 12);
+      }
+      */
+    }
+  
+  &--sidebar {
+    padding: vr(8) vr(1);
+//    margin-top: 3rem; // dit zo goed mogelijk gelijk stellen met de offset in sticky-block.js
+    background-color: $white;
+    opacity: 0.5;
+    border-radius: 5px;
+  }
+}

@@ -1,0 +1,67 @@
+//==============================================================================
+// Config Variables
+//==============================================================================
+// The config variables have default values that are just looking to be adjusted.
+// Use this variables to customize your Typesettings. Or take the whole thing
+// apart if you want :)
+
+// Font families and default text color.
+$font-sans: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$font-serif: 'Aleo', Georgia, 'Times New Roman', serif !default;
+$font-mono: 'Lucida Console', Monaco, monospace !default;
+$font-heading: 'Special Elite', serif;
+$text-color: #222 !default;
+
+// == Sans serifs ==
+
+%font-sans-thin { font-family: $font-sans; font-weight: 100; font-style: normal; }
+%font-sans-light { font-family: $font-sans; font-weight: 300; font-style: normal; }
+%font-sans-normal { font-family: $font-sans; font-weight: 400; font-style: normal; }
+%font-sans-bold { font-family: $font-sans; font-weight: 700; font-style: normal; }
+%font-sans-black { font-family: $font-sans; font-weight: 900; font-style: normal; }
+
+%font-sans-thin-i { font-family: $font-sans; font-weight: 100; font-style: italic; }
+%font-sans-light-i { font-family: $font-sans; font-weight: 300; font-style: italic; }
+%font-sans-normal-i { font-family: $font-sans; font-weight: 400; font-style: italic; }
+%font-sans-bold-i { font-family: $font-sans; font-weight: 700; font-style: italic; }
+%font-sans-black-i { font-family: $font-sans; font-weight: 900; font-style: italic; }
+
+
+// == Serifs ==
+
+%font-serif-thin { font-family: $font-serif; font-weight: 100; font-style: normal; }
+%font-serif-light { font-family: $font-serif; font-weight: 300; font-style: normal; }
+%font-serif-normal { font-family: $font-serif; font-weight: 400; font-style: normal; }
+%font-serif-bold { font-family: $font-serif; font-weight: 700; font-style: normal; }
+%font-serif-black { font-family: $font-serif; font-weight: 900; font-style: normal; }
+
+%font-serif-thin-i { font-family: $font-serif; font-weight: 100; font-style: italic; }
+%font-serif-light-i { font-family: $font-serif; font-weight: 300; font-style: italic; }
+%font-serif-normal-i { font-family: $font-serif; font-weight: 400; font-style: italic; }
+%font-serif-bold-i { font-family: $font-serif; font-weight: 700; font-style: italic; }
+%font-serif-black-i { font-family: $font-serif; font-weight: 900; font-style: italic; }
+
+
+// The vertical grid unit. Margin, padding, and line-height are set to multiples
+// of this value. This is the value that determines the baseline for our vertical
+// rhythm. The default value of 6px allows more fine tuned designs that still
+// obey vertical rhythm.
+$base-font-size: 1rem; 
+
+$base-line-height: 1.5;
+
+$base-line-multi: 4 !default;
+
+$base-vertical-unit: $base-line-height / $base-line-multi + 0rem; // in rem's
+
+
+
+// [1] Paragraph setting that you can turn on or off the indent of the first line
+// of a new paragraph.
+// [2] Paragraph setting that you can turn on or off to have your paragraphs ragged
+// right or justified.
+$paragraph-indent: true !default; // [1]
+$paragraph-justify: true !default; // [2]
+
+// You can optionally load type styles that use Typesettings.
+$load-typesetted: false !default;

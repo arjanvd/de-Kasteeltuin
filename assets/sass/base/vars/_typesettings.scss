@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+
+// ==============================================================================
+// Typesettings
+// ==============================================================================
+// A Sass toolkit that sets type in Ems based on modular scale, vertical rhythm,
+// and responsive ratio based headlines. Oh, and pixel borders that maintain
+// rhythm.
+//
+// Release Versions: https://github.com/ianrose/typesettings/releases
+// Github: https://github.com/ianrose/typesettings
+// License: The MIT License (MIT)
+//
+// Inspired by and used stuff from:
+// https://github.com/typeplate/typeplate.github.io
+// https://github.com/csswizardry/typecsset
+
+//==============================================================================
+// Internal Variables
+//==============================================================================
+// It's best not to adjust the internal variables directly.[Note]
+
+// Don't touch these values. You'll need them for different ratios in one
+// stylesheet, for example when you want a different ratio for mobile.
+
+$ms-ratio: (
+     ms1-4: 4,      // double octave
+     ms1-3: 3,      // major twelve
+     ms3-8: 2.6667, // major eleventh
+     ms2-5: 2.5,    // major tenth
+     ms1-2: 2,      // octave
+    ms8-15: 1.875,  // major seventh
+    ms9-16: 1.778,  // minor seventh
+     ms3-5: 1.667,  // major sixth
+  msgolden: 1.618,  // golden section
+     ms5-8: 1.6,    // minor sixth
+     ms2-3: 1.5,    // perfect fifth;
+   ms1-sq2: 1.414,  // augmented fourth
+     ms3-4: 1.333,  // perfect fourth
+     ms4-5: 1.25,   // major third
+     ms5-6: 1.2,    // minor third
+     ms8-9: 1.125,  // major second
+   ms15-16: 1.067   // minor second
+);
+
+// Helper function for typing less. I.e. ms-ratio(ms1-2)
+@function ms-ratio($label) {
+    @return map-get($ms-ratio,$label);
+}
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+// Generates modular scale values in Ems. [Note] If you need more size up and/or down
+// then add more sizes.
+// [1] Base font-size in the modular scale in em's
+// [2] One step down in the modular scale in em's
+// [3] Two steps down in the modular scale in em's
+// [4] One step up in the modular scale in em's
+// [5] Two steps up in the modular scale in em's
+// [6] Three steps up in the modular scale in em's
+// [7] Four steps up in the modular scale in em's
+// [8] Five steps up in the modular scale in em's
+
+$ms-base:  $base-font-size; // [1]
+$ms-down1: $ms-base / ms-ratio(ms3-4); // [2]
+$ms-down2: $ms-down1 / ms-ratio(ms3-4); // [3]
+$ms-up1:   $ms-base * ms-ratio(ms3-4); // [4]
+$ms-up2:   $ms-up1 * ms-ratio(ms3-4); // [5]
+$ms-up3:   $ms-up2 * ms-ratio(ms3-4); // [6]
+$ms-up4:   $ms-up3 * ms-ratio(ms3-4); // [7]
+$ms-up5:   $ms-up4 * ms-ratio(ms3-4); // [8]
+$ms-up6:   $ms-up5 * ms-ratio(ms3-4); // [8]
+
+// When you need more than one set of modular scale values, create more variables
+
+$m-ms-base:  $base-font-size; // [1] 16px
+$m-ms-down1: $ms-base / ms-ratio(ms8-9); // [2] 14px
+$m-ms-down2: $ms-down1 / ms-ratio(ms8-9); // [3] 12px
+$m-ms-up1:   $ms-base * ms-ratio(ms8-9); // [4] 18px
+$m-ms-up2:   $ms-up1 * ms-ratio(ms8-9); // [5] 20px
+$m-ms-up3:   $ms-up2 * ms-ratio(ms8-9); // [6] 23px
+$m-ms-up4:   $ms-up3 * ms-ratio(ms8-9); // [7] 26px
+$m-ms-up5:   $ms-up4 * ms-ratio(ms8-9); // [8] 29px
+
+//==============================================================================
+// Function(s)
+//==============================================================================
+
+
+// Returns an EM value. For example 24px becomes 1.5em
+@function em-calc($target, $context: $base-font-size) {
+  @return strip-units(($target / $context)) + 0em;
+}
+
+// Returns an REM value that is a multiple of our defined base vertical unit. For
+// example 3 becomes 1.125rem
+@function vr($lines: $base-line-multi) {
+  @if is-int($lines) == false {
+    @warn  #{$lines} + $not-integer-txt;
+  }
+  @return $lines * $base-vertical-unit;
+}
+
+
+//==============================================================================
+// Mixin(s)
+//==============================================================================
+// Finally, the tools that you can use throughout your project to set
+// all the wonderful type related stuffs.
+
+ @mixin set-type($size, $line-height: $base-line-height) {
+
+  // generates the font-size in REMs
+  font-size: $size;
+
+  // line-height functions
+  // if a line-height is specified in the mixin
+  @if $line-height != $base-line-height and $line-height != 1 {
+    line-height: ceil($size / $line-height) * ($line-height / $size);
+  }
+
+  // if $line-height == 1
+  // because, typing 1 is quicker than 16
+  @else if $line-height == 1 {
+    line-height: 1;
+  }
+
+  // normal $line-height
+  // if the line-height is left.
+  @else {
+    line-height: ceil($size / $base-line-height) * ($base-line-height / $size);
+  }
+}
+
+// Creates a pixel width border top with padding that is a multiple of the base
+// vertical grid unit. You will need to set border style and color rules.
+// Necessity of interpolation of variables: http://stackoverflow.com/questions/17982111/sass-variable-in-css-calc-function
+@mixin vr-border-top($border-width: 1px, $lines: $base-line-multi) {
+  border-top-width: $border-width;
+  padding-top: calc(#{$lines} * #{$base-vertical-unit} - #{$border-width});
+}
+
+// Creates a pixel width border bottom with padding that is a multiple of the base
+// vertical grid unit. You will need to set border style and color rules.
+@mixin vr-border-bottom($border-width: 1px, $lines: $base-line-multi) {
+  border-bottom-width: $border-width;
+  padding-bottom: calc(#{$lines} * #{$base-vertical-unit} - #{$border-width});
+}
+
+// Creates a pixel width border bottom with padding that is a multiple of the base
+// vertical grid unit. You will need to set border style and color rules.
+@mixin vr-border($border-top-width: 1px, $border-bottom-width: $border-top-width, $lines-top: $base-line-multi / 2, $lines-bottom: $lines-top) {
+  border-top-width: $border-top-width;
+  border-bottom-width: $border-bottom-width;
+  padding-top: calc(#{$lines-top} * #{$base-vertical-unit} - #{$border-top-width});
+  padding-bottom: calc(#{$lines-bottom} * #{$base-vertical-unit} - #{$border-bottom-width});
+}
+
+// Creates base type baseline overlay and vertical unit overlay.
+// To use on the body tag for example: body { @include debug-vertical-alignment(); } and add class va-debug to the body tag
+@mixin debug-vertical-alignment($opacity: 0.8, $vertical-unit: $base-vertical-unit, $type-base-line-multi: $base-line-multi, $type-size: $base-font-size) {
+  position: relative;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+
+  &:before {
+    z-index: 10;
+    background-image: -webkit-linear-gradient(rgba(233, 0, 0, $opacity) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(rgba(233, 0, 0, $opacity) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 100% (unitlessRhythm($type-base-line-multi, $type-size) + 0rem);
+  }
+
+  &:after {
+    z-index: 9;
+    background-image: -webkit-linear-gradient(rgba(0, 233, 0, $opacity) 1px, rgba(0, 0, 0, 0) 1px);
+    background-image: linear-gradient(rgba(0, 233, 0, $opacity) 1px, rgba(0, 0, 0, 0) 1px);
+    background-size: 100% $vertical-unit;
+  }
+
+  &.va-debug:before, &.va-debug:after {
+    display: block;
+    pointer-events: none;
+  }
+}
+
+// Sets the font-size of the project as a percentage. Making it easy to
+// scale up/down the whole project for specific media queries
+
+
+@if $load-typesetted {
+  //==============================================================================
+  // Default Type Styles
+  //==============================================================================
+
+  // Stops devices from scaling up text.
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-serif;
+    font-weight: 400;
+    color: $text-color;
+  }
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5,
+  h6, .h6 {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: $font-sans;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  // [1] Applies a margin bottom that is a multiple of the vertical grid in EMs.
+  // The first argument is the font size context and the second is multiple of the
+  // vertical grid unit.
+  // [2] Sets the type to one of the modular scale values and the second argument
+  // sets a unitless line-height as a multiple of the vertical grid.
+  // [3] A generic media query for tablet size ranges.
+  // [4] Applies a margin bottom that is the same vertical grid value as the mobile
+  // first rule.
+  // [5] Sets the type to one of the modular scale values and the second argument
+  // sets a unitless line-height as a multiple of the vertical grid.
+  h1, .h1 {
+    margin-bottom: emRhythm(1, $ms-up2); // [1]
+    @include setType(6, $ms-up2); // [2]
+
+    @media (min-width: 43.75em) {
+      // [3]
+      margin-bottom: emRhythm(1, $ms-up3); // [4]
+      @include setType(8, $ms-up3); // [5]
+    }
+
+    @media (min-width: 56.25em) {
+      margin-bottom: emRhythm(1, $ms-up4);
+      @include setType(10, $ms-up4);
+    }
+  }
+
+  h2, .h2 {
+    margin-bottom: emRhythm(1, $ms-up1);
+    @include setType(5, $ms-up1);
+
+    @media (min-width: 43.75em) {
+      margin-bottom: emRhythm(1, $ms-up2);
+      @include setType(6, $ms-up2)
+    }
+
+    @media (min-width: 56.25em) {
+      margin-bottom: emRhythm(1, $ms-up3);
+      @include setType(8, $ms-up3);
+    }
+  }
+
+  h3, .h3 {
+    margin-bottom: emRhythm(1, $ms-up1);
+    @include setType(5, $ms-up1);
+
+    @media (min-width: 56.25em) {
+      margin-bottom: emRhythm(1, $ms-up2);
+      @include setType(6, $ms-up2);
+    }
+  }
+
+  h4, .h4 {
+    margin-bottom: emRhythm(1, $ms-up1);
+    @include setType(5, $ms-up1);
+  }
+
+  h5, .h5,
+  h6, .h6 {
+    margin-bottom: emRhythm(1);
+    @include setType(4);
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: emRhythm($base-line-multi);
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: emRhythm(96);
+    -webkit-hyphens: auto;
+    -epub-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -o-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word;
+
+    @media (min-width: 43.75em) {
+      @if $paragraph-justify {
+        text-align: justify;
+      }
+    }
+  }
+
+  @if $paragraph-indent {
+    p + p {
+      margin-top: emRhythm($base-line-multi * -1);
+      text-indent: emRhythm($base-line-multi);
+    }
+  }
+
+  small,
+  .font-small {
+    @include setType(3, $ms-down1);
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  blockquote {
+    margin-top: emRhythm(4);
+    margin-bottom: emRhythm(4);
+    margin-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: emRhythm(4);
+    border-left: $base-vertical-unit solid lighten(#000, 50%);
+    font-family: $font-serif;
+
+    p {
+      margin-bottom: emRhythm(2);
+    }
+
+    footer {
+      cite {
+        &:before {
+          content: " – ";
+        }
+      }
+    }
+  }
+
+  pre,
+  code {
+    font-family: $font-mono;
+  }
+
+  time,
+  .time {
+    text-transform: uppercase;
+  }
+
+  ol,
+  ul,
+  dl {
+    margin-top: 0;
+    margin-bottom: emRhythm(4);
+    margin-left: emRhythm(4);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  ul ul,
+  ol ol,
+  dl dl {
+    margin-left: 0;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  // [1] https://developer.mozilla.org/en-US/docs/CSS/font-variant
+  abbr {
+    font-variant: small-caps; // [1]
+    font-weight: 600;
+    text-transform: lowercase;
+  }
+
+  // Cursor changed to a question mark when it has a title
+  abbr[title]:hover {
+    cursor: help;
+  }
+
+  // Creates horizontal rules that obey the baseline.
+  // [1] Zero outs the user agent border
+  hr {
+    margin-top: emRhythm(4);
+    margin-bottom: 0;
+    border: none; // [1]
+    border-top-color: $text-color;
+    border-top-style: solid;
+    @include rhythmBorderTop(1px, 4);
+  }
+}

@@ -1,0 +1,18 @@
+/**
+
+  @body
+--------------------------------------------------------
+  elements/_body.scss
+--------------------------------------------------------
+
+  Body should contain the document's default font and
+  background color for the content, if that background
+  color is different than the html.
+
+------------------------------------------------------ */
+
+
+body {
+  line-height: $base-line-height;
+  padding-top: $height-header;
+}

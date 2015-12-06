@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+</head>
+<body>
+<p>Elementen:</p>
+
+<p>header -&gt; grote header op landingspagina, daar dan menu onder. Op achterliggende pagina&#8217;s: klein logo met daaronder &#8216;meescrollend&#8217; menu (zie hierna).</p>
+
+<p>nav -&gt; gebruik maken van headroom.js (alleen in beeld als je terugscrollt). Maar hoe werkt dat in responsive layouts?
+ -&gt; Kopjes in nav: over ons, ouders, media, FAQ, Contact</p>
+
+<p>Footer -&gt;</p>
+
+<p>OPZOEKEN: wat staat er in een goede footer?</p>
+
+<ul>
+<li><p>herhaling menu (?)</p></li>
+<li><p>links naar pagina&#8217;s die niet in hoofdmenu staan: aanmelden, contact(?), downloads (formulieren en zo)</p></li>
+<li><p>andere informatie: </p></li>
+<li><p>kleine lettertjes;</p></li>
+</ul>
+
+<h2 id="-copyright">- copyright;</h2>
+
+<ul>
+<li>aanmelden/aanmeldprocedure</li>
+</ul>
+
+<p>&#8211;</p>
+
+<p>FAQ-page</p>
+
+<p>main div:</p>
+
+<p>-&gt; Indelen in categorieen</p>
+
+<dl class="faq">
+  <dt>Vraag</dt>
+  <dd>Antwoord</dd>
+  <dt>Vraag</dt>
+  <dd>Antwoord</dd>
+</dl>
+
+<p>sidebar div:</p>
+
+<p>-&gt; blokje met categorieen dat meescrollt
+-&gt; blokje daaronder met nummer Marlies (als soort helpdesk)</p>
+
+<p>&#8211;</p>
+
+<p>Contact-page</p>
+
+<p>Twee kolommen, die even groot zijn:</p>
+
+<p>links: Contactgegevens (adres, telefoonnummer(s), email, facebook, twitter) (Vraag: antwoorden we ook op vragen via Facebook en Twitter? Zo nee, willen we dat wel? Want anders hoeven ze hier niet bij.)</p>
+
+<p>Rechts: Google Maps met de locatie</p>
+
+<p>&#8211;</p>
+
+<p>Over ons-pagina</p>
+
+<p>Een kolom: soort storytelling hier dat je vanzelf naar beneden blijft scrollen. Volgorde:
+- inleidende tekst met linkjes op dezelfde pagina
+- over de Kasteeltuin
+- team (met foto&#8217;s; welke info per teamlid? Suggestie: naam, leeftijd, jaren werkervaring, werkdagen in welke groep)
+- in en om de Kasteeltuin (foto&#8217;s)
+- horizontale groepen/ dagelijkse gang van zaken
+- stichting de jonge bea
+- praktische info</p>
+
+<pre><code>$('.gallery').each(function(i, el) {
+    $(el).justifiedGallery({
+        rowHeight : 160,
+        lastRow : 'nojustify',
+        margins : 1,
+        rel: 'gal' + i,
+    }).on('jg.complete', function() {
+        if (i == 1) $('.gallery a').swipebox( {
+          hideCloseButtonOnMobile : false,
+          hideBarsDelay : 3000
+        } ); 
+    });
+});
+</code></pre>
+
+<p>&#8211;</p>
+
+<p>Ouders-pagina</p>
+
+<p>Eenvoudig houden; larderen met vrolijke plaatjes van Yvonne</p>
+
+<p>&#8211;</p>
+
+<p>Pers-pagina</p>
+
+<p>Twee kolommen met links en rechts de nieuwsberichten (van links naar rechts, twee per rij). Info per artikel: soort medium, datum, korte synopsis. </p>
+
+<p>Dingen voor vanavond:</p>
+
+<p>Afspraken maken over:
+- selecteren van foto&#8217;s
+- kleurenpalet: rood en groen van logo; nog een kleur erbij! (colour wheel)</p>
+
+<p>Ter discussie:
+- wat komt er in de footer?
+- icoontjes door Yvonne?</p>
+
+<p>Website: </p>
+
+<p>&#8211;</p>
+
+<p>To do:</p>
+
+<ul>
+<li>galleries op wie zijn wij</li>
+<li>buttons voorbereiden</li>
+<li>meescrollend menu op wie zijn wij zoals Tympanus</li>
+<li>alle text styling</li>
+<li>pagina Ouders</li>
+</ul>
+
+</body>
+</html>

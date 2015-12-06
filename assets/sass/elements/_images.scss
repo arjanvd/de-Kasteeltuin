@@ -1,0 +1,47 @@
+/**
+
+  @images
+---------------------------------------------------------
+  elements/_images.scss
+--------------------------------------------------------
+
+  Base styling for images, plus some helpful utility
+  classes that modify images.
+
+  Note: You won't add any styling to these image classes,
+  these are just utility classes
+
+--------------------------------------------------------- */
+
+
+
+
+
+/* @images
+--------------------------------------------------------
+
+  Base Image Style is 100% width by default
+
+  Example: Image
+  <img src="http://fillmurray.com/600/300">
+
+------------------------------------------------------ */
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+img .wide {
+  width: 104%;
+  margin-left: -2%;
+  height: auto;
+  vertical-align: middle;   // Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+    @include bp(x-large) {
+      width: 100%;
+      margin-left: 0;
+    }
+}
+
+*/

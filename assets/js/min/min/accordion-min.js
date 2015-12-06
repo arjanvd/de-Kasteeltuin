@@ -1,0 +1,1 @@
+$(document).ready(function($){$("#accordion").find(".acc-toggle").click(function(){$(this).next().slideToggle("slow"),$(".acc-content").not($(this).next()).slideUp("fast")})});

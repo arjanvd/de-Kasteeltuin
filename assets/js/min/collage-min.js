@@ -1,0 +1,1 @@
+$(".collage").collagePlus({targetHeight:200,fadeSpeed:"fast",effect:"default",direction:"horizontal",allowPartialLastRow:!1});

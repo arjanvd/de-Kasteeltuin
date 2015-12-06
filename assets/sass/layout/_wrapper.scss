@@ -1,0 +1,60 @@
+/**
+
+  @container
+--------------------------------------------------------
+  layout/_container.scss
+--------------------------------------------------------
+
+  The .container class is applied to restrict the
+  max-width of an element, usually a bit of content.
+
+  Often, you will place a .container div within another
+  element that has a background color. This gives you
+  a full-bleed background, but the content is contained
+  within the max-width.
+
+  Example: Container within a section
+  <section class="awesome-section-with-background-color">
+    <div class="container">
+      <p>Your content goes here... </p>
+    </div>
+  </section>
+
+------------------------------------------------------ */
+
+.l-container {
+  @include container;
+  padding: 0 4%;
+  
+  @include bp(xx-large) {
+    padding: 0;
+  }
+
+}
+
+.l-wrapper {
+  width: 100%;
+  
+  &__about {
+    min-height: 100vh;
+    padding-top: vr(4);
+    padding-bottom: vr(4);
+    
+    &--intro {
+      background-color: mix($white, $yellow, 95%);
+    }
+    &--castle {
+      background-color: mix($white, $green-yellow, 50%);
+      padding-bottom: 0; // reset van de padding-bottom, omdat deze doorloopt vanwege #sticky-anchor
+    }
+    &--team {
+      background-color: mix($white, $green-yellow, 80%);
+    }
+  }
+  
+  &--footer {
+    background-color: mix($white, $red, 50%);
+  }
+  
+}
+

@@ -1,0 +1,231 @@
+
+$button-height: 27px;
+$button-width: 35px;
+
+.nav-menu-container {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100px;
+  
+  @include bp(small) {
+    visibility: hidden;
+  }
+}
+
+
+
+.nav-menu-container__button {
+  position: fixed;
+  height: $button-height;
+  width: $button-width;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity .25s ease;
+  
+  
+  &:hover {
+    opacity: .7;
+  }
+  
+  &.active {
+    .top {
+      transform: translateY(10px) translateX(0) rotate(45deg);
+      background: $white;
+    }
+    .middle {
+      opacity: 0;
+      background: $white;
+    }
+    
+    .bottom {
+      transform: translateY(-10px) translateX(0) rotate(-45deg);
+      background: $white;
+    }
+  }
+  
+  span {
+  background: $red;
+  border: none;
+  height: 5px;
+  width: 100%;
+  position: absolute;
+  left: 50px;
+  transition: all .35s ease;
+  cursor: pointer;
+
+    @for $i from 1 through 3 {
+        $top: ($i * 10px) - 10px;
+        &:nth-of-type(#{$i}) { 
+          top: $top;
+        }
+      } 
+  }
+}
+
+.nav-menu-container__title {
+  float: left;
+  color: $black;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+//  opacity: 1;
+  visibility: hidden;
+  transition: opacity .35s ease, visibility .35s ease, height .35s ease;
+  z-index: 50;
+
+  &.open {
+    visibility: visible;
+    opacity: 0.9;
+    height: 100%;
+    background: $red;
+    
+    li {
+      
+      &:nth-child(odd) {
+        animation: fadeInRight .5s ease forwards;
+      }
+      
+      &:nth-child(even) {
+        animation: fadeInLeft .5s ease forwards;
+      }
+      @for $i from 1 through 5 {
+        $delay: ($i * .10s) + .25s;
+        &:nth-of-type(#{$i}) { 
+          animation-delay: $delay;
+        }
+      } 
+    }
+  }
+
+  nav {
+    position: relative;
+    top: 120px; // dit zou zo'n waarde moeten zijn, dat het menu onder de x begint, misschien zelfs wel onder de header
+ //   transform: translateY(-50%);
+    text-align: center;
+    z-index: 100;
+  }
+  ul {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%; 
+    
+    li {
+      display: block;
+      position: relative;
+      opacity: 0;
+      
+      a {
+        display: block;
+        position: relative;
+        color: $white;
+        text-decoration: none;
+        overflow: hidden;
+        @include set-type($ms-up2);
+        /*
+        &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-link;
+          transition: .35s;
+        }*/
+      } 
+    }
+  }
+}
+
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    right: 20%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+// -- Navigation menu for larger screens
+
+.nav-menu {
+  visibility: hidden;
+  
+  @include bp(small) {
+    visibility: visible;
+    position: absolute;
+    top: 2px;
+    right: 4%;
+ 
+    ul {
+    //  background-color: #444;
+      text-align: center;
+      }
+
+    li {
+      display: inline-block;
+      line-height: 3rem;
+      height: 3rem;
+    }
+ 
+    a {
+      text-decoration: none;
+      color: $black;
+      display: block;
+      padding: 0 1rem;
+      border-radius: 5px;
+      transition: .35s background-color;
+  
+      &:hover {
+        background-color: $green-blue;
+        color: $white;
+      }
+      
+      &.active {
+        background-color: $red;
+        color: $white;
+        cursor: default;
+      }
+    
+    } 
+  
+  }
+  
+  @include bp(large) {
+    top: auto;
+    bottom: 0; // hier iets rekening houdend met de hoogte in rem's van de header...
+    right: 4%;
+  }
+}
+ 
+
+
+ 

@@ -1,0 +1,178 @@
+/****
+
+  MAIN STYLESHEET for [* Site Name Here *]
+
+---------------------------------------------------------
+
+  BUILT WITH SKYLINE: EVOLVING CSS ARCHITECTURE
+
+  See README.md for info and credits
+
+---------------------------------------------------------
+
+  TABLE OF CONTENTS
+  @toc
+
+  - Base ............ foundations, mixins, functions, vars
+  - Elements ........ single elements
+  - Layout .......... layout objects like grids, containers
+  - Modules ......... objects created by combining elements
+
+---------------------------------------------------------  */
+
+/***/
+
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+/*
+  @base
+---------------------------------------------------------
+
+  Your CSS begins with some global variables, a reset which
+  is basically Normalize, some mixins, and a print stylesheet.
+
+-----------------------------------------------------  */
+  // Reset
+
+  @import "base/reset";
+
+  // Configs
+
+  @import "susy";
+  @import "base/config/typesettings";
+
+  // Vars
+
+  @import "base/vars/variables";
+  @import "base/vars/fonts";
+  @import "base/vars/colours";
+  @import "base/vars/breakpoints";
+  @import "base/vars/susy--settings";
+  @import "base/vars/typesettings";
+
+  // Mixins
+
+  @import "base/mixins/clearfix";
+  @import "base/mixins/fancy-link";
+  @import "base/mixins/snap-to-baseline";
+
+  // Fonts
+
+ // @import "base/fonts"; // Als ik al @import "base/config/typesettings"; heb, is deze dan nog nodig of moet ik de twee samenvoegen?
+
+  // Vendor
+
+ // @import "base/vendor/fluidbox";
+  @import "base/vendor/fancybox";
+ 
+
+
+
+
+/***
+
+  @elements
+---------------------------------------------------------
+
+  Global styling of elements.
+
+---------------------------------------------------------  */
+
+  @import "elements/universal";
+
+  @import "elements/headings";
+
+  @import "elements/text";
+
+  @import "elements/links";
+
+  @import "elements/lists";
+
+  @import "elements/quotes";
+
+  @import "elements/images";
+
+  @import "elements/icons";
+
+//  @import "elements/buttons";
+
+  @import "elements/code";
+
+//  @import "elements/forms";
+
+  @import "elements/hr";
+
+
+
+
+
+
+
+
+
+
+
+
+  /***
+
+  @layout
+---------------------------------------------------------
+
+  A large portion of CSS is structural layout. You will use
+  these helpers to create the scaffolding that will support
+  the elements that make up your site.
+
+---------------------------------------------------------  */
+  @import "layout/html";
+  @import "layout/body";
+  @import "layout/wrapper";
+  @import "layout/header";
+  @import "layout/main";
+  @import "layout/sidebar";
+  @import "layout/footer";
+
+
+
+/***
+
+  @modules
+---------------------------------------------------------
+
+  Reusable objects that are combinations
+  of elements and other modules.
+
+  When you create a new module, make sure the partial is
+  in the modules directory, and you import it below
+
+  Comment out any partial you don't need for this app.
+
+---------------------------------------------------------  */
+
+
+  // Site Modules
+  //
+
+  // Component Modules
+  //
+@import "modules/nav";
+//  @import "modules/alerts";
+
+@import "modules/blocks";
+@import "modules/media";
+
+//  @import "modules/callouts";
+
+//  @import "modules/heroes";
+
+//  @import "modules/modals";
+
+@import "modules/gallery";
+@import "modules/video-embeds";
+
+@import "modules/accordion";
+@import "modules/logo";
+
+
+ // Print
+
+  @import "base/print";
