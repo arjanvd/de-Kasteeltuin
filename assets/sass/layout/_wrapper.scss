@@ -43,12 +43,21 @@
     &--intro {
       background-color: mix($white, $yellow, 95%);
     }
-    &--castle {
+    &--1 {
       background-color: mix($white, $green-yellow, 50%);
       padding-bottom: 0; // reset van de padding-bottom, omdat deze doorloopt vanwege #sticky-anchor
     }
-    &--team {
+    &--2 {
       background-color: mix($white, $green-yellow, 80%);
+    }
+    &--3 {
+      background-color: mix($white, $green-yellow, 60%);
+    }
+    &--4 {
+      background-color: mix($white, $green-yellow, 90%);
+    }
+    &--5 {
+      background-color: mix($white, $green-yellow, 70%);
     }
   }
   

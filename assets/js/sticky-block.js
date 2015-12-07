@@ -5,12 +5,12 @@ $(document).ready(function () {
 
     $("#sticky_faq").stick_in_parent({
       parent: '.l-wrapper',
-      offset_top: 20
+      offset_top: 80 // moet net iets meer dan de hoogte van de header!
     });
   
     $("#sticky_about").stick_in_parent({
       parent: '#sticky-anchor',
-      offset_top: 20
+      offset_top: 80 // moet net iets meer dan de hoogte van de header!
     });
  
   }

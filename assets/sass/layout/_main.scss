@@ -1,3 +1,5 @@
+// .l-main en .c-main
+
 .l-main {
  
   &__faq {  
@@ -25,24 +27,7 @@
       @include span(6 at 7 of 12 last);
     }
   }
-  
-  &__about {
-    
-    @include span(12);
- 
-    @include bp(small) {
-      @include span(10 of 12);
-      @include post(2 of 12);
-    }
-    
-    @include bp(medium) {
-   //   @include pre(4 of 12);
-      @include span(7 at 5 of 12);
-      @include post(1 at 11 of 12);
-    }
-    
-  }
-  
+
   &__about--intro {
     
     @include span(12);
@@ -58,15 +43,94 @@
       @include post(1 of 12);
     }
 
-    
   }
   
-  &__about--flright {
-    @include bp(medium) {
-      @include pre(4 of 12);
+  &__about--1 {
+    
+    @include span(12);
+ 
+    @include bp(small) {
+      @include span(10 of 12);
+      @include post(2 of 12);
     }
+    
+    @include bp(medium) {
+      // geen pre, want dat zit in de .l-sidebar
+      @include span(7 at 5 of 12);
+      @include post(1 at 11 of 12);
+    }
+    
   }
+
+// Zoals hieronder is de standaardsectie zonder gallery  
+  
+/*  &__about--2 { 
+    
+    @include span(12);
+ 
+    @include bp(small) {
+      @include span(10 of 12);
+      @include post(2 of 12);
+    }
+    
+    @include bp(medium) {
+      @include pre(4 of 12); 
+      @include span(7 at 5 of 12);
+      @include post(1 at 11 of 12);
+    }
+    
+  } */
   
   &__media {
   }
 } 
+
+.c-main {
+  
+  &__about--header {
+    @include span(12);
+    
+    @include bp(medium) {
+      @include pre(4 of 12);
+      @include span(8 at 5 of 12);
+    }
+    
+  }
+  
+  &__about--text {
+    
+    @include span(12);
+    
+    @include bp(small) {
+      @include span(10 of 12);
+      @include post(2 of 12);
+    }
+    
+    @include bp(medium) {
+      @include pre(4 of 12);
+      @include span(7 at 5 of 12);
+      @include post(1 at 11 of 12);
+    }
+    
+    @include bp(large) {
+      @include span(5 at 5 of 12);
+      @include post(0);
+    }
+    
+  }
+  
+  &__about--gallery {
+    
+    @include span(12);
+    
+    @include bp(medium) {
+      @include pre(4 of 12);
+      @include span(8 at 5 of 12);
+    }   
+    
+    @include bp(large) {
+      @include pre(0);
+      @include span(3 at 10 of 12);
+    }
+  }
+}
