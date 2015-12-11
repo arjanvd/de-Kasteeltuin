@@ -91,7 +91,17 @@ Pers-pagina
 
 Twee kolommen met links en rechts de nieuwsberichten (van links naar rechts, twee per rij). Info per artikel: soort medium, datum, korte synopsis. 
 
+--
 
+Beelden Yvonne
+
+Bijv volle bakfiets bij oprichting, 
+daarna kasteel met laarsjes.
+Bij warme maaltijd: weekmenu.
+Bij spelen en groeien: kind in zand, baby, schorsman.
+Bij contact: kantoorlogo en facebook-appel.
+
+--
 
 Dingen voor vanavond:
 

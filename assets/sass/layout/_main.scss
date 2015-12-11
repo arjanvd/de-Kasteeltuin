@@ -112,10 +112,10 @@
       @include post(1 at 11 of 12);
     }
     
-    @include bp(large) {
+/*    @include bp(large) {
       @include span(5 at 5 of 12);
       @include post(0);
-    }
+    }*/
     
   }
   
@@ -128,9 +128,9 @@
       @include span(8 at 5 of 12);
     }   
     
-    @include bp(large) {
+ /*   @include bp(large) {
       @include pre(0);
       @include span(3 at 10 of 12);
-    }
+    }*/
   }
 }

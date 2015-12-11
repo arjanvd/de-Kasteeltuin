@@ -1039,6 +1039,8 @@ html {
 body {
   line-height: 1.5;
   padding-top: 5rem; }
+  body.homepage {
+    padding-top: 0; }
 
 /**
 
@@ -1207,7 +1209,11 @@ body {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  /*    @include bp(large) {
+        @include span(5 at 5 of 12);
+        @include post(0);
+      }*/ }
   @media (min-width: 600px) {
     .c-main__about--text {
       width: 82.6086956522%;
@@ -1221,27 +1227,19 @@ body {
       float: left;
       margin-right: 4.347826087%;
       margin-right: 8.6956521739%; } }
-  @media (min-width: 996px) {
-    .c-main__about--text {
-      width: 39.1304347826%;
-      float: left;
-      margin-right: 4.347826087%;
-      margin-right: 0%; } }
 .c-main__about--gallery {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  /*   @include bp(large) {
+       @include pre(0);
+       @include span(3 at 10 of 12);
+     }*/ }
   @media (min-width: 768px) {
     .c-main__about--gallery {
       margin-left: 34.7826086957%;
       width: 65.2173913043%;
-      float: right;
-      margin-right: 0; } }
-  @media (min-width: 996px) {
-    .c-main__about--gallery {
-      margin-left: 0%;
-      width: 21.7391304348%;
       float: right;
       margin-right: 0; } }
 
@@ -1321,6 +1319,14 @@ body {
   z-index: 100;
   -webkit-transition: opacity .25s ease;
   transition: opacity .25s ease; }
+  .nav-menu-container__button--homepage {
+    position: relative;
+    height: 27px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease; }
   .nav-menu-container__button:hover {
     opacity: .7; }
   .nav-menu-container__button.active .top {
@@ -1497,6 +1503,32 @@ body {
       top: auto;
       bottom: 0;
       right: 4%; } }
+  .nav-menu--homepage {
+    visibility: hidden; }
+    @media (min-width: 600px) {
+      .nav-menu--homepage {
+        visibility: visible; }
+        .nav-menu--homepage ul {
+          text-align: center; }
+        .nav-menu--homepage li {
+          display: inline-block;
+          line-height: 3rem;
+          height: 3rem; }
+        .nav-menu--homepage a {
+          text-decoration: none;
+          color: #222;
+          display: block;
+          padding: 0 1rem;
+          border-radius: 5px;
+          -webkit-transition: .35s background-color;
+          transition: .35s background-color; }
+          .nav-menu--homepage a:hover {
+            background-color: #117878;
+            color: #fff; }
+          .nav-menu--homepage a.active {
+            background-color: #c81f1d;
+            color: #fff;
+            cursor: default; } }
 
 /**
 
@@ -1610,22 +1642,49 @@ body {
       .c-media__art:nth-of-type(3n+2) {
         margin-right: 4.347826087%; } }
 
-.gallery a {
-  display: block;
-  margin-bottom: 10px;
-  /*   @include gallery(6 of 12);
-     
-     @include bp(small) {
-        @include gallery(4 of 12); 
-     }
-         
-     @include bp(large) {
-       @include gallery(3 of 12);
-     } */ }
-  .gallery a img {
-    width: 100%;
-    vertical-align: middle;
-    border: 1px solid #fff; }
+/*.gallery { 
+  
+  a {
+    display: block;
+    margin-bottom: gutter(10px);
+  
+ /*   @include gallery(6 of 12);
+    
+    @include bp(small) {
+       @include gallery(4 of 12); 
+    }
+        
+    @include bp(large) {
+      @include gallery(3 of 12);
+    } 
+    img {
+      width: 100%;
+      vertical-align: middle;
+      border: 1px solid $white;
+    }
+  }
+} */
+.gallery {
+  border: 2px solid #f3f8f8;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .gallery a {
+    display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: auto;
+        -ms-flex: auto;
+            flex: auto;
+    width: 200px;
+    border: 2px solid #f3f8f8; }
+    .gallery a img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle; }
 
 /**
 

@@ -1,4 +1,4 @@
-.gallery { 
+/*.gallery { 
   
   a {
     display: block;
@@ -12,12 +12,31 @@
         
     @include bp(large) {
       @include gallery(3 of 12);
-    } */
-    
+    } 
     img {
       width: 100%;
       vertical-align: middle;
       border: 1px solid $white;
     }
   }
-} 
+} */
+
+
+.gallery { 
+  border: 2px solid mix($white, $green-blue, 95%); 
+  flex-flow: row wrap; 
+  display: flex;
+
+  a {
+    display: block;
+    flex: auto;
+    width: 200px;
+    border: 2px solid mix($white, $green-blue, 95%);
+  
+    img {
+      width: 100%; 
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+}
