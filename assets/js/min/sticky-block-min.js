@@ -1,1 +1,1 @@
-$(document).ready(function(){"use strict";$(window).width()>600&&($("#sticky_faq").stick_in_parent({parent:".l-wrapper",offset_top:80}),$("#sticky_about").stick_in_parent({parent:"#sticky-anchor",offset_top:80}))});
+$(document).ready(function(){"use strict";$(window).width()>600&&($("#sticky_faq").stick_in_parent({parent:".l-wrapper",offset_top:80}),$("#sticky_about").stick_in_parent({parent:"#sticky-anchor",offset_top:80,bottoming:!0}))});

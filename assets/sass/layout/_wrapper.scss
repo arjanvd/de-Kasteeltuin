@@ -24,16 +24,24 @@
 
 .l-container {
   @include container;
+  position: relative; // voor absolute positionering van .figures op pagina Wie zijn wij
   padding: 0 4%;
   
   @include bp(xx-large) {
     padding: 0;
   }
+  
+  @include bp(medium) {
 
+  }
 }
 
 .l-wrapper {
   width: 100%;
+  
+  &--homepage {
+    background-color: mix($white, $green-yellow, 80%);
+  }
   
   &__about {
     min-height: 100vh;

@@ -32,6 +32,17 @@ img {
   height: auto;
 }
 
+.img {
+  
+  &--header {
+    
+    padding-top: 1.5rem; // net zo groot als het menu moet zijn
+    vertical-align: middle;
+    
+  }
+  
+}
+
 /*
 img .wide {
   width: 104%;

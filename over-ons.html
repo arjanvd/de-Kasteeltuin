@@ -20,7 +20,7 @@
 
 <body>
 
-<div class="l-wrapper">
+<!--<div class="l-wrapper">
   <div class="js-header">
   <header class="l-container">
     <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
@@ -45,33 +45,64 @@
     </div>
   </header>
   </div>
+</div>-->
+
+<div class="l-wrapper">
+  <div class="js-header">
+  <header class="l-container">
+    <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
+    <nav>
+      <input type="checkbox" id="toggle-nav" />
+      <label id="toggle-nav-label" for="toggle-nav">
+      <div class="nav-menu-container">
+        <div class="nav-menu-container__title">Menu</div>
+        <div class="nav-menu-container__button">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+      </div>
+      </label>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="#" class="active" title="Team">Wie zijn wij</a></li>
+          <li><a href="#" title="Ouders">Ouders</a></li>
+          <li><a href="#" title="Home">FAQ</a></li>
+          <li><a href="#" title="Home">Media</a></li>
+          <li><a href="#" title="Home">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  </div>
 </div>
 
 <div class="l-wrapper l-wrapper__about l-wrapper__about--intro">
-  <section class="l-container">
+  <section class="l-container l-container__about--intro">
     <div class="l-main__about--intro">
-      <h1>Wie zijn wij</h1>
+      <h1 class="h1">Wie zijn wij</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipi*45*sicing elit. Mod*65*i nisi*75* repel*85*lendus veritatis, maiores tenetur ipsa officia, distinctio. Praesentium atque, nobis quia aut quidem commodi ratione architecto tempora quaerat, porro voluptas.</p>
       <p>De Kasteeltuin is een zelfstandige kinderdagverzorging zonder winstoogmerk. Alle inkomsten worden geïnvesteerd in de kwaliteit van de verzorging van uw kind.</p>
       <p>Totam deleniti delectus labore, dolore doloribus nulla sunt mollitia, veritatis eos, modi iusto veniam voluptate fuga placeat quam et rem numquam. Vero facere eum eius nobis ipsum, odit recusandae excepturi!</p>
       <p>A sapiente harum officia tempore neque officiis maxime necessitatibus minus vel, id minima eum temporibus recusandae reiciendis, quod quae, sunt expedita similique aperiam eius ab laborum? Similique obcaecati laboriosam, facilis?</p>
       <p>Distinctio in enim hic blanditiis autem aliquid doloribus debitis facere, cum beatae animi rerum iusto, corporis molestias amet esse culpa tenetur eius, adipisci aperiam veniam. Consectetur optio autem recusandae repudiandae.</p>
       <p>Rem necessitatibus adipisci corporis! Aut error doloremque, excepturi ipsum tenetur minus, harum voluptatum tempora accusantium nulla asperiores similique distinctio in sunt eius quisquam mollitia saepe perferendis laborum corrupti rerum recusandae.</p>
+      <div class="figures figures--about figures--about--intro"></div>
     </div>
   </section>
 </div>
  
-<div class="l-wrapper l-wrapper__about l-wrapper__about--1" id="sticky-anchor">
-  <div class="l-container"> 
+<div class="l-wrapper l-wrapper__about l-wrapper__about--1" id="pin__container">
+  <div class="l-container l-container__about--1"> 
     <div class="l-sidebar__about">
-      <div id="sticky_about">
-        <div class="c-block--sidebar"> 
+    <!-- <div id="sticky_about"> -->
+        <div class="c-block--sidebar pinned"> 
           <ul class="no-list">
             <li><a href="#s3">over de Kasteeltuin</a></li>
-            <li><a href="#s4">over het team</a></li>   
+            <li><a href="#s4" class="scroll">over het team</a></li>   
           </ul>       
         </div>
-      </div>
+      <!--</div>-->
     </div>
     <section class="section" id="1">
       <div class="l-main__about--1"><!-- deze is apart, omdat hier de sticky_about in de sidebar zit. De andere .l-main__about(--flright) hieronder moeten een span(4) naar rechts. -->
@@ -93,6 +124,7 @@
             <li>actieve oudercommissie die de belangen van alle ouders vertegenwoordigt en behartigt.</li>
           </ul>
         </p>
+        <div class="figures figures--about figures--about--1"></div>
       </div>
     </section>
   </div>
@@ -190,19 +222,21 @@
 <script>
   head.load(
     "assets/js/jquery-2.1.4.min.js", 
-    "assets/js/jquery.sticky-kit.min.js",
+ //   "assets/js/jquery.sticky-kit.min.js",
     "assets/js/jquery.fancybox.js",
+    "assets/js/jquery.pin.min.js",
 //    "assets/js/jquery.throttle.min.js", 
  //   "assets/js/jquery.fluidbox.min.js", 
 //    "assets/js/jquery.collagePlus.min.js",
     "assets/js/jquery.waypoints.min.js",
     "assets/js/accordion.js", 
-    "assets/js/sticky-block.js", 
+ //   "assets/js/sticky-block.js", 
     "assets/js/nav.js", 
     "assets/js/fancybox.js",
  //   "assets/js/fluidbox.js", 
     "assets/js/autoHideHeader.js",
-    "assets/js/scroll.js"
+    "assets/js/scroll.js",
+    "assets/js/pin.js"
   )
 </script>
 

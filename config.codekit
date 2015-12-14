@@ -2,6 +2,17 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19102",
 "files": {
+	"\/assets\/css\/img\/baby-met-boompje.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66460,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/baby-met-boompje.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/baby-met-boompje.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/css\/img\/bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -24,6 +35,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/css\/img\/kasteel.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 61919,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/kasteel.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/kasteel.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/css\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -39,7 +61,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 30472,
+		"initialSize": 20630,
 		"inputAbbreviatedPath": "\/assets\/css\/img\/logo2.png",
 		"outputAbbreviatedPath": "\/assets\/css\/img\/logo2.png",
 		"outputPathIsOutsideProject": 0,
@@ -204,6 +226,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery.masonry.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.masonry.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/jquery.pin.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/jquery.pin.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.pin.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -418,6 +451,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/jquery.pin.min-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/jquery.pin.min-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/jquery.pin.min-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/jquery.throttle.min-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -484,6 +528,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/pin-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/pin-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/pin-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/prism-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -534,6 +589,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/page-scroll.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/page-scroll-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/pin.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/pin.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/pin-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -1201,6 +1267,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/modules\/_figures.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/modules\/_figures.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_figures.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/sass\/modules\/_gallery.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1290,6 +1372,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/modules\/_nav.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/css\/_nav.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/modules\/_nav2.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/modules\/_nav2.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_nav2.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1452,7 +1550,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 198309,
+		"initialSize": 223771,
 		"inputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1474,7 +1572,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 168419,
+		"initialSize": 181418,
 		"inputAbbreviatedPath": "\/images\/4_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/4 kopie_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1496,7 +1594,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 365850,
+		"initialSize": 404966,
 		"inputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1518,7 +1616,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 231542,
+		"initialSize": 252324,
 		"inputAbbreviatedPath": "\/images\/6_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/6_sq.jpg",
 		"outputPathIsOutsideProject": 0,

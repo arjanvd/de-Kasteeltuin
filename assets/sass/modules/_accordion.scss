@@ -1,12 +1,12 @@
-  .acc-toggle {cursor: pointer;}
+  .acc-toggle {
+    cursor: pointer;
+    transform: all 0.35s ease;
+    
+    &.open-toggle {
+      font-weight: 700;
+      color: $red;
+    }
+    
+  }
   .acc-content {display: none;}
 
-.acc-content {
-  padding-left: 2rem;
-  
-  &:before {
-    content: '>'; // dit is dus niet de goede code...
-    float: left;
-    margin-left: -2rem; // gelijk aan padding-left van parent
-  }
-}

@@ -68,12 +68,16 @@
   </div>
 </div>
 
-<div class="l-wrapper">
+<div class="l-wrapper" id="pin__container">
   <div class="l-container">
     <div class="l-main__faq" id="accordion">
+      <div class="l-main__faq__intro">
+        <h1 class="h1">Vragen en antwoorden</h1>
+        Hier komt een inleidende tekst met links naar de verschillende categorieen. Bedoeld voor breedtes tot bp(small).
+      </div>
       <h1 class="h3 h3__faq">Categorienaam</h1>
       <dl class="faq">
-        <dt class="acc-toggle">Vraag komt hier</dt>
+        <dt class="acc-toggle"><span class="icon icon-chevron-right"></span>Vraag komt hier</dt>
         <dd class="acc-content">
         <p>Lorem ipsum dolor sit amet, consectetur adipi**sicing elit. Modi **nisi rep**ellendus veritatis, maiores tenetur ipsa officia, distinctio. Praesentium atque, nobis quia aut quidem commodi ratione architecto tempora quaerat, porro voluptas.</p>
         <p>Magnam molestias architecto voluptatum vel quae hic explicabo quas nesciunt, libero animi tenetur maxime enim, eveniet odio dolore soluta vitae repellat voluptate commodi temporibus sequi quisquam dolor dignissimos. Optio, temporibus.</p>
@@ -120,7 +124,7 @@
       </dl>
     </div>
     <div class="l-sidebar__faq">
-      <div id="sticky_faq">
+      <div class="pinned">
         <div class="o-block c-block--categories">
           <h1 class="h4 h4--faq">Categorieën</h1>
           <ul class="no-list">
@@ -172,18 +176,21 @@
 <script>
   head.load(
     "assets/js/jquery-2.1.4.min.js", 
-    "assets/js/jquery.sticky-kit.min.js",
+ //   "assets/js/jquery.sticky-kit.min.js",
     "assets/js/jquery.fancybox.js",
+    "assets/js/jquery.pin.min.js",
 //    "assets/js/jquery.throttle.min.js", 
  //   "assets/js/jquery.fluidbox.min.js", 
 //    "assets/js/jquery.collagePlus.min.js",
+    "assets/js/jquery.waypoints.min.js",
     "assets/js/accordion.js", 
-    "assets/js/sticky-block.js", 
+ //   "assets/js/sticky-block.js", 
     "assets/js/nav.js", 
     "assets/js/fancybox.js",
  //   "assets/js/fluidbox.js", 
     "assets/js/autoHideHeader.js",
-    "assets/js/scroll.js"
+    "assets/js/scroll.js",
+    "assets/js/pin.js"
   )
 </script>
 

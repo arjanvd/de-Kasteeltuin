@@ -59,7 +59,7 @@
   &--arrow-left { width: vr(2); height: vr(2); }
 }*/
 
-[class^="icon-"], [class*=" icon-"] {
+.icon {
   font-family: 'icomoon';
   speak: none;
   font-style: normal;
@@ -73,160 +73,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon {
-  transition: color 0.3s ease;
-  &-facebook2:hover { color: $color-facebook; }
-  &-twitter2:hover { color: $color-twitter; }
-  &-google-plus2:hover { color: $color-google; }
-  &-pinterest:hover { color: $color-pinterest; }  
-}
-
-[class^="icon--sm"], [class*=" icon--sm"] {
-  vertical-align: middle;
-  color: $grey40;
-  @include set-type($ms-up1);
-}
-
-[class^="icon--info"], [class*=" icon--info"], 
-[class^="icon--meta"], [class*=" icon--meta"] {
+.acc-toggle .icon-chevron-right {
+  font-size: $ms-down1;
   display: inline-block;
-  text-align: center;
-  width: 1rem;
-  margin-right: 0.5rem;  
+  padding-right: 10px;
+  color: mix($white, $red, 50%);
+  transition: all 0.5s ease;
 }
 
-.icon-arrow-left:before {
-	content: "\e600";
+.open-toggle .icon-chevron-right {
+  color: $red;
+  transform-origin: 25% 50%;
+  transform: rotate(90deg);
 }
 
-.icon-arrow-right:before {
-	content: "\e601";
+.icon-chevron-right:before {
+    content: "\f054";
 }
-
-.icon-comments:before {
-	content: "\e602";
-}
-
-.icon-calendar:before {
-	content: "\e603";
-}
-
-.icon-clock:before {
-	content: "\e604";
-}
-
-.icon-codepen:before {
-	content: "\e605";
-}
-
-.icon-cycling:before {
-	content: "\e606";
-}
-
-.icon-code:before {
-	content: "\e607";
-}
-
-.icon-mail:before {
-	content: "\e608";
-}
-
-.icon-facebook1:before {
-	content: "\e609";
-}
-
-.icon-facebook2:before {
-	content: "\e60a";
-}
-
-.icon-rss:before {
-	content: "\e60b";
-}
-
-.icon-flickr:before {
-	content: "\e60c";
-}
-
-.icon-github:before {
-	content: "\e60d";
-}
-
-.icon-google-plus1:before {
-	content: "\e60e";
-}
-
-.icon-google-plus2:before {
-	content: "\e60f";
-}
-
-.icon-image:before {
-	content: "\e610";
-}
-
-.icon-instagram:before {
-	content: "\e611";
-}
-
-.icon-linkedin:before {
-	content: "\e612";
-}
-
-.icon-location:before {
-	content: "\e613";
-}
-
-.icon-mountain:before {
-	content: "\e614";
-}
-
-.icon-movie:before {
-	content: "\e615";
-}
-
-.icon-pencil:before {
-	content: "\e616";
-}
-
-.icon-pinterest:before {
-	content: "\e617";
-}
-
-.icon-tag:before {
-	content: "\e618";
-}
-
-.icon-road:before {
-	content: "\e619";
-}
-
-.icon-running:before {
-	content: "\e61a";
-}
-
-.icon-skating:before {
-	content: "\e61b";
-}
-
-.icon-stopwatch:before {
-	content: "\e61c";
-}
-
-.icon-twitter1:before {
-	content: "\e61d";
-}
-
-.icon-twitter2:before {
-	content: "\e61e";
-}
-
-.icon-vimeo:before {
-	content: "\e61f";
-}
-
-.icon-youtube:before {
-	content: "\e620";
-}
-
 
 
 

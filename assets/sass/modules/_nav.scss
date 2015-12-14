@@ -1,12 +1,41 @@
+/*<header id="head">
+	<div class="container">
+    	<nav id="menu">
+    		
+    		<input type="checkbox" id="toggle-nav"/>
+    		<label id="toggle-nav-label" for="toggle-nav"><i class="icon-reorder"></i>
+            </label>
+    		
+    		<div class="box">
+	    		<ul>
+	    			<li><a href="#"><i class="icon-home"></i> home</a></li>
+	    			<li><a href="#"><i class="icon-file-alt"></i> about</a></li>
+	    			<li><a href="#"><i class="icon-copy"></i> works</a></li>
+	    			<li><a href="#"><i class="icon-envelope"></i> contacts</a></li>
+	    		</ul>
+    		</div>
+    		
+    	</nav>
+	</div>
+</header>*/
 
-$button-height: 27px;
-$button-width: 35px;
+
+
+#toggle-nav-label {
+	display: block;
+	cursor: pointer;
+	z-index: 500;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+}
 
 .nav-menu-container {
   position: absolute;
   top: 10px;
   right: 0;
   width: 100px;
+  z-index: 500;
   
   @include bp(small) {
     visibility: hidden;
@@ -14,43 +43,16 @@ $button-width: 35px;
   
 }
 
-
-
 .nav-menu-container__button {
   position: fixed;
-  height: $button-height;
-  width: $button-width;
+  height: 27px;
+  width: 35px;
   cursor: pointer;
-  z-index: 100;
+ // z-index: 600;
   transition: opacity .25s ease;
-  
-  &--homepage {
-    position: relative;
-    height: $button-height;
-  width: $button-width;
-  cursor: pointer;
-  z-index: 100;
-  transition: opacity .25s ease;
-  }
   
   &:hover {
     opacity: .7;
-  }
-  
-  &.active {
-    .top {
-      transform: translateY(10px) translateX(0) rotate(45deg);
-      background: $white;
-    }
-    .middle {
-      opacity: 0;
-      background: $white;
-    }
-    
-    .bottom {
-      transform: translateY(-10px) translateX(0) rotate(-45deg);
-      background: $white;
-    }
   }
   
   span {
@@ -77,89 +79,87 @@ $button-width: 35px;
   color: $black;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-//  opacity: 1;
-  visibility: hidden;
-  transition: opacity .35s ease, visibility .35s ease, height .35s ease;
-  z-index: 50;
+#toggle-nav { display: none; }
 
-  &.open {
-    visibility: visible;
-    opacity: 0.9;
-    height: 100%;
-    background: $red;
-    
-    li {
-      
-      &:nth-child(odd) {
-        animation: fadeInRight .5s ease forwards;
-      }
-      
-      &:nth-child(even) {
-        animation: fadeInLeft .5s ease forwards;
-      }
-      @for $i from 1 through 5 {
-        $delay: ($i * .10s) + .25s;
-        &:nth-of-type(#{$i}) { 
-          animation-delay: $delay;
-        }
-      } 
-    }
-  }
+#toggle-nav:checked ~ .nav-menu { 
+  opacity: 0.9;
+  z-index: 400;
+}
 
-  nav {
-    position: relative;
-    top: 120px; // dit zou zo'n waarde moeten zijn, dat het menu onder de x begint, misschien zelfs wel onder de header
- //   transform: translateY(-50%);
-    text-align: center;
-    z-index: 100;
-  }
+#toggle-nav:checked ~ #toggle-nav-label .nav-menu-container .nav-menu-container__title { 
+  color: $white;
+}
+
+#toggle-nav:checked ~ #toggle-nav-label .nav-menu-container .nav-menu-container__button .top { 
+  transform: translateY(10px) translateX(0) rotate(45deg);
+  background: $white;
+}
+#toggle-nav:checked ~ #toggle-nav-label .nav-menu-container .nav-menu-container__button .middle {
+  opacity: 0;
+  background: $white;
+}
+
+#toggle-nav:checked ~ #toggle-nav-label .nav-menu-container .nav-menu-container__button .bottom {
+  transform: translateY(-10px) translateX(0) rotate(-45deg);
+  background: $white;
+}
+
+
+.nav-menu {
+	position: fixed;
+	text-align: center;
+	overflow: hidden;
+	z-index: -1;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: $red;
+	transition: all 0.3s ease-in-out;
+}
+
+nav {
+  
   ul {
+	position: relative;
+	top: 80px; // iets gelijk aan hoogte header
     margin: 0 auto;
     display: inline-block;
+	transition: all 0.3s ease-in-out;
+  }
+  
+  li { 
+    display: block;
     position: relative;
-    height: 100%; 
+    opacity: 0;
     
-    li {
-      display: block;
-      position: relative;
-      opacity: 0;
-      
-      a {
+    @for $i from 1 through 5 {
+      $delay: ($i * .10s) + .25s;
+      &:nth-of-type(#{$i}) { 
+        animation-delay: $delay;
+      }
+    } 
+    
+    a {
         display: block;
         position: relative;
         color: $white;
         text-decoration: none;
         overflow: hidden;
         @include set-type($ms-up2);
-        /*
-        &:hover:after,
-         &:focus:after,
-         &:active:after {
-           width: 100%;
-         }
-        
-        &:after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 0%;
-          transform: translateX(-50%);
-          height: 3px;
-          background: $color-link;
-          transition: .35s;
-        }*/
-      } 
     }
+  
   }
 }
 
+#toggle-nav:checked ~ .nav-menu ul li:nth-child(odd) {
+  animation: fadeInRight .5s ease forwards;
+}
+
+#toggle-nav:checked ~ .nav-menu ul li:nth-child(even) {
+  animation: fadeInLeft .5s ease forwards;
+}
 
 @keyframes fadeInRight {
   0% {
@@ -182,102 +182,3 @@ $button-width: 35px;
     right: 0;
   }
 }
-
-// -- Navigation menu for larger screens -- Homepage menu further down
-
-.nav-menu {
-  visibility: hidden;
-  
-  @include bp(small) {
-    visibility: visible;
-    position: absolute;
-    top: 2px;
-    right: 4%;
- 
-    ul {
-    //  background-color: #444;
-      text-align: center;
-      }
-
-    li {
-      display: inline-block;
-      line-height: 3rem;
-      height: 3rem;
-    }
- 
-    a {
-      text-decoration: none;
-      color: $black;
-      display: block;
-      padding: 0 1rem;
-      border-radius: 5px;
-      transition: .35s background-color;
-  
-      &:hover {
-        background-color: $green-blue;
-        color: $white;
-      }
-      
-      &.active {
-        background-color: $red;
-        color: $white;
-        cursor: default;
-      }
-    
-    } 
-  
-  }
-  
-  @include bp(large) {
-    top: auto;
-    bottom: 0; // hier iets rekening houdend met de hoogte in rem's van de header...
-    right: 4%;
-  }
-  
-  
-  &--homepage {
-    visibility: hidden;
-  
-    @include bp(small) {
-      visibility: visible;
-
-      ul {
-      //  background-color: #444;
-        text-align: center;
-        }
-
-      li {
-        display: inline-block;
-        line-height: 3rem;
-        height: 3rem;
-      }
-
-      a {
-        text-decoration: none;
-        color: $black;
-        display: block;
-        padding: 0 1rem;
-        border-radius: 5px;
-        transition: .35s background-color;
-
-        &:hover {
-          background-color: $green-blue;
-          color: $white;
-        }
-
-        &.active {
-          background-color: $red;
-          color: $white;
-          cursor: default;
-        }
-
-      } 
-
-    }
-
-  }
-}
- 
-
-
- 

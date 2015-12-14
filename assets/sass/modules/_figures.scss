@@ -1,0 +1,32 @@
+.figures { 
+  
+  display: none;
+  
+  @include bp(medium) {
+    
+    display: block;
+    
+    &--about {
+      position: absolute;
+      left: 0;
+      top: 150px;
+      
+      
+      &--intro {
+        width: 307px;
+        height: 283px;
+        background: url(img/kasteel.png) 0 0 no-repeat;
+      }
+      
+      &--1 {
+        width: 295px;
+        height: 307px;
+        background: url(img/baby-met-boompje.png) 0 0 no-repeat;
+      }
+      
+    }
+    
+  }
+  
+}
+

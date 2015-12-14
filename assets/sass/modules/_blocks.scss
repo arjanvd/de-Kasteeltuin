@@ -53,10 +53,12 @@
     }
   
   &--sidebar {
+    position: relative;
     padding: vr(8) vr(1);
 //    margin-top: 3rem; // dit zo goed mogelijk gelijk stellen met de offset in sticky-block.js
     background-color: $white;
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 5px;
+    z-index: 1000;
   }
 }

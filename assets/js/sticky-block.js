@@ -10,7 +10,8 @@ $(document).ready(function () {
   
     $("#sticky_about").stick_in_parent({
       parent: '#sticky-anchor',
-      offset_top: 80 // moet net iets meer dan de hoogte van de header!
+      offset_top: 80, // moet net iets meer dan de hoogte van de header!
+      bottoming: true
     });
  
   }
