@@ -1528,7 +1528,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 300219,
+		"initialSize": 362979,
 		"inputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1550,7 +1550,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 223771,
+		"initialSize": 198309,
 		"inputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1656,6 +1656,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/75\/header-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.08861e+06,
+		"inputAbbreviatedPath": "\/images\/75\/header-small.png",
+		"outputAbbreviatedPath": "\/images\/75\/header-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/75\/Kasteeltuin_058.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1674,6 +1685,28 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/75\/Kasteeltuin_085.jpg",
 		"outputAbbreviatedPath": "\/images\/75\/Kasteeltuin_085.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/75\/Kasteeltuin_1939.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 121158,
+		"inputAbbreviatedPath": "\/images\/75\/Kasteeltuin_1939.jpg",
+		"outputAbbreviatedPath": "\/images\/75\/Kasteeltuin_1939.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/75\/Kasteeltuin_2014.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113709,
+		"inputAbbreviatedPath": "\/images\/75\/Kasteeltuin_2014.jpg",
+		"outputAbbreviatedPath": "\/images\/75\/Kasteeltuin_2014.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1707,6 +1740,17 @@
 		"initialSize": 2.06573e+06,
 		"inputAbbreviatedPath": "\/images\/cirkel-header.png",
 		"outputAbbreviatedPath": "\/images\/cirkel-header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/header-small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.08861e+06,
+		"inputAbbreviatedPath": "\/images\/header-small.png",
+		"outputAbbreviatedPath": "\/images\/header-small.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2454,6 +2498,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/ouders.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ouders.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/over-ons.html": {
 		"fileType": 8192,

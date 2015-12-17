@@ -25,16 +25,19 @@
   <div class="js-header">
   <header class="l-container">
     <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
-    <div class="nav-menu-container">
-      <div class="nav-menu-container__title">Menu</div>
-      <div class="nav-menu-container__button" id="toggle">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
+    <nav>
+      <input type="checkbox" id="toggle-nav" />
+      <label id="toggle-nav-label" for="toggle-nav">
+      <div class="nav-menu-container">
+        <div class="nav-menu-container__title">Menu</div>
+        <div class="nav-menu-container__button">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
       </div>
-    </div>
-    <div class="nav-menu" id="overlay">
-      <nav>
+      </label>
+      <div class="nav-menu">
         <ul>
           <li><a href="#" class="active" title="Team">Wie zijn wij</a></li>
           <li><a href="#" title="Ouders">Ouders</a></li>
@@ -42,11 +45,12 @@
           <li><a href="#" title="Home">Media</a></li>
           <li><a href="#" title="Home">Contact</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
   </div>
 </div>
+
 <div class="l-wrapper">
   <div class="l-container">
     <div class="l-main__media">

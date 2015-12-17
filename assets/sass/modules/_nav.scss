@@ -19,32 +19,35 @@
 	</div>
 </header>*/
 
+#toggle-nav { display: none; } // input checkbox
 
+#toggle-nav-label { // label met menu-title en menu-button erin
+  display: block;
+  cursor: pointer;
+  z-index: 500;
+  width: 100px;
+  height: 30px;
+  
+  @include bp(medium) {
+    display: none;
+  }
 
-#toggle-nav-label {
-	display: block;
-	cursor: pointer;
-	z-index: 500;
-	width: 100px;
-	height: 30px;
-	border-radius: 5px;
 }
 
 .nav-menu-container {
   position: absolute;
-  top: 10px;
+  top: 20px;
   right: 0;
   width: 100px;
-  z-index: 500;
+  z-index: 500;  
   
-  @include bp(small) {
-    visibility: hidden;
+  @include bp(medium) {
+    display: none;
   }
-  
 }
 
 .nav-menu-container__button {
-  position: fixed;
+ // position: fixed;
   height: 27px;
   width: 35px;
   cursor: pointer;
@@ -59,7 +62,7 @@
   background: $red;
   border: none;
   height: 5px;
-  width: 100%;
+  width: 35px;
   position: absolute;
   left: 50px;
   transition: all .35s ease;
@@ -77,13 +80,6 @@
 .nav-menu-container__title {
   float: left;
   color: $black;
-}
-
-#toggle-nav { display: none; }
-
-#toggle-nav:checked ~ .nav-menu { 
-  opacity: 0.9;
-  z-index: 400;
 }
 
 #toggle-nav:checked ~ #toggle-nav-label .nav-menu-container .nav-menu-container__title { 
@@ -106,20 +102,39 @@
 
 
 .nav-menu {
-	position: fixed;
-	text-align: center;
-	overflow: hidden;
-	z-index: -1;
-	opacity: 0;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-	background: $red;
-	transition: all 0.3s ease-in-out;
+  
+  display: none; 
+  transition: all 0.3s ease-in-out;
+  
+  @include bp(medium) {
+    display: block;
+    position: static;
+    text-align: left;
+    z-index: 100;
+    opacity: 1;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+}
+
+#toggle-nav:checked ~ .nav-menu { 
+  display: block;
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: $red;
+  opacity: 0.9;
+  z-index: 400;
 }
 
 nav {
+  
+  //position: relative;
   
   ul {
 	position: relative;
@@ -127,6 +142,19 @@ nav {
     margin: 0 auto;
     display: inline-block;
 	transition: all 0.3s ease-in-out;
+    
+    @include bp(medium) {
+      display: block;
+      top: -3rem; // DIT MOET ANDERS!!
+      float: right;
+      height: vr(12);
+    /*  position: absolute;
+      top: 10px;
+      right: 4%;
+      height: 55px; // LET OP: even hoog als logo-small - 10px (van top)
+      border-bottom: 1px solid $green; */
+    }
+    
   }
   
   li { 
@@ -134,22 +162,67 @@ nav {
     position: relative;
     opacity: 0;
     
-    @for $i from 1 through 5 {
+    @for $i from 1 through 7 {
       $delay: ($i * .10s) + .25s;
       &:nth-of-type(#{$i}) { 
         animation-delay: $delay;
       }
     } 
     
-    a {
-        display: block;
-        position: relative;
-        color: $white;
-        text-decoration: none;
-        overflow: hidden;
-        @include set-type($ms-up2);
+    @include bp(medium) {
+      display: inline-block;
+      opacity: 1;
+      animation-delay: none;
     }
-  
+    
+    a {
+      display: block;
+      position: relative;
+      color: $white;
+      text-decoration: none;
+      // overflow: hidden;
+      transition: all .35s ease;
+      @include set-type($ms-up2);
+      
+      &.icons {
+        @include set-type($ms-up1);
+        line-height: vr(8);
+      }
+      
+      &:hover {
+        color: mix($white, $red, 75%);
+      }
+      
+      @include bp(medium) {
+        color: $black;
+       // overflow: visible;
+        padding: vr(2);
+        border-radius: 5px;
+        transition: .35s background-color;
+        @include set-type($ms-base);
+        
+        &.icons {
+          @include set-type($ms-base);
+          color: mix($white, $black, 20%);
+          line-height: vr(4);
+        }
+        
+        &:hover {
+          background-color: $green-blue;
+          color: $white;
+        }
+        
+        span.text--hide {
+          display: none;
+        }
+
+        &.active {
+          background-color: $red;
+          color: $white;
+          cursor: default;
+        }
+      }
+    }
   }
 }
 
@@ -182,3 +255,60 @@ nav {
     right: 0;
   }
 }
+
+
+//
+// Nav menu for homepage
+//
+
+/*
+.homepage header {
+  position: relative;
+  
+  @include bp(medium) {
+    position: static;
+  }
+  
+  img {
+    display: block;
+  }
+} 
+
+.homepage nav {
+  position: absolute;
+  top: 10px;
+  right: 0;
+//  width: 100px;
+ // z-index: 500;
+  
+  @include bp(medium) {
+    position: static;
+  }
+}
+
+.homepage nav ul {
+  @include bp(medium) {
+    position: static;
+    float: none;
+    height: vr(8); 
+    text-align: center;
+    display: block;
+    border-bottom: 0;
+    padding-top: 0;
+    margin: 0 auto;
+  }
+} /*
+.homepage nav ul li {
+  @include bp(medium) {
+    position: static;
+    display: inline;
+  }
+}
+
+.homepage nav ul li a {
+  @include bp(medium) {
+    position: static;
+    display: inline-block;
+  }
+}
+*/

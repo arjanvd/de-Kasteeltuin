@@ -27,7 +27,7 @@
 
 // H1
 h1, .h1 {
-  @include set-type($ms-up4);
+  @include set-type($ms-up3);
   font-family: $font-heading;
   color: $green-blue;
 }
@@ -39,6 +39,12 @@ h2, .h2 {
   color: $red;
   @include set-type($ms-up3);
   font-family: $font-heading;
+}
+
+.h2 {
+  &--about--intro {
+    color: $green-blue;
+  }
 }
 
 

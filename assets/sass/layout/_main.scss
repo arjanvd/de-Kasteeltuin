@@ -32,109 +32,117 @@
     }
   }
 
-  &__about--intro {
+  &--about {
     
     @include span(12);
-    
-    @include bp(small) {
-      @include span(10 of 12);
-      @include post(2 of 12);
-    }
     
     @include bp(medium) {
       @include pre(4 of 12);
-      @include span(7 of 12);
-      @include post(1 of 12);
+      @include span(8 at 5 of 12);
+    }
+    
+    &--intro {
+    
+      @include span(12);
+
+      @include bp(small) {
+        @include span(10 of 12);
+        @include post(2 of 12);
+      }
+
+      @include bp(medium) {
+        @include pre(4 of 12);
+        @include span(7 of 12);
+        @include post(1 of 12);
+      }
+
+    }
+  
+    &--pinned {
+    
+      @include span(12);
+
+     /* @include bp(small) {
+        @include span(10 of 12);
+        @include post(2 of 12);
+      }*/
+
+      @include bp(medium) {
+        // geen pre, want dat zit in de .l-sidebar
+        @include span(8 at 5 of 12);
+      }
+
     }
 
   }
-  
-  &__about--1 {
-    
-    @include span(12);
- 
-    @include bp(small) {
-      @include span(10 of 12);
-      @include post(2 of 12);
-    }
-    
-    @include bp(medium) {
-      // geen pre, want dat zit in de .l-sidebar
-      @include span(7 at 5 of 12);
-      @include post(1 at 11 of 12);
-    }
-    
-  }
 
-// Zoals hieronder is de standaardsectie zonder gallery  
+}
   
-/*  &__about--2 { 
-    
-    @include span(12);
- 
-    @include bp(small) {
-      @include span(10 of 12);
-      @include post(2 of 12);
-    }
-    
-    @include bp(medium) {
-      @include pre(4 of 12); 
-      @include span(7 at 5 of 12);
-      @include post(1 at 11 of 12);
-    }
-    
-  } */
-  
-  &__media {
-  }
-} 
+
 
 .c-main {
   
-  &__about--header {
-    @include span(12);
+  &--about--text {
     
-    @include bp(medium) {
-      @include pre(4 of 12);
-      @include span(8 at 5 of 12);
+    &--full {
+    
+      @include span(12);
+
+      @include bp(small) {
+        @include span(10 of 12);
+        @include post(2 of 12);
+      }
+
+      @include bp(medium) {
+        @include span(7 of 8);
+        @include post(1 at 7 of 8);
+      }
+      
+    }
+    
+    &--side-gal {
+      @include span(12);
+
+      @include bp(small) {
+        @include span(10 of 12);
+        @include post(2 of 12);
+      }
+
+      @include bp(medium) {
+        
+        @include span(7 of 8);
+        @include post(1 at 7 of 8);
+      }
+      
+      @include bp(large) {
+        @include span(5 of 8);
+        @include post(0);
+      }
+
     }
     
   }
   
-  &__about--text {
+  &--about--gallery {
     
-    @include span(12);
+    &--bottom-gal {
     
-    @include bp(small) {
-      @include span(10 of 12);
-      @include post(2 of 12);
+      @include span(12);
+
+      @include bp(medium) {
+        @include span(8 of 8);
+      }  
+    
     }
     
-    @include bp(medium) {
-      @include pre(4 of 12);
-      @include span(7 at 5 of 12);
-      @include post(1 at 11 of 12);
+    &--side-gal {
+      @include span(12);
+      
+      @include bp(large) {
+        @include span(3 at 6 of 8);
+      }
     }
-    
-/*    @include bp(large) {
-      @include span(5 at 5 of 12);
-      @include post(0);
-    }*/
     
   }
   
-  &__about--gallery {
-    
-    @include span(12);
-    
-    @include bp(medium) {
-      @include pre(4 of 12);
-      @include span(8 at 5 of 12);
-    }   
-    
- /*   @include bp(large) {
-      @include pre(0);
-      @include span(3 at 10 of 12);
-    }*/
-  }
 }

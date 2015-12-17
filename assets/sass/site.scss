@@ -22,7 +22,7 @@
 
 /***/
 
-@import url(http://fonts.googleapis.com/css?family=Special+Elite|Ribeye);
+@import url(http://fonts.googleapis.com/css?family=Chelsea+Market|Special+Elite|Ribeye);
 
 /*
   @base
@@ -43,12 +43,12 @@
 
   // Vars
 
-  @import "base/vars/variables";
   @import "base/vars/fonts";
   @import "base/vars/colours";
   @import "base/vars/breakpoints";
   @import "base/vars/susy--settings";
   @import "base/vars/typesettings";
+  @import "base/vars/variables";
 
   // Mixins
 

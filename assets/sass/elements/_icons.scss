@@ -67,29 +67,47 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+  padding-right: vr(2);
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.acc-toggle .icon-chevron-right {
-  font-size: $ms-down1;
+.acc-toggle .icon-angle-right {
   display: inline-block;
   padding-right: 10px;
   color: mix($white, $red, 50%);
   transition: all 0.5s ease;
 }
 
-.open-toggle .icon-chevron-right {
+.open-toggle .icon-angle-right {
   color: $red;
   transform-origin: 25% 50%;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateX(5px) translateY(-3px);
 }
 
-.icon-chevron-right:before {
-    content: "\f054";
+.icon-facebook, .icon-twitter {
+  @include bp(medium) {
+    padding-right: 0; // reset van algemene padding-right op .icon
+  }
 }
 
+.icon-angle-right:before {
+	content: "\f105";
+}
+
+.icon-baby63:before {
+	content: "\e900";
+}
+.icon-flower66:before {
+	content: "\e901";
+}
+.icon-twitter:before {
+	content: "\f099";
+}
+.icon-facebook:before {
+	content: "\f09a";
+}
 
 

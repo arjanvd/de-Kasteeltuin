@@ -31,19 +31,19 @@
     padding: 0;
   }
   
-  @include bp(medium) {
-
+  &--homepage {
+    position: static;
   }
 }
 
 .l-wrapper {
   width: 100%;
   
-  &--homepage {
-    background-color: mix($white, $green-yellow, 80%);
+  &--homepage-nav {
+    background-color: mix($white, $green-yellow, 90%);
   }
   
-  &__about {
+  &--about {
     min-height: 100vh;
     padding-top: vr(4);
     padding-bottom: vr(4);
@@ -53,7 +53,7 @@
     }
     &--1 {
       background-color: mix($white, $green-yellow, 50%);
-      padding-bottom: 0; // reset van de padding-bottom, omdat deze doorloopt vanwege #sticky-anchor
+      padding-bottom: 0; // reset van de padding-bottom, omdat deze doorloopt vanwege #pin__container
     }
     &--2 {
       background-color: mix($white, $green-yellow, 80%);

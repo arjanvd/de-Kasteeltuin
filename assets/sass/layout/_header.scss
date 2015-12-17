@@ -2,6 +2,7 @@
 
 .js-header {
   background-color: $white;
+  border-bottom: 1px solid mix($white, $green-yellow, 50%);
   opacity: 0.9;
   width: 100%;
   height: $height-header;

@@ -23,20 +23,27 @@
 
 
 .gallery { 
-  border: 2px solid mix($white, $green-blue, 95%); 
+  padding: 2px;
+  background-color: mix($white, $green-blue, 95%); 
   flex-flow: row wrap; 
   display: flex;
+  align-items: center;
 
   a {
     display: block;
-    flex: auto;
-    width: 200px;
-    border: 2px solid mix($white, $green-blue, 95%);
+    flex: 3 1 200px;
+    padding: 2px;
+    background-color: mix($white, $green-blue, 95%);
   
+    &.img-up {
+      flex: 1 1 90px;
+    }
+    
     img {
       width: 100%; 
       height: auto;
       vertical-align: middle;
     }
+
   }
 }
