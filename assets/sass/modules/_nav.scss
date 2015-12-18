@@ -19,6 +19,24 @@
 	</div>
 </header>*/
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $height-header;
+  
+  &__logo {
+    margin-right: auto;
+  }
+  
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
 #toggle-nav { display: none; } // input checkbox
 
 #toggle-nav-label { // label met menu-title en menu-button erin
@@ -107,14 +125,9 @@
   transition: all 0.3s ease-in-out;
   
   @include bp(medium) {
-    display: block;
-    position: static;
-    text-align: left;
-    z-index: 100;
-    opacity: 1;
-    width: auto;
-    height: auto;
-    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -132,27 +145,23 @@
   z-index: 400;
 }
 
+
 nav {
   
   //position: relative;
   
   ul {
 	position: relative;
-	top: 80px; // iets gelijk aan hoogte header
+	top: $height-header; // iets gelijk aan hoogte header
     margin: 0 auto;
     display: inline-block;
 	transition: all 0.3s ease-in-out;
     
     @include bp(medium) {
-      display: block;
-      top: -3rem; // DIT MOET ANDERS!!
-      float: right;
-      height: vr(12);
-    /*  position: absolute;
-      top: 10px;
-      right: 4%;
-      height: 55px; // LET OP: even hoog als logo-small - 10px (van top)
-      border-bottom: 1px solid $green; */
+      display: flex;
+      align-items: center;
+      position: static;
+      margin: auto;
     }
     
   }
@@ -170,9 +179,10 @@ nav {
     } 
     
     @include bp(medium) {
-      display: inline-block;
+    //  display: inline-block;
       opacity: 1;
       animation-delay: none;
+      margin-left: vr(1);
     }
     
     a {
@@ -225,6 +235,7 @@ nav {
     }
   }
 }
+
 
 #toggle-nav:checked ~ .nav-menu ul li:nth-child(odd) {
   animation: fadeInRight .5s ease forwards;

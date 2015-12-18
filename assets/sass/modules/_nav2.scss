@@ -225,6 +225,97 @@
 
 
 
+/*
+nav {
+  
+  //position: relative;
+  
+  ul {
+	position: relative;
+	top: $height-header; // iets gelijk aan hoogte header
+    margin: 0 auto;
+    display: inline-block;
+	transition: all 0.3s ease-in-out;
+    
+    @include bp(medium) {
+      display: block;
+      top: -3rem; // DIT MOET ANDERS!!
+      float: right;
+      height: vr(12);
+    }
+    
+  }
+  
+  li { 
+    display: block;
+    position: relative;
+    opacity: 0;
+    
+    @for $i from 1 through 7 {
+      $delay: ($i * .10s) + .25s;
+      &:nth-of-type(#{$i}) { 
+        animation-delay: $delay;
+      }
+    } 
+    
+    @include bp(medium) {
+      display: inline-block;
+      opacity: 1;
+      animation-delay: none;
+    }
+    
+    a {
+      display: block;
+      position: relative;
+      color: $white;
+      text-decoration: none;
+      // overflow: hidden;
+      transition: all .35s ease;
+      @include set-type($ms-up2);
+      
+      &.icons {
+        @include set-type($ms-up1);
+        line-height: vr(8);
+      }
+      
+      &:hover {
+        color: mix($white, $red, 75%);
+      }
+      
+      @include bp(medium) {
+        color: $black;
+       // overflow: visible;
+        padding: vr(2);
+        border-radius: 5px;
+        transition: .35s background-color;
+        @include set-type($ms-base);
+        
+        &.icons {
+          @include set-type($ms-base);
+          color: mix($white, $black, 20%);
+          line-height: vr(4);
+        }
+        
+        &:hover {
+          background-color: $green-blue;
+          color: $white;
+        }
+        
+        span.text--hide {
+          display: none;
+        }
+
+        &.active {
+          background-color: $red;
+          color: $white;
+          cursor: default;
+        }
+      }
+    }
+  }
+}
+*/
+
 
 
  

@@ -52,13 +52,40 @@ ul ul, ol ol, dl dl {
 }
 
 ul {
-  list-style: disc;
-  &.no-list {
-    list-style: none;
-    margin-left: 0;
+  list-style: none;
+  margin-left: 0;
+      
+  &.faq--categories {
+    margin-bottom: 0;
+  
+    & li {
+      &:before {
+        font-family: 'icomoon';
+        display: inline-block;
+        width: 1.5em;
+        vertical-align: middle;
+        color: $black;
+        content: '\e900';
+      }
+    }
   }
 }
 
 ol {
   list-style: decimal;
+}
+
+.content ul {
+    & li {
+      padding-left: 1.5rem;
+      
+    &:before {
+      font-family: 'icomoon';
+      display: inline-block;
+      width: 1.5rem;
+      margin-left: -1.5rem;
+      vertical-align: middle;
+      content: '\e901';
+    }
+  }
 }

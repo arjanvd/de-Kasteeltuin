@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
+
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="nl" class="fonts-loaded">
+<!--#else -->
 <html lang="nl">
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="modern"> <!--<![endif]-->
+<!--#endif -->
 
 <head>
 	<title>Kinderdagverzorging De Kasteeltuin - Contact</title>
@@ -101,22 +102,17 @@
   </footer>
 </div>
 
+<script src="assets/js/fonts.js"></script>
 <script>
   head.load(
     "assets/js/jquery-2.1.4.min.js", 
-    "assets/js/jquery.sticky-kit.min.js",
     "assets/js/jquery.fancybox.js",
-//    "assets/js/jquery.throttle.min.js", 
- //   "assets/js/jquery.fluidbox.min.js", 
-//    "assets/js/jquery.collagePlus.min.js",
-    "assets/js/jquery.waypoints.min.js",
+    "assets/js/jquery.pin.min.js",
     "assets/js/accordion.js", 
-    "assets/js/sticky-block.js", 
-    "assets/js/nav.js", 
     "assets/js/fancybox.js",
- //   "assets/js/fluidbox.js", 
     "assets/js/autoHideHeader.js",
-    "assets/js/scroll.js"
+    "assets/js/scroll.js",
+    "assets/js/pin.js"
   )
 </script>
 

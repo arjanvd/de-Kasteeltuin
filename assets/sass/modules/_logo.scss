@@ -1,20 +1,6 @@
 .o-logo {
-  
-  background: url(img/header.png) 0 0 no-repeat;
-  width: 100%;
-  
-  &__link {
-    display: block;
-  }
-  
-  h1 {
-    margin-left: -9999px;
-  }
-}
-
-.o-logo__small {
-  background: url(img/logo2.png) 0 5px no-repeat;
-  height: 65px; //let op: rekening houden met totale hoogte van de header; zie ook $height-header in variables.scss
+  background: url(img/logo2.png) 0 0 no-repeat;
+  height: 60px; //let op: rekening houden met totale hoogte van de header; zie ook $height-header in variables.scss
   width: 189px;    
   
   h1 {

@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
+
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="nl" class="fonts-loaded">
+<!--#else -->
 <html lang="nl">
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="modern"> <!--<![endif]-->
+<!--#endif -->
 
 <head>
 	<title>Kinderdagverzorging De Kasteeltuin - FAQ</title>
@@ -23,9 +24,9 @@
 
 <div class="l-wrapper">
   <div class="js-header">
-  <header class="l-container">
-    <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
-    <nav>
+  <header class="l-container navbar">
+    <div class="o-logo navbar__logo"><h1>De Kasteeltuin</h1></div>
+    <nav class="navbar__nav">
       <input type="checkbox" id="toggle-nav" />
       <label id="toggle-nav-label" for="toggle-nav">
       <div class="nav-menu-container">
@@ -39,11 +40,13 @@
       </label>
       <div class="nav-menu">
         <ul>
-          <li><a href="#" title="Team">Wie zijn wij</a></li>
+          <li><a href="#" class="active" title="Team">Wie zijn wij</a></li>
           <li><a href="#" title="Ouders">Ouders</a></li>
-          <li><a href="#" class="active" title="Home">FAQ</a></li>
+          <li><a href="#" title="Home">FAQ</a></li>
           <li><a href="#" title="Home">Media</a></li>
           <li><a href="#" title="Home">Contact</a></li>
+          <li><a href="#" title="Facebook" class="icons"><span class="icon icon-facebook"></span><span class="text--hide">Facebook-pagina</span></a></li>
+          <li><a href="#" title="Twitter" class="icons"><span class="icon icon-twitter"></span><span class="text--hide">Twitter-timeline</span></a></li>
         </ul>
       </div>
     </nav>
@@ -110,7 +113,7 @@
       <div class="pinned">
         <div class="o-block c-block--categories">
           <h1 class="h4 h4--faq">Categorieën</h1>
-          <ul class="no-list">
+          <ul class="faq--categories">
             <li><a href="#cat3" class="scroll">categorie 1</a></li>
             <li><a href="" class="scroll">categorie 2</a></li>
             <li><a href="" class="scroll">categorie 3</a></li>
@@ -156,21 +159,14 @@
   </footer>
 </div>
 
+<script src="assets/js/fonts.js"></script>
 <script>
   head.load(
     "assets/js/jquery-2.1.4.min.js", 
- //   "assets/js/jquery.sticky-kit.min.js",
     "assets/js/jquery.fancybox.js",
     "assets/js/jquery.pin.min.js",
-//    "assets/js/jquery.throttle.min.js", 
- //   "assets/js/jquery.fluidbox.min.js", 
-//    "assets/js/jquery.collagePlus.min.js",
-    "assets/js/jquery.waypoints.min.js",
     "assets/js/accordion.js", 
- //   "assets/js/sticky-block.js", 
-    "assets/js/nav.js", 
     "assets/js/fancybox.js",
- //   "assets/js/fluidbox.js", 
     "assets/js/autoHideHeader.js",
     "assets/js/scroll.js",
     "assets/js/pin.js"

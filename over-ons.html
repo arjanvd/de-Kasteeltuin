@@ -1,5 +1,11 @@
 <!DOCTYPE HTML>
+
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="nl" class="fonts-loaded">
+<!--#else -->
 <html lang="nl">
+<!--#endif -->
+
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
@@ -22,9 +28,9 @@
 
 <div class="l-wrapper">
   <div class="js-header">
-  <header class="l-container">
-    <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
-    <nav>
+  <header class="l-container navbar">
+    <div class="o-logo navbar__logo"><h1>De Kasteeltuin</h1></div>
+    <nav class="navbar__nav">
       <input type="checkbox" id="toggle-nav" />
       <label id="toggle-nav-label" for="toggle-nav">
       <div class="nav-menu-container">
@@ -80,7 +86,7 @@
     <section id="1">
       <div class="l-main--about--pinned"><!-- deze is apart, omdat hier de sticky_about in de sidebar zit. De andere .l-main--about hieronder moeten een span(4) naar rechts. -->
         <h1 class="h2 c-main--about--header">Kopje</h1>
-        <div class="c-main--about--text--full">
+        <div class="c-main--about--text--full content">
           <p>Lorem ipsum dolor sit amet, consectetur adipi**sicing elit. Modi **nisi rep**ellendus veritatis, maiores tenetur ipsa officia, distinctio. Praesentium atque, nobis quia aut quidem commodi ratione architecto tempora quaerat, porro voluptas.</p>
           <p>De Kasteeltuin is een zelfstandige kinderdagverzorging zonder winstoogmerk. Alle inkomsten worden geïnvesteerd in de kwaliteit van de verzorging van uw kind.</p>
           <p>Wij vinden het belangrijkste voor uw kind:<br>
@@ -111,7 +117,7 @@
       <section id="s3">
         <div class="l-main--about">
           <h1 class="h2 c-main--about--header">Een nieuwe crèche met 75 jaar ervaring</h1>
-          <div class="c-main--about--text--side-gal">
+          <div class="c-main--about--text--side-gal content">
             <p>Lorem ipsum dolor sit amet, consectetur adipi**sicing elit. Modi **nisi rep**ellendus veritatis, maiores tenetur ipsa officia, distinctio. Praesentium atque, nobis quia aut quidem commodi ratione architecto tempora quaerat, porro voluptas. De Kasteeltuin heeft haar deuren geopend op 1 mei 2014. De aanleiding was dat in januari 2014 kinderdagverblijf Beatrix, de oudste crèche van Rotterdam, van eigenaar veranderde. Ouders en leidsters hebben toen de handen ineen geslagen en gezamenlijk besloten een zelfstandige crèche op te richten. Ze wilden hiermee vasthouden aan de zorg en cultuur van de kinderdagverzorging die ze kenden en waar vertrouwen in was. Zo konden de kinderen bij hun vertrouwde leidsters blijven en kon het hele team met hetzelfde plezier samen blijven werken. Met dit bijzondere initiatief is 75 jaar ervaring bewaard gebleven. Wij spreken dus niet voor niets over een team van schatten met ervaring!</p>
           </div>
           <div class="c-main--about--gallery--side-gal">
@@ -130,7 +136,7 @@
       <section id="s4">
         <div class="l-main--about">
           <h1 class="h2 c-main--about--header">In en om De Kasteeltuin</h1>
-          <div class="c-main--about--text--full">
+          <div class="c-main--about--text--full content">
             <p>Kinderdagverzorging De Kasteeltuin is gevestigd in een authentieke kleuterschool uit 1920, Borgerstraat 8, Rotterdam. Er zijn vier groepsruimtes in ruime lichte lokalen. Buitenspelen doen we in onze mooie, grote afgesloten kasteeltuin. In deze binnentuin is ook onze eigen moestuin, met groenten en fruit voor de warme maaltijden. Als het regent spelen de kinderen in een aparte binnenspeelruimte.</p>
           </div>
           <div class="c-main--about--gallery--bottom-gal">
@@ -190,21 +196,14 @@
   </footer>
 </div>
 
+<script src="assets/js/fonts.js"></script>
 <script>
   head.load(
     "assets/js/jquery-2.1.4.min.js", 
- //   "assets/js/jquery.sticky-kit.min.js",
     "assets/js/jquery.fancybox.js",
     "assets/js/jquery.pin.min.js",
-//    "assets/js/jquery.throttle.min.js", 
- //   "assets/js/jquery.fluidbox.min.js", 
-//    "assets/js/jquery.collagePlus.min.js",
-    "assets/js/jquery.waypoints.min.js",
     "assets/js/accordion.js", 
- //   "assets/js/sticky-block.js", 
- //   "assets/js/nav.js", 
     "assets/js/fancybox.js",
- //   "assets/js/fluidbox.js", 
     "assets/js/autoHideHeader.js",
     "assets/js/scroll.js",
     "assets/js/pin.js"

@@ -22,7 +22,6 @@
 
 /***/
 
-@import url(http://fonts.googleapis.com/css?family=Chelsea+Market|Special+Elite|Ribeye);
 
 /*
   @base
@@ -63,8 +62,28 @@
   // Vendor
 
  // @import "base/vendor/fluidbox";
-  @import "base/vendor/fancybox";
+ // @import "base/vendor/fancybox";
  
+
+
+  /***
+
+  @layout
+---------------------------------------------------------
+
+  A large portion of CSS is structural layout. You will use
+  these helpers to create the scaffolding that will support
+  the elements that make up your site.
+
+---------------------------------------------------------  */
+  @import "layout/html";
+  @import "layout/body";
+  @import "layout/wrapper";
+  @import "layout/header";
+  @import "layout/main";
+  @import "layout/sidebar";
+  @import "layout/footer";
+
 
 
 
@@ -112,28 +131,8 @@
 
 
 
-
-  /***
-
-  @layout
----------------------------------------------------------
-
-  A large portion of CSS is structural layout. You will use
-  these helpers to create the scaffolding that will support
-  the elements that make up your site.
-
----------------------------------------------------------  */
-  @import "layout/html";
-  @import "layout/body";
-  @import "layout/wrapper";
-  @import "layout/header";
-  @import "layout/main";
-  @import "layout/sidebar";
-  @import "layout/footer";
-
-
-
 /***
+
 
   @modules
 ---------------------------------------------------------
