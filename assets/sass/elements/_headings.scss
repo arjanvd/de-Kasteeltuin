@@ -24,11 +24,18 @@
 
 ------------------------------------------------------ */
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $font-heading;
+}
 
 // H1
 h1, .h1 {
   @include set-type($ms-up3);
-  font-family: $font-heading;
   color: $green-blue;
 }
 
@@ -38,7 +45,6 @@ h2, .h2 {
   margin-bottom: vr(4);
   color: $red;
   @include set-type($ms-up3);
-  font-family: $font-heading;
 }
 
 .h2 {
@@ -51,7 +57,6 @@ h2, .h2 {
 // H3
 h3, .h3 {
   @include set-type($ms-up2);
-  font-family: $font-heading;
   color: $blue;
 }
 .h3 {
@@ -68,7 +73,6 @@ h3, .h3 {
 // H4
 h4, .h4 {
   @include set-type($ms-up1);
-  font-family: $font-heading;
   color: $green-yellow;
 }
 

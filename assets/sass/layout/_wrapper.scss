@@ -40,6 +40,11 @@
 .l-wrapper {
   width: 100%;
   
+  &--content {
+    padding-top: vr(4); 
+    padding-bottom: vr(4);
+  }
+  
   &--homepage-nav {
     background-color: mix($white, $green-yellow, 90%);
   }
@@ -53,20 +58,19 @@
       background-color: mix($white, $yellow, 95%);
     }
     &--1 {
-      background-color: mix($white, $green-yellow, 50%);
       padding-bottom: 0; // reset van de padding-bottom, omdat deze doorloopt vanwege #pin__container
     }
-    &--2 {
+    &--1, &--5 {
+      background-color: mix($white, $green-yellow, 50%);
+    }
+    &--2, &--6 {
       background-color: mix($white, $green-yellow, 80%);
     }
-    &--3 {
+    &--3, &--7 {
       background-color: mix($white, $green-yellow, 60%);
     }
     &--4 {
       background-color: mix($white, $green-yellow, 90%);
-    }
-    &--5 {
-      background-color: mix($white, $green-yellow, 70%);
     }
   }
   

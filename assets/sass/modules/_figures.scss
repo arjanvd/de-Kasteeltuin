@@ -8,22 +8,58 @@
     
     &--about {
       position: absolute;
-      left: 0;
+      left: 20px; // Deze wellicht nog verder opschuiven bij grotere schermbreedtes
       top: 150px;
       
       
       &--intro {
-        width: 307px;
-        height: 283px;
+        width: 221px;
+        height: 198px;
         background: url(img/kasteel.png) 0 0 no-repeat;
       }
       
       &--1 {
-        width: 295px;
-        height: 307px;
+        width: 212px;
+        height: 243px;
         background: url(img/baby-met-boompje.png) 0 0 no-repeat;
       }
+
+      &--2 {
+        width: 203px;
+        height: 349px;
+        background: url(img/bloempot.png) 0 0 no-repeat;
+      }
+
+      &--3 {
+        width: 225px;
+        height: 192px;
+        background: url(img/meisje-wortel.png) 0 0 no-repeat;
+      }
+
+      &--4 {
+        width: 230px;
+        height: 240px;
+        background: url(img/bakfiets.png) 0 0 no-repeat;
+      }
       
+      &--5 {
+        width: 232px;
+        height: 397px;
+        background: url(img/moeder-met-beer.png) 0 0 no-repeat;
+      }
+
+      &--6 {
+        width: 176px;
+        height: 420px;
+        background: url(img/stapelblokken.png) 0 0 no-repeat;
+      }
+    
+      &--7 {
+        width: 212px;
+        height: 170px;
+        background: url(img/varken-met-kaplaarzen.png) 0 0 no-repeat;
+      }
+    
     }
     
   }
