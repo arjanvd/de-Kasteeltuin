@@ -176,6 +176,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/elementQuery.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/elementQuery.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/elementQuery-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/fancybox.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -237,6 +248,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/jquery-2.1.4.min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery-2.1.4.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/jquery.bxslider.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/jquery.bxslider.min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/jquery.bxslider.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -380,6 +402,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/min\/collage-min.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/collage-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/min\/elementQuery-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/elementQuery-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/elementQuery-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -649,6 +682,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/js\/min\/slider-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/min\/slider-min.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/min\/slider-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/js\/min\/sticky-block-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -710,6 +754,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/js\/scroll.js",
 		"outputAbbreviatedPath": "\/assets\/js\/min\/scroll-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/js\/slider.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/js\/slider.js",
+		"outputAbbreviatedPath": "\/assets\/js\/min\/slider-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -943,6 +998,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/base\/vars\/_variables.scss",
 		"outputAbbreviatedPath": "\/assets\/sass\/base\/css\/_variables.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/base\/vendor\/_bxslider.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/base\/vendor\/_bxslider.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/base\/css\/_bxslider.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
@@ -1366,6 +1437,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/sass\/modules\/_carousel.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/modules\/_carousel.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_carousel.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/assets\/sass\/modules\/_figures.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -1621,7 +1708,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 264849,
+		"initialSize": 178549,
 		"inputAbbreviatedPath": "\/images\/1_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/1_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1643,7 +1730,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 362979,
+		"initialSize": 300219,
 		"inputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1665,7 +1752,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 198309,
+		"initialSize": 223771,
 		"inputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/3_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1709,7 +1796,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 404966,
+		"initialSize": 365850,
 		"inputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1859,6 +1946,94 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/groepen\/Kasteeltuin_023.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_023.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_023.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_056.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_056.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_056.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_071.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_071.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_071.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_078.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_078.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_078.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_140.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_140.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_140.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_145.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_145.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_145.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_147.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_147.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_147.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/Kasteeltuin_dinsdag_046.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_dinsdag_046.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_dinsdag_046.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/header-small.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1870,6 +2045,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/header.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71844,
+		"inputAbbreviatedPath": "\/images\/header.jpg",
+		"outputAbbreviatedPath": "\/images\/header.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/header.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1877,6 +2063,17 @@
 		"initialSize": 2.2756e+06,
 		"inputAbbreviatedPath": "\/images\/header.png",
 		"outputAbbreviatedPath": "\/images\/header.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/header2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 937913,
+		"inputAbbreviatedPath": "\/images\/header2.png",
+		"outputAbbreviatedPath": "\/images\/header2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2035,17 +2232,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/nieuw\/20150826_195006000_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 799325,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20150826_195006000_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20150826_195006000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/nieuw\/20150827_132512000_iOS.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2053,28 +2239,6 @@
 		"initialSize": 315337,
 		"inputAbbreviatedPath": "\/images\/nieuw\/20150827_132512000_iOS.jpg",
 		"outputAbbreviatedPath": "\/images\/nieuw\/20150827_132512000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/20150904_140120000_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 196513,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20150904_140120000_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20150904_140120000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/20150910_194311000_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 807501,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20150910_194311000_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20150910_194311000_iOS.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2090,28 +2254,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/nieuw\/20151001_171824000_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 258209,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20151001_171824000_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20151001_171824000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/20151001_171828000_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 249258,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20151001_171828000_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20151001_171828000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/nieuw\/20151026_073035000_iOS.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2123,17 +2265,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/nieuw\/20151031_095316836_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.46847e+06,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20151031_095316836_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20151031_095316836_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/nieuw\/20151031_161121000_iOS.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2141,17 +2272,6 @@
 		"initialSize": 5.34696e+06,
 		"inputAbbreviatedPath": "\/images\/nieuw\/20151031_161121000_iOS.jpg",
 		"outputAbbreviatedPath": "\/images\/nieuw\/20151031_161121000_iOS.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/20151105_162808892_iOS.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/20151105_162808892_iOS.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/20151105_162808892_iOS.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2189,28 +2309,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/nieuw\/IMG_6243.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/IMG_6243.JPG",
-		"outputAbbreviatedPath": "\/images\/nieuw\/IMG_6243.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/IMG_6554.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/IMG_6554.JPG",
-		"outputAbbreviatedPath": "\/images\/nieuw\/IMG_6554.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/nieuw\/IMG_6557.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2218,160 +2316,6 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/nieuw\/IMG_6557.JPG",
 		"outputAbbreviatedPath": "\/images\/nieuw\/IMG_6557.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_007.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_007.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_007.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_023.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_023.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_023.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_049.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_049.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_049.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_051.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_051.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_051.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_055.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_055.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_055.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_056.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_056.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_056.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_071.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_071.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_071.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_078.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_078.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_078.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_100.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_100.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_100.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_131.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_131.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_131.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_140.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_140.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_140.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_143.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_143.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_143.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_145.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_145.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_145.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_147.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_147.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_147.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2387,61 +2331,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/nieuw\/Kasteeltuin_dinsdag_003.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_003.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_003.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_dinsdag_020.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_020.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_020.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_dinsdag_030.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_030.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_030.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_dinsdag_039.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_039.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_039.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/nieuw\/Kasteeltuin_dinsdag_046.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_046.jpg",
-		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_046.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/nieuw\/Kasteeltuin_dinsdag_063.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2449,6 +2338,226 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_063.jpg",
 		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_dinsdag_063.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ouders\/20151031_095316836_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.46847e+06,
+		"inputAbbreviatedPath": "\/images\/ouders\/20151031_095316836_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/ouders\/20151031_095316836_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ouders\/Kasteeltuin_051.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_051.jpg",
+		"outputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_051.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/ouders\/Kasteeltuin_055.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_055.jpg",
+		"outputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_055.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/20150826_195006000_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 799325,
+		"inputAbbreviatedPath": "\/images\/team\/20150826_195006000_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/20150826_195006000_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/20151105_162808892_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/team\/20151105_162808892_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/20151105_162808892_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/Kasteeltuin_007.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/team\/Kasteeltuin_007.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/Kasteeltuin_007.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/Kasteeltuin_131.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/team\/Kasteeltuin_131.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/Kasteeltuin_131.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/Kasteeltuin_dinsdag_039.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/team\/Kasteeltuin_dinsdag_039.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/Kasteeltuin_dinsdag_039.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/20150904_140120000_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196513,
+		"inputAbbreviatedPath": "\/images\/wie\/20150904_140120000_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/20150904_140120000_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/20150910_194311000_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 807501,
+		"inputAbbreviatedPath": "\/images\/wie\/20150910_194311000_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/20150910_194311000_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/20151001_171824000_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 258209,
+		"inputAbbreviatedPath": "\/images\/wie\/20151001_171824000_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/20151001_171824000_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/20151001_171828000_iOS.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 249258,
+		"inputAbbreviatedPath": "\/images\/wie\/20151001_171828000_iOS.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/20151001_171828000_iOS.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/IMG_6243.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/IMG_6243.JPG",
+		"outputAbbreviatedPath": "\/images\/wie\/IMG_6243.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/IMG_6554.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/IMG_6554.JPG",
+		"outputAbbreviatedPath": "\/images\/wie\/IMG_6554.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_049.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_049.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_049.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_100.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_100.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_100.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_143.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_143.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_143.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_dinsdag_003.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_003.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_003.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_dinsdag_020.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_020.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_020.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/wie\/Kasteeltuin_dinsdag_030.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_030.jpg",
+		"outputAbbreviatedPath": "\/images\/wie\/Kasteeltuin_dinsdag_030.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2799,11 +2908,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/over-ons.html": {
+	"\/wie-zijn-wij.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/over-ons.html",
+		"inputAbbreviatedPath": "\/wie-zijn-wij.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

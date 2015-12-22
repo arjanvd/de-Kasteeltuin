@@ -1,36 +1,6 @@
 // .l-main en .c-main
 
 .l-main {
- 
-  &__faq {  
-    
-    padding-bottom: vr(8);
-    
-    @include bp(small) {
-      @include span(8 of 12);
-    }
-    
-    @include bp(medium) {
-      @include span(7 of 12);
-      @include post(1 at 8 of 12);
-    }
-    
-    &__intro {
-      
-    }
-  }
-  
-  &__contact--left {
-    @include bp(small) {
-      @include span(6 of 12);
-    }
-  }
-  
-  &__contact--right {
-    @include bp(small) {
-      @include span(6 at 7 of 12 last);
-    }
-  }
 
   &--about {
     
@@ -75,7 +45,50 @@
     }
 
   }
+  
+  &--contact--left {
+    @include bp(small) {
+      @include span(6 of 12);
+    }
+  }
+  
+  &--contact--right {
+    @include bp(small) {
+      @include span(6 at 7 of 12 last);
+    }
+  }
 
+
+  &--faq {  
+    
+    padding-bottom: vr(8);
+    
+    @include bp(small) {
+      @include span(8 of 12);
+    }
+    
+    @include bp(medium) {
+      @include span(7 of 12);
+      @include post(1 at 8 of 12);
+    }
+    
+    &__intro {
+      
+    }
+  }
+  
+  &--home--left {
+    @include bp(small) {
+      @include span(7 of 12);
+    }
+  }
+  
+  &--home--right {
+    @include bp(small) {
+      @include span(5 at 8 of 12 last);
+    }
+  }
+  
 }
   
 

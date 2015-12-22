@@ -57,10 +57,10 @@ h2, .h2 {
 // H3
 h3, .h3 {
   @include set-type($ms-up2);
-  color: $blue;
+  color: $green-blue;
 }
 .h3 {
-  &__faq {
+  &--faq {
     color: $green-yellow;
     margin-top: vr(4);
     &:nth-child(1) {

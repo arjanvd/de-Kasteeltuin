@@ -1,0 +1,123 @@
+@function carousel-width ($carousel-panes) {
+  @return ($carousel-panes) * 100%;
+}
+
+@function pane-width ($carousel-panes) {
+  @return 100% / ($carousel-panes);
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.panes {
+  position: relative;
+  width: carousel-width(5); /* Number of panes * 100% */
+  overflow: hidden; /* This is used solely to clear floats, it does not add functionality. */
+  animation: carousel 30s infinite;
+}
+.panes > li {
+  position: relative;
+  float: left;
+  width: pane-width(5); /* 100 / number of panes */
+  
+  @include snap-to-baseline(3/2, 21px);
+
+  @include bp(x-small) {
+    @include snap-to-baseline(3/2, 24px);
+  }
+
+  @include bp(large) {
+      @include snap-to-baseline(3/2, 27px);
+  }
+
+  @include bp(x-large) {
+      @include snap-to-baseline(3/2, 30px);
+  }
+}
+
+.carousel img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel h2 {
+    font-size:1em;
+    padding:0.5em;
+    position:absolute;
+    right:10px;
+    bottom:10px;
+    left:10px;
+    text-align:right;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+}
+/*
+@keyframes carousel{
+    0%    { left:0; }
+    11%   { left:0; }
+    12.5% { left:-100%; }
+    23.5% { left:-100%; }
+    25%   { left:-200%; }
+    36%   { left:-200%; }
+    37.5% { left:-300%; }
+    48.5% { left:-300%; }
+    50%   { left:-400%; }
+    61%   { left:-400%; }
+    62.5% { left:-300%; }
+    73.5% { left:-300%; }
+    75%   { left:-200%; }
+    86%   { left:-200%; }
+    87.5% { left:-100%; }
+    98.5% { left:-100%; }
+    100%  { left:0; }
+}
+*/
+
+// http://hugogiraudel.com/2014/07/16/automating-css-animations-with-sass/
+
+@mixin carousel-animation($frames, $static, $animation-name: 'carousel') {
+  // Make `$static` a percentage in case it's unitless
+  @if unitless($static) {
+    $static: percentage($static);
+  }
+
+  // Compute the percentage of animation spent animating for each frame
+  $animating: (100% - $frames * $static) / ($frames - 1);
+  
+  // Output the animation at root level
+  // to make sure it doesn't crash if called in a selector
+  @at-root {
+    
+    // Create an animation
+    @keyframes #{$animation-name} {
+      
+      // Loop over the frames
+      @for $i from 0 to $frames {
+        // Compute keyframes
+        $current-frame: $i * $static + $i * $animating;
+        $next-frame: ($i + 1) * $static + $i * $animating;
+        $halfway-frame: $i * $static / 1% + ($i - 1) * $animating + $animating / 2;
+        
+        // Output halfway styles for blur
+        // Avoid a negative keyframes by making sure `$i` is at least `1`
+        @if $i > 0 {
+          #{$halfway-frame} {
+            filter: blur(2px);
+          }
+        }
+
+        // Output styles for each frame
+        #{$current-frame, $next-frame} {
+          transform: translateX($i * -100% / $frames);
+          filter: blur(0);
+        }
+      }
+    }
+  }
+}
+
+// Generate animation
+@include carousel-animation(5, 17.5%);

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".bxslider").bxSlider({controls:!1,auto:!0,pause:4e3})});
