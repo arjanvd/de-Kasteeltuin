@@ -23,34 +23,74 @@
 }
 
 .c-block {
-    &--categories {
-      display: none;
+  &--facebook {
+    margin-bottom: vr(4);
+    & a {
+      display: block;
+      color: mix($white, $green-blue, 100%);
+      background-color: mix($white, $green-blue, 30%);
+      border-radius: 5px;
+      padding: vr(4) vr(4) vr(4) vr(2);
+      transition: all 0.35s ease;
       
-      @include bp(small) {
+      &:hover {
+        color: $white;
+        background-color: mix($white, $green-blue, 20%);
+      }
+    }
+    & p {
+      margin-left: vr(8);
+      margin-bottom: 0;
+  
+      &:before {
+        font-family: 'icomoon';
+        @include set-type($ms-up4);
         display: block;
-        background-color: mix($white, $green-yellow, 60%);
+        float: left;
+        width: vr(4);
+        margin-left: -2.5rem;
+        vertical-align: middle;
+        color: mix($white, $green-blue, 90%);
+        content: '\f09a';
+        
+        @include bp(x-small) {
+          @include set-type($ms-up3);
+        }
+        @include bp(small) {
+          @include set-type($ms-up4);
+        }      
       }
- /*     @include bp(x-small) {
-        @include span(6 of 12);
-      }
- 
-      @include bp(small) {
-        @include span(12 of 12);
-      }
-*/
     }
-    &--helpdesk {
-      background-color: mix($white, $green-yellow, 80%);
+  }
+  
+  &--categories {
+    display: none;
 
- /*     @include bp(x-small) {
-        @include span(6 at 7 of 12);
-      }
-      
-      @include bp(small) {
-        @include span(12 of 12);
-      }
-      */
+    @include bp(small) {
+      display: block;
+      background-color: mix($white, $green-yellow, 60%);
     }
+/*     @include bp(x-small) {
+      @include span(6 of 12);
+    }
+
+    @include bp(small) {
+      @include span(12 of 12);
+    }
+*/
+  }
+  &--helpdesk {
+    background-color: mix($white, $green-yellow, 80%);
+
+/*     @include bp(x-small) {
+      @include span(6 at 7 of 12);
+    }
+
+    @include bp(small) {
+      @include span(12 of 12);
+    }
+    */
+  }
   
   &--sidebar {
     position: relative;

@@ -39,7 +39,7 @@ a {
 
 // == Modules
 
-.o-block a {
+.c-block--categories a, .c-block--helpdesk a {
   @include fancy-link($red, $red);
 }
 
