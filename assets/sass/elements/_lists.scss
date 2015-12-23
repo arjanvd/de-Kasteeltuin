@@ -75,17 +75,22 @@ ol {
   list-style: decimal;
 }
 
-.content ul {
+.content {
+  ul {
     & li {
       padding-left: 1.5rem;
       
-    &:before {
-      font-family: 'icomoon';
-      display: inline-block;
-      width: 1.5rem;
-      margin-left: -1.5rem;
-      vertical-align: middle;
-      content: '\e901';
+      &:before {
+        font-family: 'icomoon';
+        display: inline-block;
+        width: 1.5rem;
+        margin-left: -1.5rem;
+        vertical-align: middle;
+        content: '\e901';
+      }
     }
+  }
+  p + ul {
+    margin-top: -1.5rem;
   }
 }

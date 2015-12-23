@@ -50,8 +50,20 @@
 }
 
 .c-media {
-  
+
   &__art {
+    
+    width: span(12);
+    flex: 0 1 auto;
+    
+    @include bp(medium) {
+      flex: 0 1 calc(50% - (#{span(1)} / 2));   
+    }
+  }
+}
+/*
+  &__art {
+    
     width: span(12);
     
     @include bp(medium) {
@@ -76,4 +88,4 @@
     }
   }
   
-}
+} */

@@ -33,7 +33,7 @@ a {
 
 // == Layout ==
 
-.footer a {
+.footer__content a {
   @include fancy-link($black, $black);
 }
 

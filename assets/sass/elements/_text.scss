@@ -34,6 +34,10 @@ p {
   -o-hyphens: auto;
   hyphens: auto;
   word-wrap: break-word;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 

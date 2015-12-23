@@ -28,7 +28,6 @@ button {
     outline: none;
     box-shadow: none;
     border: none;
-    color: green;
   }
 }
 
@@ -37,135 +36,24 @@ button {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
-  background: $color__black;
-  color: $color__white;
-  border: none;
-  @extend %sans--regular;
-  font-size: 1.25em;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: .225em;
-  padding: 1em 1.25em;
+  background-color: $red;
+  color: $white;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: all .35s ease;
   &:hover,
   &:focus,
   &:active {
     outline: none;
-    opacity: .85;
+    background-color: mix($black, $red, 10%);
+    box-shadow: inset 0 0 3px mix($white, $black, 20%);
   }
-}
-
-
-
-
-
-/* @btn--secondary
---------------------------------------------------------
-
-  A btn modifier, secondary
-
-  Example: .btn--secondary
-  <a class="btn btn--secondary">Secondary button</a>
-
------------------------------------------------------- */
-
-.btn--secondary {
-  background: none;
-  border: 1px solid $color__white;
-  color: $color__white;
-}
-
-
-
-
-
-/* @btn--large
---------------------------------------------------------
-
-  A btn modifier, large
-
-  Example: .btn--large
-  <a class="btn btn--large">Large button</a>
-
------------------------------------------------------- */
-
-.btn--large {
-  @include bp-at-least($breakpoint__sm) {
-    font-size: 1.25em;
-    padding: 1.25em 2.75em;
+  &--signup-form {
+    
   }
-}
-
-
-
-
-
-/* @btn--inline
---------------------------------------------------------
-
-  A btn modifier, if this button is in a paragraph or
-  in anything else that has a defined font-size, this
-  modifier will make the btn inherit the font-size of
-  the partent.
-
-  Example: .btn--inline
-  <p>Here's some text <a class="btn btn--inline">Cool button</a> text keeps going</p>
-
------------------------------------------------------- */
-
-.btn--inline {
-  font-size: 1em;
-}
-
-
-
-
-
-/* @btn--block
---------------------------------------------------------
-
-  A btn modifier - makes the button display block, 100%
-  width and aligns the text to the center.  Removes left
-  and right padding since the text is center aligned, it
-  is not needed.  Actually sometimes having the padding
-  on the left and right causes problems if the centered
-  text is quite long - so we just remove it.
-
-  Example: .btn--block
-  <a href="#" class="btn btn--block">Block button</a>
-
------------------------------------------------------- */
-
-.btn--block {
-  display: block;
-  width: 100%;
-  text-align: center;
-  padding-right: 0;
-  padding-left: 0;
-}
-
-
-
-
-
-/* @btn--icon
---------------------------------------------------------
-
-  A btn modifier - makes the button display block, 100%
-  width and aligns the text to the center.  Removes left
-  and right padding since the text is center aligned, it
-  is not needed.  Actually sometimes having the padding
-  on the left and right causes problems if the centered
-  text is quite long - so we just remove it.
-
-  Example: .btn--icon
-  <button class="btn--icon ss-icon">Block button</button>
-
------------------------------------------------------- */
-
-.btn--icon {
-  background: transparent;
-  border: none;
-  padding: 0;
-  font-size: 1em;
+  & a {
+    display: block;
+    padding: vr(4);
+  }
 }
 

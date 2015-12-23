@@ -2,26 +2,26 @@
   padding-top: vr(4);
   padding-bottom: vr(8);
   
-  &__nav {
+  &__col-1 {
     
     @include bp(small) {
-      @include span(4 of 12);
+      @include span(3 of 12);
     }
     
   }
   
-  &__address {
+  &__col-2 {
     
     @include bp(small) {
-      @include span(4 at 5 of 12);
+      @include span(4 at 4 of 12);
     }
   
   }
   
-  &__data {
+  &__col-3 {
     
     @include bp(small) {
-      @include span(4 at 9 of 12 last);
+      @include span(5 at 8 of 12 last);
     }
       
   }
@@ -33,6 +33,26 @@
       @include span(12 of 12 last);
     }
       
+  }
+  
+  &__content {
+    margin-bottom: vr(4);
+  }
+  
+  &__content--signup {
+    
+    & a {
+      display: block;
+      padding: vr(4) vr(4) vr(4) vr(4);
+      border-radius: 5px;
+      background-color: mix($white, $yellow, 70%);
+      transition: all .35s ease;
+    
+      &:hover {
+        background-color: mix($white, $yellow, 60%);
+        box-shadow: inset 0 0 3px mix($white, $black, 50%);
+      }
+    }
   }
   
 }

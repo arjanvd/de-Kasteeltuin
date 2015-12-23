@@ -34,25 +34,40 @@ h6, .h6 {
 }
 
 // H1
-h1, .h1 {
-  @include set-type($ms-up3);
-  color: $green-blue;
-}
 
 
 // H2
-h2, .h2 {
+.h1 {
   margin-bottom: vr(4);
   color: $red;
-  @include set-type($ms-up3);
+ // @include set-type($ms-up3);
+  font-size: 2.368593037rem;
+  
+  line-height: 42px; 
+  
+  @include bp(x-small) {
+    line-height: 48px; // 16px
+  }
+  
+    @include bp(large) {
+        line-height: 54px; // 18px
+    }
+  
+    @include bp(x-large) {
+        line-height: 60px; // 20px
+    }
 }
 
-.h2 {
-  &--about--intro {
+.h1 {
+  &--intro {
     color: $green-blue;
   }
 }
 
+h2, .h2 {
+  @include set-type($ms-up2);
+  color: $green-yellow;
+}
 
 // H3
 h3, .h3 {
@@ -78,10 +93,13 @@ h4, .h4 {
 
 .h4 {
   &--footer {
-    color: $white;
+    color: mix($white, $yellow, 80%);
   }
   &--faq {
     color: $green-blue;
+  }
+  &--signup {
+    color: $red;
   }
 }
 

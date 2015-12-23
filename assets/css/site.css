@@ -118,8 +118,7 @@ h6, .h6 {
   font-family: "Courier New", Courier, monospace; }
 
 .fonts-loaded body {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 400; }
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 .fonts-loaded h1, .fonts-loaded .h1,
 .fonts-loaded h2, .fonts-loaded .h2,
 .fonts-loaded h3, .fonts-loaded .h3,
@@ -795,7 +794,7 @@ body {
   .l-wrapper--about {
     min-height: 100vh;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
+    padding-bottom: 3rem; }
     .l-wrapper--about--intro {
       background-color: #fefff3; }
     .l-wrapper--about--1 {
@@ -906,6 +905,37 @@ body {
     width: 39.1304347826%;
     float: right;
     margin-right: 0; } }
+.l-main--media__intro {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3rem; }
+  @media (min-width: 600px) {
+    .l-main--media__intro {
+      width: 82.6086956522%;
+      float: left;
+      margin-right: 4.347826087%;
+      margin-right: 17.3913043478%; } }
+  @media (min-width: 768px) {
+    .l-main--media__intro {
+      margin-left: 34.7826086957%;
+      width: 56.5217391304%;
+      float: left;
+      margin-right: 4.347826087%;
+      margin-right: 8.6956521739%; } }
+.l-main--media__content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .c-main--about--text--full {
   width: 100%;
@@ -951,7 +981,8 @@ body {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-top: 1.5rem; }
   @media (min-width: 768px) {
     .c-main--about--gallery--bottom-gal {
       width: 100%;
@@ -962,12 +993,14 @@ body {
   width: 100%;
   float: left;
   margin-left: 0;
-  margin-right: 0; }
+  margin-right: 0;
+  margin-top: 1.5rem; }
   @media (min-width: 996px) {
     .c-main--about--gallery--side-gal {
       width: 33.3333333333%;
       float: right;
-      margin-right: 0; } }
+      margin-right: 0;
+      margin-top: 0; } }
 
 .l-sidebar--faq {
   /*   @include bp(x-small) {
@@ -992,18 +1025,18 @@ body {
   padding-top: 1.5rem;
   padding-bottom: 3rem; }
   @media (min-width: 600px) {
-    .footer__nav {
+    .footer__col-1 {
+      width: 21.7391304348%;
+      float: left;
+      margin-right: 4.347826087%; } }
+  @media (min-width: 600px) {
+    .footer__col-2 {
       width: 30.4347826087%;
       float: left;
       margin-right: 4.347826087%; } }
   @media (min-width: 600px) {
-    .footer__address {
-      width: 30.4347826087%;
-      float: left;
-      margin-right: 4.347826087%; } }
-  @media (min-width: 600px) {
-    .footer__data {
-      width: 30.4347826087%;
+    .footer__col-3 {
+      width: 39.1304347826%;
       float: right;
       margin-right: 0; } }
   .footer__copyright {
@@ -1013,6 +1046,18 @@ body {
         width: 100%;
         float: right;
         margin-right: 0; } }
+  .footer__content {
+    margin-bottom: 1.5rem; }
+  .footer__content--signup a {
+    display: block;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 5px;
+    background-color: #f9fdb7;
+    -webkit-transition: all .35s ease;
+    transition: all .35s ease; }
+    .footer__content--signup a:hover {
+      background-color: #f7fd9f;
+      box-shadow: inset 0 0 3px #919191; }
 
 /***
 
@@ -1072,19 +1117,28 @@ h5, .h5,
 h6, .h6 {
   font-family: "Special Elite", "Courier New", Courier, monospace; }
 
-h1, .h1 {
-  font-size: 2.368593037rem;
-  line-height: 1.2665746936;
-  color: #117878; }
-
-h2, .h2 {
+.h1 {
   margin-bottom: 1.5rem;
   color: #c81f1d;
   font-size: 2.368593037rem;
-  line-height: 1.2665746936; }
+  line-height: 42px; }
+  @media (min-width: 480px) {
+    .h1 {
+      line-height: 48px; } }
+  @media (min-width: 996px) {
+    .h1 {
+      line-height: 54px; } }
+  @media (min-width: 1140px) {
+    .h1 {
+      line-height: 60px; } }
 
-.h2--about--intro {
+.h1--intro {
   color: #117878; }
+
+h2, .h2 {
+  font-size: 1.776889rem;
+  line-height: 1.6883440665;
+  color: #86BB1B; }
 
 h3, .h3 {
   font-size: 1.776889rem;
@@ -1103,9 +1157,11 @@ h4, .h4 {
   color: #86BB1B; }
 
 .h4--footer {
-  color: #fff; }
+  color: #fbfecf; }
 .h4--faq {
   color: #117878; }
+.h4--signup {
+  color: #c81f1d; }
 
 h5, .h5 {
   margin-bottom: 1em; }
@@ -1141,6 +1197,8 @@ p {
   -o-hyphens: auto;
   hyphens: auto;
   word-wrap: break-word; }
+  p:last-child {
+    margin-bottom: 0; }
 
 /* @inline
 --------------------------------------------------------
@@ -1182,13 +1240,13 @@ a {
   color: inherit;
   text-decoration: none; }
 
-.footer a {
+.footer__content a {
   color: #222;
   position: relative;
   text-decoration: none;
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out; }
-  .footer a:before {
+  .footer__content a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -1202,7 +1260,7 @@ a {
             transform: scaleX(0);
     -webkit-transition: all 0.35s ease-in-out 0s;
     transition: all 0.35s ease-in-out 0s; }
-  .footer a:hover:before {
+  .footer__content a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
@@ -1331,6 +1389,8 @@ ol {
     margin-left: -1.5rem;
     vertical-align: middle;
     content: '\e901'; }
+.content p + ul {
+  margin-top: -1.5rem; }
 
 /**
 
@@ -1508,6 +1568,53 @@ img .wide {
 
 .icon-facebook:before {
   content: "\f09a"; }
+
+/**
+
+  @buttons
+--------------------------------------------------------
+  elements/_buttons.scss
+--------------------------------------------------------
+
+  Buttons are a common UI component in sites/apps.  They
+  are usually either anchor, button, or input elements
+  with a classname of 'btn'.  They provide an easily
+  identified clickable target.
+
+  Buttons commonly have modifying classes that apply
+  specific styles.  Examples of these are .btn--large and
+  .btn--inline
+
+  Example: Buttons using anchors
+  <p><a href="#" class="btn">Regular Button</a></p>
+
+  Example: Buttons using buttons
+  <p><button class="btn">Regular Button</button></p>
+
+------------------------------------------------------ */
+button:focus, button:active {
+  outline: none;
+  box-shadow: none;
+  border: none; }
+
+.btn {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  background-color: #c81f1d;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  -webkit-transition: all .35s ease;
+  transition: all .35s ease; }
+  .btn:hover, .btn:focus, .btn:active {
+    outline: none;
+    background-color: #b71f1e;
+    box-shadow: inset 0 0 3px #4e4e4e; }
+  .btn a {
+    display: block;
+    padding: 1.5rem; }
 
 /**
 
@@ -1918,7 +2025,7 @@ nav li {
   margin-bottom: 1.5rem; }
   .c-block--facebook a {
     display: block;
-    color: white;
+    color: #fff;
     background-color: #58a1a1;
     border-radius: 5px;
     padding: 1.5rem 1.5rem 1.5rem 0.75rem;
@@ -1980,6 +2087,11 @@ nav li {
   opacity: 0.8;
   border-radius: 5px;
   z-index: 1000; }
+.c-block--signup {
+  background-color: #f9fdb7; }
+
+.o-element {
+  margin-bottom: 1.5rem; }
 
 /**
 
@@ -2028,23 +2140,46 @@ nav li {
   margin-bottom: 3rem; }
 
 .c-media__art {
-  width: 100%; }
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto; }
   @media (min-width: 768px) {
     .c-media__art {
-      float: left;
-      width: 47.8260869565%; }
-      .c-media__art:nth-child(2n+1) {
-        margin-right: 4.347826087%; } }
-  @media (min-width: 996px) {
-    .c-media__art {
-      width: 30.4347826087%; }
-      .c-media__art:nth-child(2n+1) {
-        margin-right: 0; }
-      .c-media__art:nth-of-type(3n+1) {
-        margin-right: 4.347826087%; }
-      .c-media__art:nth-of-type(3n+2) {
-        margin-right: 4.347826087%; } }
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 1 calc(50% - (4.347826087% / 2));
+          -ms-flex: 0 1 calc(50% - (4.347826087% / 2));
+              flex: 0 1 calc(50% - (4.347826087% / 2)); } }
 
+/*
+  &__art {
+    
+    width: span(12);
+    
+    @include bp(medium) {
+      float: left;
+      width: span(6);
+      &:nth-child(2n+1) {
+        margin-right: gutter();
+      }
+    }
+
+    @include bp(large) {
+      width: span(4);
+      &:nth-child(2n+1) {
+        margin-right: 0;
+      }
+      &:nth-of-type(3n+1) {
+        margin-right: gutter();
+      }
+     &:nth-of-type(3n+2) {
+        margin-right: gutter();
+      }
+    }
+  }
+  
+} */
 /*.gallery { 
   
   a {
@@ -2151,12 +2286,13 @@ nav li {
 .acc-content {
   display: none; }
 
-.o-logo {
+.o-logo a {
+  display: block;
   background: url(img/logo2.png) 0 0 no-repeat;
   height: 60px;
   width: 190px; }
-  .o-logo h1 {
-    margin-left: -9999px; }
+.o-logo h1 {
+  margin-left: -9999px; }
 
 .figures {
   display: none; }

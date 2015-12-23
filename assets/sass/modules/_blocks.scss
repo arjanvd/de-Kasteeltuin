@@ -27,7 +27,7 @@
     margin-bottom: vr(4);
     & a {
       display: block;
-      color: mix($white, $green-blue, 100%);
+      color: $white;
       background-color: mix($white, $green-blue, 30%);
       border-radius: 5px;
       padding: vr(4) vr(4) vr(4) vr(2);
@@ -100,5 +100,9 @@
     opacity: 0.8;
     border-radius: 5px;
     z-index: 1000;
+  }
+  
+  &--signup {
+    background-color: mix($white, $yellow, 70%);
   }
 }
