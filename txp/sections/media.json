@@ -1,0 +1,9 @@
+{
+    "title": "Media",
+    "page": "media",
+    "css": "default",
+    "is_default": false,
+    "in_rss": true,
+    "on_frontpage": false,
+    "searchable": true
+}

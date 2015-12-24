@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
+
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="nl" class="fonts-loaded">
+<!--#else -->
 <html lang="nl">
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="modern"> <!--<![endif]-->
+<!--#endif -->
 
 <head>
 	<title>Kinderdagverzorging De Kasteeltuin - Ouders</title>
@@ -13,18 +14,19 @@
 	<meta name="description" content="Kinderdagverzorging De Kasteeltuin is een zelfstandig en duurzaam kinderdagverblijf waar geborgenheid en plezier van kinderen om te spelen en te groeien bovenaan staan." />
 	<meta name="robots" content="index, follow, noodp, noydir">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="assets/js/picturefill-3.0.1.min.js" async></script>
 	<script src="assets/js/head.js"></script>
 	<link rel="stylesheet" media="screen" href="assets/css/site.css">
 </head>
 
 
-<body>
+<body class="homepage">
 
 <div class="l-wrapper">
   <div class="js-header">
-  <header class="l-container">
-    <div class="o-logo__small"><h1>De Kasteeltuin</h1></div>
-    <nav>
+  <header class="l-container navbar">
+    <div class="o-logo navbar__logo"><a href=""><h1>De Kasteeltuin</h1></a></div>
+    <nav class="navbar__nav">
       <input type="checkbox" id="toggle-nav" />
       <label id="toggle-nav-label" for="toggle-nav">
       <div class="nav-menu-container">
@@ -43,8 +45,8 @@
           <li><a href="#" title="Home">FAQ</a></li>
           <li><a href="#" title="Home">Media</a></li>
           <li><a href="#" title="Home">Contact</a></li>
-          <li><a href="#" title="Facebook" class="icons"><span>Facebook-pagina</span></a></li>
-          <li><a href="#" title="Twitter" class="icons"><span>Twitter-timeline</span></a></li>
+          <li><a href="#" title="Facebook" class="icons"><span class="icon icon-facebook"></span><span class="text--hide">Facebook</span></a></li>
+          <li><a href="#" title="Twitter" class="icons"><span class="icon icon-twitter"></span><span class="text--hide">Twitter</span></a></li>
         </ul>
       </div>
     </nav>
@@ -52,25 +54,15 @@
   </div>
 </div>
 
-<div class="l-wrapper">
+<div class="l-wrapper l-wrapper--content">
   <div class="l-container">
-  <div class="l-main__contact--left">
-    <h1 class="h3">Adres</h1>
-    <p>adresgegevens</p>
-    <h1 class="h3">Telefoon</h1>
-    <p>telefoon</p>
-    <h1 class="h3">Email</h1>
-    <p>email</p>
-    <h1 class="h3">Sociale media</h1>
-    <p>Facebook</p>
-    <p>Twitter</p>
-  </div>
-  <div class="l-main__contact--right">
-    <h1 class="h3">Google Maps</h1>
-    <div class="embed-container">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11267.535520788453!2d4.435733591940862!3d51.92020995778007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77374375b8731314!2sDe+Kasteeltuin!5e0!3m2!1snl!2snl!4v1446041956792" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="l-main--parents">
+      <h1 class="h1 h1--intro">Ouders van De Kasteeltuin</h1>
+      <p>De Kasteeltuin is geboren uit een ouder- en teaminitiatief. Zo is De Kasteeltuin begonnen en zo blijven we het graag doen, omdat betrokken ouders mede het succes van De Kasteeltuin maken. Veel ouders steken daarom de handen uit de mouwen. Dit varieert van het mede organiseren van een feest, een middagje onkruid wieden in de tuin tot aan het deelnemen in de oudercommissie of zitting nemen in het bestuur. Een aantal ouders en leidsters zit in werkgroepen die zich bezig houden met de inrichting, buitenruimte en het voedingsbeleid.</p>
+      <p>Ook enkele vrijwilligers bieden een helpende hand. Bijvoorbeeld door kokkin Mena te assisteren in de keuken en met de boodschappen, met de grote hoeveelheid was doen, het kringloopwinkeltje bijhouden, met de groentetuin of door kleine technische klusjes in en om het pand te doen.</p>
+      <p>Naast al die actieve (groot-)ouders heeft De Kasteeltuin een betrokken en actieve oudercommissie. Zij adviseren o.a. over het pedagogisch beleid en de kwaliteit van de opvang. Ouders hebben bij De Kasteeltuin echt wat in te brengen. Op deze manier voelen niet alleen kinderen, maar ook ouders zich thuis op ons kinderdagverblijf.
+</p>
     </div>
-  </div>
   </div>
 </div>
 

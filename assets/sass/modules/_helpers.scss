@@ -1,0 +1,9 @@
+.hidden {
+  display: none;
+  
+  &--contact {
+    @include bp(medium) {
+      display: none;
+    }
+  }
+}

@@ -5,11 +5,15 @@
   @include bp(medium) {
     
     display: block;
+    position: absolute;
     
     &--about {
-      position: absolute;
       left: 20px; // Deze wellicht nog verder opschuiven bij grotere schermbreedtes
       top: 150px;
+      
+      @include bp(large) {
+        left: 60px;
+      }
       
       
       &--intro {
@@ -62,6 +66,22 @@
     
     }
     
+    &--faq { // op faq-pagina
+      top: 10px;
+      left: 100px;
+      width: 172px;
+      height: 200px;
+      background: url(img/kar-zandbak.png) 0 0 no-repeat;
+    }
+
+    &--media { // op media-pagina
+      top: 10px;
+      left: 100px;
+      width: 79px;
+      height: 200px;
+      background: url(img/vogelhuisje.png) 0 0 no-repeat;
+    }
+
   }
   
 }

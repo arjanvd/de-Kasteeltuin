@@ -1,0 +1,407 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="modern"> <!--<![endif]-->
+
+<head>
+	<title>Kinderdagverzorging De Kasteeltuin</title>
+	<meta name="copyright" content="&copy; 2014 Kinderdagverzorging De Kasteeltuin, tenzij anders aangegeven" />
+	<meta name="author" content="Kinderdagopvang en -verzorging De Kasteeltuin" />
+	<meta name="description" content="Kinderdagverzorging De Kasteeltuin is een zelfstandig en duurzaam kinderdagverblijf waar geborgenheid en plezier van kinderen om te spelen en te groeien bovenaan staan." />
+	<meta name="robots" content="index, follow, noodp, noydir">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+  /* -- Eric Meyer's Global Reset -- */
+html, body, div, span, applet, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+:focus {
+  outline: 0; }
+
+ins {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*! normalize.css 2011-08-11T09:26 UTC */
+/* http://github.com/necolas/normalize.css */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+audio:not([controls]) {
+  display: none; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.grid {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 1%; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding: 0 12px;
+  /*		.grid &:last-of-type {
+  			padding-right: 0;
+    		}
+    		.grid &:first-child {
+    			padding-left: 0;
+    		}*/ }
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: 12px 0 12px 12px; }
+  .grid-pad [class*='col-']:last-of-type {
+    padding-right: 12px; }
+
+.col-1-12, .col-1-6, .col-1-4, .col-1-3, .col-5-12, .col-1-2,
+.col-7-12, .col-2-3, .col-3-4, .col-5-6, .col-11-12, .col-12-12 {
+  width: 100%; }
+
+@media screen and (min-width: 756px) {
+  .col-1-12 {
+    width: 8.33333333%; }
+
+  .col-1-6 {
+    width: 16.66666667%; }
+
+  .col-1-4 {
+    width: 25%; }
+
+  .col-1-3 {
+    width: 33.33333333%; }
+
+  .col-5-12 {
+    width: 41.66666667%; }
+
+  .col-1-2 {
+    width: 50%; }
+
+  .col-7-12 {
+    width: 58.33333333%; }
+
+  .col-2-3 {
+    width: 66.66666667%; }
+
+  .col-3-4 {
+    width: 75%; }
+
+  .col-5-6 {
+    width: 83.33333333%; }
+
+  .col-11-12 {
+    width: 91.66666667; } }
+.floatleft {
+  float: left;
+  padding-right: 12px; }
+
+.floatright {
+  float: right;
+  padding-left: 12px; }
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16/9 ratio */
+  margin: 24px 0;
+  height: 0;
+  overflow: hidden; }
+  .embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.cf:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+p + p {
+  text-indent: 1.5em; }
+
+.alert {
+  text-indent: 0;
+  margin-top: 24px;
+  padding: 11px;
+  color: white;
+  border-radius: 6px;
+  background-color: #3bb9d5;
+  border: 1px solid #102391; }
+
+.skip {
+  margin-top: 24px;
+  text-indent: 0; }
+
+a {
+  color: #ec008c;
+  text-decoration: none;
+  border-bottom: 1px dashed #ec008c; }
+  a:hover {
+    border-bottom: 1px solid #ec008c; }
+
+.alpha a {
+  border-bottom: 0; }
+
+html {
+  background: white; }
+
+body {
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+header {
+  background: url(http://original.dekasteeltuin.nl/assets/css/img/logo_150.jpg) no-repeat 0 0;
+  height: 168px;
+  position: relative; }
+
+.social {
+  position: absolute;
+  top: 5px;
+  right: 2%;
+  width: 80px; }
+  .social li {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin: 2px; }
+  .social a {
+    display: block;
+    text-indent: -9999px;
+    border-bottom: 0; }
+
+.fb {
+  background: url(http://original.dekasteeltuin.nl/assets/css/img/facebook.png) no-repeat 0 0; }
+
+.tw {
+  background: url(http://original.dekasteeltuin.nl/assets/css/img/twitter.png) no-repeat 0 0; }
+
+.alpha {
+  font-family: "Mystery Quest", serif;
+  font-size: 1.8em;
+  line-height: 150px;
+  color: #ec008c;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-bottom: 8px; }
+
+.beta {
+  font-family: "Mystery Quest", serif;
+  font-size: 54px;
+  line-height: 72px;
+  color: #009a4f; }
+
+.content {
+  margin: 1.5em 0 0; }
+
+.content--main__intro {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 48px;
+  color: #102391;
+  padding-bottom: 24px; }
+
+.content--main__pitch {
+  margin-bottom: 48px; }
+
+.content--main__location {
+  margin-bottom: 48px; }
+
+.location--input {
+  line-height: 24px;
+  margin: 0; }
+
+.location--submit {
+  height: 24px;
+  background-color: #009a4f;
+  border: none;
+  margin-top: 0px;
+  cursor: pointer; }
+
+/* In your CSS */
+.gallery {
+  /* define how much padding you want in between your images */
+  margin: 24px 0 48px;
+  padding: 6px;
+  background-color: #d9eaee; }
+  .gallery:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.gallery img {
+  /* ensures padding at the bottom of the image is correct */
+  float: left;
+  width: 100%;
+  padding: 6px;
+  vertical-align: bottom;
+  /* hide the images until the plugin has run. the plugin will reveal the images*/
+  opacity: 1; }
+
+.content--side__register, .content--side__info {
+  margin-bottom: 48px; }
+
+.footer {
+  padding-top: 72px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #102391; }
+
+.copy {
+  text-indent: 0; }
+
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 100%; }
+
+  .alpha {
+    font-size: 3.375em;
+    padding-top: 18px;
+    padding-bottom: 0; }
+
+  .gallery img {
+    /* ensures padding at the bottom of the image is correct */
+    width: 50%; } }
+@media screen and (min-width: 756px) {
+  header {
+    background: url(http://original.dekasteeltuin.nl/assets/css/img/logo_250.jpg) no-repeat 0 0, url(http://original.dekasteeltuin.nl/assets/css/img/varkenmetlaarsjes.jpg) no-repeat 100% 0;
+    height: 264px; }
+
+  .alpha {
+    font-size: 3.375em;
+    line-height: 250px;
+    padding-left: 147px;
+    padding-bottom: 14px; }
+
+  .social {
+    left: 165px;
+    top: 180px; } }
+@media screen and (min-width: 960px) {
+  .alpha {
+    font-size: 5.063em; } }
+
+  </style>
+	<link href='http://fonts.googleapis.com/css?family=Mystery+Quest|Open+Sans:400italic,400,700,800' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<header class="grid">
+	<h1 class="alpha"><a href="index.html">De Kasteeltuin</a></h1>
+	<ul class="social cf">
+		<li class="fb"><a href="https://www.facebook.com/kdv.dekasteeltuin" rel="me" >Facebook</a></li>
+		<li class="tw"><a href="https://twitter.com/kdvkasteeltuin" rel="me">Twitter</a></li>
+	</ul>
+</header>
+
+<section class="grid">
+	<div class="content">
+		<div class="content--main col-7-12">
+			
+			<div class="content--main__intro">
+				Waar kinderen kunnen groeien, bloeien, stoeien en knoeien!
+			</div>
+			<div class="content--main__pitch">
+				<p>Kinderdagverzorging De Kasteeltuin is een zelfstandig kinderdagverblijf zonder winstoogmerk in Spangen, Rotterdam. Het bestuur bestaat onder andere uit ouders van de kinderen. Het heeft een zeer ervaren team van leidsters, bouwend op 75 jaar ervaring. De sfeer is open en vriendelijk, we lachen en kroelen veel.</p>
+				<p>De betrokken leidsters zorgen liefdevol voor de kinderen. De vaste leidsters op de groepen bieden uw kind geborgenheid en rust-en-regelmaat. We combineren dit met een hoge dosis gezelligheid en plezier. De kinderen krijgen elke dag een warme maaltijd, vers bereid door onze eigen kokkin met zoveel mogelijk biologische ingredi&euml;nten.</p>
+				<p>In de mooie tuin spelen de kinderen veel buiten. Ze plukken in het najaar de appeltjes van de bomen, en maken er hun eigen taart of verse appelmoes van. En niets smaakt zo lekker als een kopje thee met verse munt wanneer je die zelf mag plukken!</p>
+				<p>Plezier van kinderen om te spelen en te groeien, vinden we het belangrijkst. Vies worden is gezond, van kliederen en klauteren groeien en genieten we.</p>
+				<p class="skip"><a href="#english-summary">Looking for the English summary? Please click here!</a></p>
+			</div>
+			<div class="content--main__location">
+				<img src="http://original.dekasteeltuin.nl/assets/images/kindmetgieter.jpg" alt="Kasteeltuin: kind met gieter" class="floatleft"/><h1 class="beta">Locatie</h1>
+				<p>Kinderdagverzorging De Kasteeltuin is gevestigd in een sfeervol pand in Spangen, <a href="http://goo.gl/maps/t1oMX" title="link naar kinderdagverblijf De Kasteeltuin op Google Maps">Borgerstraat 8, Rotterdam</a>. Er zijn vier grote groepsruimtes en er is een aparte speel-/gymzaal. De Kasteeltuin heeft een zeer grote afgesloten buitenruimte waar de kinderen naar hartelust kunnen spelen. Het gebouw was oorspronkelijk een kleuterschool, en is recentelijk verbouwd als kinderdagverblijf. Hierbij zijn de prachtige authentieke details bewaard gebleven.</p>
+				<div class="gallery cf"><img src="http://original.dekasteeltuin.nl/assets/images/Kasteeltuin_12.jpg" alt="tuin kinderdagverblijf De Kasteeltuin" /><img src="http://original.dekasteeltuin.nl/assets/images/Kasteeltuin_13.jpg" alt="tuin kinderdagverblijf De Kasteeltuin met speeltoestel" /><img src="http://original.dekasteeltuin.nl/assets/images/Kasteeltuin_14.jpg" alt="groepsruimte kinderdagverblijf De Kasteeltuin met uitzicht op tuin" /><img src="http://original.dekasteeltuin.nl/assets/images/Kasteeltuin_15.jpg" alt="kapstokje in kinderdagverblijf De Kasteeltuin" /></div>
+				<div id="english-summary">
+					<h1 class="beta">English summary</h1>
+					<p>De Kasteeltuin (The Castlegarden) is a non-profit independent child care organization, situated in Rotterdam, The Netherlands. Inside the beautiful building and out in the lovely playground the highly experienced staff nurses the children in a friendly and loving manner. Regular faces in every group provide a stable and secure environment for the children. Our own cook serves freshly prepared hot meals everyday, containing vegetables from our own garden.</p>
+					<p>What matters to us most is the enthusiasm of the children to play (outside) and to discover. We just enjoy seeing the children frolicking and rummaging around. For that is what makes them flourish and grow.</p>
+				</div>
+			</div>
+		</div>
+		<div class="content--side col-5-12">
+			<div class="content--side__info">
+				<h1 class="beta">Informatie</h1>
+				<p>Kinderdagverzorging De Kasteeltuin op werkdagen open <b>van 7.30 tot 18.00 uur</b> (offici&euml;le feestdagen uitgezonderd). Het kinderdagverblijf is bereikbaar op <b>telefoonnummer 010 - 229 26 14</b>.</p>
+				<p>De Kasteeltuin heeft een horizontale groepsindeling. De kinderen zitten samen met leeftijdsgenootjes in een groep. De indeling van de horizontale groepen is als volgt: babygroep de Kuikentjes met maximaal 14 baby's (2-20 maanden), babygroep de Kapoentjes met maximaal 14 baby's (2-20 maanden), dreumesgroep de Kikkers met maximaal 16 dreumesen (20-36 maanden) en peutergroep de Krekels (36-48 maanden).</p>
+				<p>We vinden het belangrijk dat kinderen zich snel bij ons thuis voelen. Hiervoor maken we bij de intake afspraken om te wennen. Hierin passen we ons aan aan de wensen en behoeftes van uw kind en uzelf. Geen kind is immers hetzelfde. We vinden het belangrijk dat niet alleen de kinderen maar ook hun ouders zich welkom voelen in ons kinderdagverblijf. U bent daarom altijd welkom in de groep van uw kind, en we staan open voor al uw suggesties. </p>
+				<p class="alert">Voor meer informatie of vragen kunt u contact opnemen met <a href='&#109;ailto&#58;&#37;6&#68;arl%&#54;9esdej&#111;ng&#64;&#37;64ekasteeltui&#110;&#46;n&#108;'>Marlies de Jong</a>, manager van KDV De Kasteeltuin. Zij is ook bereikbaar op telefoonnummer 010 - 229 26 14.</p>
+			</div>
+			<div class="content--side__register">
+				<h1 class="beta">Aanmelden</h1>
+				<p>U kunt zich aanmelden met <a href="http://original.dekasteeltuin.nl/assets/files/Aanmeldingsformulier_De_Kasteeltuin.pdf" title="aanmeldingsformulier voor KDV De Kasteeltuin">dit formulier</a>. <img src="http://original.dekasteeltuin.nl/assets/images/bakfietsje_boom_klein.jpg" alt="kinderdagverblijf De Kasteeltuin: bakfiets met boom" class="floatright" />Zodra wij het ingevulde formulier in ons bezit hebben, nemen wij zo snel mogelijk contact met u op.</p>
+				<p>Wilt u eerst een keertje komen kijken, stuur dan gerust <a href='&#109;ailto&#58;&#37;6&#68;arl%&#54;9esdej&#111;ng&#64;&#37;64ekasteeltui&#110;&#46;n&#108;'>een e-mail</a> of bel telefoonnummer 010 - 229 26 14. Wij nodigen u dan zo snel mogelijk uit voor een bezoek aan de Kasteeltuin. U bent van harte welkom!</p>
+			</div>
+			<div class="content--side__register">
+				<h1 class="beta">Landelijk Register</h1>
+				<p>Kinderdagverzorging De Kasteeltuin is sinds 1 april 2014 geregistreerd in het Landelijk Register Kinderopvang en Peuterspeelzalen (LRKP). Hierdoor hebben wij ook een zogeheten LRKP-nummer. Met dit hummer kunt u kinderopvangtoeslag aanvragen. Ons LRKP-nummer is: 496108517.</p>
+				<p><a href="http://original.dekasteeltuin.nl/assets/files/Inspectierapport_KDV_de_Kasteeltuin_05-08-14.pdf" title="Inspectierapport GGD van KDV de Kasteeltuin voor LRKP">Het meest recente GGD-advies kunt u hier downloaden</a>. Onze gegevens en eerdere inspectierapporten zoals opgenomen in het Landelijk Register Kinderopvang en Peuterspeelzalen kunt u <a href="http://www.landelijkregisterkinderopvang.nl/pp/inzien/Oko/Kdv/GegevensOKO.jsf?selectedResultId=113487" title="gegevens KDV De Kasteeltuin in LRKP">via deze link</a> vinden.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="grid footer">
+	<div class="col-12-12">
+		<p>Kinderdagverzorging De Kasteeltuin is onderdeel van <a href="http://www.stichtingdejongebea.nl">Stichting De jonge Bea</a>.</p>
+		<p class="copy">&copy; 2014-2015. Alle rechten voorbehouden.</p>
+	</div>
+</footer>
+
+
+<!--<script>
+    head.load("http://original.dekasteeltuin.nl/assets/js/jquery-2.0.3.min.js", "http://original.dekasteeltuin.nl/assets/js/jquery.fancybox.pack.js", "http://original.dekasteeltuin.nl/assets/js/jquery.fancybox-buttons.js", "http://original.dekasteeltuin.nl/assets/js/fancyscript.js");
+</script>-->
+
+</body>
+</html>

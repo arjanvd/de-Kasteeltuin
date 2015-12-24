@@ -60,32 +60,31 @@
       flex: 0 1 calc(50% - (#{span(1)} / 2));   
     }
   }
-}
-/*
-  &__art {
-    
-    width: span(12);
-    
-    @include bp(medium) {
-      float: left;
-      width: span(6);
-      &:nth-child(2n+1) {
-        margin-right: gutter();
-      }
+  
+  &__medium {
+    @include bp(x-small) {
+      @include snap-to-baseline(3/2, 24px);
     }
 
     @include bp(large) {
-      width: span(4);
-      &:nth-child(2n+1) {
-        margin-right: 0;
-      }
-      &:nth-of-type(3n+1) {
-        margin-right: gutter();
-      }
-     &:nth-of-type(3n+2) {
-        margin-right: gutter();
-      }
+      @include snap-to-baseline(3/2, 27px);
+    }
+
+    @include bp(x-large) {
+      @include snap-to-baseline(3/2, 30px);
+    }
+    
+    & img {
+      box-shadow: 0 0 5px mix($white, $black, 50%);
     }
   }
   
-} */
+  &__info {
+    margin-bottom: vr(4);
+    letter-spacing: .1rem;
+    font-variant: small-caps;
+    text-transform: uppercase;
+    @include set-type($ms-down1);
+    color: mix($white, $black, 50%);
+  }
+}

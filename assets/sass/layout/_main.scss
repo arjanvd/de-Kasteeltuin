@@ -73,20 +73,39 @@
     }
     
     &__intro {
-      
+      @include span(12);
+      margin-bottom: vr(4);
+
+      @include bp(small) {
+        @include span(10 of 12);
+        @include post(2 of 12);
+      }
+
+      @include bp(medium) {
+        @include pre(4 of 12);
+        @include span(7 of 12);
+        @include post(1 of 12);
+      }
+
     }
   }
   
-  &--home--left {
+  &--home__left {
     @include bp(small) {
       @include span(7 of 12);
     }
   }
   
-  &--home--right {
+  &--home__right {
+    margin-top: vr(4);
+    
     @include bp(small) {
       @include span(5 at 8 of 12 last);
+      margin-top: 0;
     }
+  }
+  &--home__info {
+    margin-top: vr(8);
   }
   
   &--media {
@@ -94,7 +113,7 @@
     &__intro {
     
       @include span(12);
-      margin-bottom: vr(8);
+      margin-bottom: vr(4);
 
       @include bp(small) {
         @include span(10 of 12);

@@ -37,6 +37,24 @@ a {
   @include fancy-link($black, $black);
 }
 
+.content {
+  & a {
+    color: $red;
+    border-bottom: 1px dotted $red;
+    transition: all 0.35s ease;
+    &:hover {
+      border-bottom: 1px solid $red;
+    }
+  }
+  .btn--contact-maps a, .btn--signup-form a {
+    color: $white;
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}
+
 // == Modules
 
 .c-block--categories a, .c-block--helpdesk a {

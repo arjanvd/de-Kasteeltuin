@@ -1,6 +1,6 @@
 $(document).ready(function () {
   "use strict";
-  $(".fancybox").fancybox({
+  $(".fancybox a").fancybox({
     padding: 0,
     arrows: 'false',
     closeBtn: 'false',

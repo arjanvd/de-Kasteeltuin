@@ -41,7 +41,7 @@
 ===================================*/
 
 .bx-wrapper .bx-viewport {
-	box-shadow: 0 0 5px #ccc;
+	box-shadow: 0 0 5px mix($white, $black, 50%);
 //	border: 5px solid mix($white, $green-blue, 90%);
 //	left: -5px;
 //	background: mix($white, $green-blue, 90%);
