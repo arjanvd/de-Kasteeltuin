@@ -14,6 +14,7 @@
 	<meta name="description" content="Kinderdagverzorging De Kasteeltuin is een zelfstandig en duurzaam kinderdagverblijf waar geborgenheid en plezier van kinderen om te spelen en te groeien bovenaan staan." />
 	<meta name="robots" content="index, follow, noodp, noydir">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script src="assets/js/lazyload.min.js"></script>
 	<script src="assets/js/head.js"></script>
 	<link rel="stylesheet" media="screen" href="assets/css/site.css">
 </head>
@@ -24,7 +25,7 @@
 <div class="l-wrapper">
   <div class="js-header">
   <header class="l-container navbar">
-    <div class="o-logo navbar__logo"><h1>De Kasteeltuin</h1></div>
+    <div class="o-logo navbar__logo"><a href=""><h1>De Kasteeltuin</h1></a></div>
     <nav class="navbar__nav">
       <input type="checkbox" id="toggle-nav" />
       <label id="toggle-nav-label" for="toggle-nav">
@@ -39,13 +40,13 @@
       </label>
       <div class="nav-menu">
         <ul>
-          <li><a href="#" class="active" title="Team">Wie zijn wij</a></li>
+          <li><a href="#" title="Team">Wie zijn wij</a></li>
           <li><a href="#" title="Ouders">Ouders</a></li>
-          <li><a href="#" title="Home">FAQ</a></li>
+          <li><a href="#" class="active" title="Home">FAQ</a></li>
           <li><a href="#" title="Home">Media</a></li>
           <li><a href="#" title="Home">Contact</a></li>
-          <li><a href="#" title="Facebook" class="icons"><span class="icon icon-facebook"></span><span class="text--hide">Facebook-pagina</span></a></li>
-          <li><a href="#" title="Twitter" class="icons"><span class="icon icon-twitter"></span><span class="text--hide">Twitter-timeline</span></a></li>
+          <li><a href="#" title="Facebook" class="icons"><span class="icon icon-facebook"></span><span class="text--hide">Facebook</span></a></li>
+          <li><a href="#" title="Twitter" class="icons"><span class="icon icon-twitter"></span><span class="text--hide">Twitter</span></a></li>
         </ul>
       </div>
     </nav>
@@ -58,6 +59,7 @@
     <section class="l-main--faq__intro">
         <h1 class="h1 h1--intro">Vragen en antwoorden</h1>
         <p>Hier komt een inleidende tekst met links naar de verschillende categorieen. Bedoeld voor breedtes tot bp(small).</p>
+        <p>Na elke categorie ook een div toevoegen met de cirkels van de groepen (figures).</p>
         <div class="figures figures--faq"></div>
     </section>
   </div>
@@ -114,7 +116,7 @@
       </dl>
     </div>
     <div class="l-sidebar--faq">
-      <div class="pinned">
+      <div id="pinned">
         <div class="o-block c-block--categories">
           <h1 class="h4 h4--faq">Categorieën</h1>
           <ul class="faq--categories">
@@ -136,30 +138,59 @@
 
 <div class="l-wrapper l-wrapper--footer">
   <footer class="l-container footer">
-    <div class="footer__nav">
-      <h1 class="h4 h4--footer">Menu</h1>
-      <ul class="no-list">
-        <li><a href="">Home</a></li>
-        <li><a href="">Wie zijn wij</a></li>
-        <li><a href="">Ouders</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Media</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
+    <div class="footer__col-1">
+      <div class="footer__content">
+        <h1 class="h4 h4--footer">Menu</h1>
+        <ul class="no-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Wie zijn wij</a></li>
+          <li><a href="">Ouders</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Media</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h1 class="h4 h4--footer">Hier zitten we</h1>
+        <p>Borgerstraat 8<br>
+        3027 EA  Rotterdam<br>
+        010 - 229 26 14<br>
+        mailadres
+        </p>
+      </div>
     </div>
-    <div class="footer__address">
-      <h1 class="h4 h4--footer">Hier zitten we</h1>
-      <p>Borgerstraat 8<br>
-      3027 EA  Rotterdam<br>
-      </p>
+    <div class="footer__col-2">
+      <div class="footer__content">
+        <h1 class="h4 h4--footer">Kleine lettertjes</h1>
+        <p>KvK: 59862092<br>
+        LRKP: 496108517<br>
+        IBAN: NL38 INGB 000 6339644</p>
+      </div>
+      <div class="footer__content content">
+        <h1 class="h4 h4--footer">Rustig nalezen</h1>
+        <p>U kunt een aantal documenten over De Kasteeltuin downloaden om rustig na te lezen:</p>
+        <ul>
+          <li>Informatiebrochure</li>
+          <li>Inspectierapport</li>
+          <li>xxxxx</li>
+        </ul>
+      </div>
     </div>
-    <div class="footer__data">
-      <h1 class="h4 h4--footer">Kleine lettertjes</h1>
-      <p>KvK: 59862092<br>
-      LRKP: 496108517<br>
-      IBAN: NL38 INGB 000 6339644</p>
+    <div class="footer__col-3">
+      <!--<div class="footer__content--signup">
+        <a href="">
+          <h1 class="h4 h4--signup">Aanmelden</h1>
+          <p>Hier vind u het inschrijfformulier.</p>
+        </a>
+      </div>-->
+      <div class="o-block c-block--signup">
+        <h1 class="h4 h4--footer--signup">Aanmelden</h1>
+        <p>U kunt uw kind(eren) aanmelden met ons inschrijfformulier. Na aanmelding volgt een intakegesprek, waarin we afspraken maken om te wennen.</p>
+        <div class="btn btn--signup-form o-element"><a href="">Download het inschrijfformulier</a></div>
+        <p>Of wilt u eerst een keertje komen kijken? Bel dan gerust (010 - 229 26 14) of stuur een e-mail. U bent van harte welkom!</p>
     </div>
-    <div class="footer__copyright">&copy; KDV De Kasteeltuin 2015-heden. Alle rechten voorbehouden, tenzij anders aangegeven.</div>
+    </div>
+  <div class="footer__copyright"><p>&copy; KDV De Kasteeltuin 2015-heden. Alle rechten voorbehouden, tenzij anders aangegeven.</p></div>
   </footer>
 </div>
 
@@ -169,11 +200,14 @@
     "assets/js/jquery-2.1.4.min.js", 
     "assets/js/jquery.fancybox.js",
     "assets/js/jquery.pin.min.js",
+    "assets/js/jquery.bxslider.min.js",
+    "assets/js/elementQuery.js",
     "assets/js/accordion.js", 
     "assets/js/fancybox.js",
     "assets/js/autoHideHeader.js",
     "assets/js/scroll.js",
-    "assets/js/pin.js"
+    "assets/js/pin.js",
+    "assets/js/slider.js"
   )
 </script>
 

@@ -67,11 +67,21 @@
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  padding-right: vr(2);
+  padding-right: vr(1);
 
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  &--nav {
+    @include bp(medium) {
+      padding-right: 0; // reset van algemene padding-right op .icon
+    }
+  }
+  &--text {
+    padding-right: 0;
+  }
+  
 }
 
 .acc-toggle .icon-angle-right {
@@ -87,11 +97,7 @@
   transform: rotate(90deg) translateX(5px) translateY(-3px);
 }
 
-.icon-facebook, .icon-twitter {
-  @include bp(medium) {
-    padding-right: 0; // reset van algemene padding-right op .icon
-  }
-}
+
 
 .icon-angle-right:before {
 	content: "\f105";

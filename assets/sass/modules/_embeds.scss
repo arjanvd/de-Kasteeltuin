@@ -9,28 +9,10 @@
 
 -----------------------------------------------------  */
 
-.video-embed {
-  display: block;
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding-top: 66.666%;
-  iframe {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100% !important;
-    width: 100% !important;
-  }
-}
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16/9 ratio */
-  margin: 24px 0;
   height: 0;
   overflow: hidden;
   box-shadow: 0 0 5px mix($white, $black, 50%);

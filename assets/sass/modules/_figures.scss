@@ -86,3 +86,31 @@
   
 }
 
+.figures--parents {
+  width: 100%;
+  margin-bottom: vr(4);
+  
+  &__1 {
+    background: url(img/baby-boompje-tractor.png) 50% 0 no-repeat;
+    height: 130px;
+  }
+  &__2 {
+    background: url(img/meisje-met-gieter.png) 50% 0 no-repeat;
+    height: 138px;
+  }
+  
+}
+
+.figures--contact {
+  
+  display: none;
+  
+  @include bp(small) {
+    display: block;
+    width: 100%;
+    margin: vr(4) 0;
+    background: url(img/cirkel-kasteel-kantoor.png) 50% 0 no-repeat;
+    height: 260px;
+  }
+}
+

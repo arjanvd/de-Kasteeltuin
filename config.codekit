@@ -2,6 +2,17 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19102",
 "files": {
+	"\/assets\/css\/img\/baby-boompje-tractor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29077,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/baby-boompje-tractor.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/baby-boompje-tractor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/css\/img\/baby-met-boompje.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -46,6 +57,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/css\/img\/cirkel-kasteel-kantoor.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 116737,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/cirkel-kasteel-kantoor.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/cirkel-kasteel-kantoor.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/css\/img\/crossword.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -53,6 +75,17 @@
 		"initialSize": 43694,
 		"inputAbbreviatedPath": "\/assets\/css\/img\/crossword.png",
 		"outputAbbreviatedPath": "\/assets\/css\/img\/crossword.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/css\/img\/grijze-boom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 106160,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/grijze-boom.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/grijze-boom.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -130,6 +163,17 @@
 		"initialSize": 17735,
 		"inputAbbreviatedPath": "\/assets\/css\/img\/logo3.png",
 		"outputAbbreviatedPath": "\/assets\/css\/img\/logo3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/css\/img\/meisje-met-gieter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39419,
+		"inputAbbreviatedPath": "\/assets\/css\/img\/meisje-met-gieter.png",
+		"outputAbbreviatedPath": "\/assets\/css\/img\/meisje-met-gieter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1905,7 +1949,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 404966,
+		"initialSize": 365850,
 		"inputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1927,7 +1971,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 231542,
+		"initialSize": 252324,
 		"inputAbbreviatedPath": "\/images\/6_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/6_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -3346,6 +3390,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
+		},
+	"\/wie-zijn-wij-2.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wie-zijn-wij-2.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/wie-zijn-wij.html": {
 		"fileType": 8192,

@@ -875,11 +875,14 @@ body {
     width: 47.8260869565%;
     float: left;
     margin-right: 4.347826087%; } }
-@media (min-width: 600px) {
-  .l-main--contact--right {
-    width: 47.8260869565%;
-    float: right;
-    margin-right: 0; } }
+.l-main--contact--right {
+  margin-top: 1.5rem; }
+  @media (min-width: 600px) {
+    .l-main--contact--right {
+      margin-top: 0;
+      width: 47.8260869565%;
+      float: right;
+      margin-right: 0; } }
 .l-main--faq {
   padding-bottom: 3rem; }
   @media (min-width: 600px) {
@@ -1023,29 +1026,70 @@ body {
       float: right;
       margin-right: 0;
       margin-top: 0; } }
-
-.l-sidebar--faq {
-  /*   @include bp(x-small) {
-       @include span(12 of 12);
-     }*/ }
+.c-main--parents__text {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5rem; }
   @media (min-width: 600px) {
-    .l-sidebar--faq {
-      width: 30.4347826087%;
+    .c-main--parents__text {
+      width: 82.6086956522%;
+      float: left;
+      margin-right: 4.347826087%;
+      margin-right: 17.3913043478%; } }
+  @media (min-width: 768px) {
+    .c-main--parents__text {
+      width: 56.5217391304%;
+      float: left;
+      margin-right: 4.347826087%; } }
+.c-main--parents__gallery {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 1.5rem; }
+  @media (min-width: 768px) {
+    .c-main--parents__gallery {
+      width: 39.1304347826%;
       float: right;
       margin-right: 0; } }
+
+@media (min-width: 600px) {
+  .l-sidebar--faq {
+    width: 30.4347826087%;
+    float: right;
+    margin-right: 0; } }
 .l-sidebar--about--pinned {
   display: none; }
   @media (min-width: 768px) {
     .l-sidebar--about--pinned {
       display: block;
-      padding-top: 20px;
+      padding-top: 1.5rem;
       width: 30.4347826087%;
       float: left;
       margin-right: 4.347826087%; } }
 
 .footer {
   padding-top: 1.5rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  /*  &__content--signup {
+      
+      & a {
+        display: block;
+        padding: vr(4);
+        margin-bottom: vr(4);
+        border-radius: 5px;
+        background-color: mix($white, $yellow, 70%);
+        transition: all .35s ease;
+      
+        &:hover {
+          background-color: mix($white, $yellow, 60%);
+          box-shadow: inset 0 0 3px mix($white, $black, 20%),
+                            0 0 3px $yellow;
+        }
+      }
+    } */ }
   @media (min-width: 600px) {
     .footer__col-1 {
       width: 21.7391304348%;
@@ -1070,17 +1114,67 @@ body {
         margin-right: 0; } }
   .footer__content {
     margin-bottom: 1.5rem; }
-  .footer__content--signup a {
-    display: block;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-    background-color: #f9fdb7;
-    -webkit-transition: all .35s ease;
-    transition: all .35s ease; }
-    .footer__content--signup a:hover {
-      background-color: #f7fd9f;
-      box-shadow: inset 0 0 3px #4e4e4e, 0 0 3px #ECF90F; }
+
+.homepage .footer {
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  /*  &__content--signup {
+      
+      & a {
+        display: block;
+        padding: vr(4);
+        margin-bottom: vr(4);
+        border-radius: 5px;
+        background-color: mix($white, $yellow, 70%);
+        transition: all .35s ease;
+      
+        &:hover {
+          background-color: mix($white, $yellow, 60%);
+          box-shadow: inset 0 0 3px mix($white, $black, 20%),
+                            0 0 3px $yellow;
+        }
+      }
+    } */ }
+  @media (min-width: 768px) {
+    .homepage .footer {
+      background: url(img/grijze-boom.png) 96% 50% no-repeat; } }
+  @media (min-width: 480px) {
+    .homepage .footer__col-1 {
+      width: 47.8260869565%;
+      float: left;
+      margin-right: 4.347826087%; } }
+  @media (min-width: 768px) {
+    .homepage .footer__col-1 {
+      width: 30.4347826087%;
+      float: left;
+      margin-right: 4.347826087%; } }
+  @media (min-width: 480px) {
+    .homepage .footer__col-2 {
+      width: 47.8260869565%;
+      float: right;
+      margin-right: 0; } }
+  @media (min-width: 768px) {
+    .homepage .footer__col-2 {
+      width: 30.4347826087%;
+      float: left;
+      margin-right: 4.347826087%; } }
+  .homepage .footer__col-3 {
+    display: none;
+    /*   @include bp(small) {
+         display: block;
+         @include span(4 at 9 of 12);
+         background: url(img/baby-boompje-tractor.png) 0 50% no-repeat;
+         height: 130px;
+       } */ }
+  .homepage .footer__copyright {
+    padding-top: 1.5rem; }
+    @media (min-width: 480px) {
+      .homepage .footer__copyright {
+        width: 100%;
+        float: right;
+        margin-right: 0; } }
+  .homepage .footer__content {
+    margin-bottom: 1.5rem; }
 
 /***
 
@@ -1181,6 +1275,9 @@ h4, .h4 {
 
 .h4--footer {
   color: #fbfecf; }
+  .h4--footer--signup {
+    color: #c81f1d;
+    margin-bottom: 1.5rem; }
 .h4--faq {
   color: #117878; }
 .h4--signup {
@@ -1572,10 +1669,15 @@ img .wide {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  padding-right: 0.75rem;
+  padding-right: 0.375rem;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+  @media (min-width: 768px) {
+    .icon--nav {
+      padding-right: 0; } }
+  .icon--text {
+    padding-right: 0; }
 
 .acc-toggle .icon-angle-right {
   display: inline-block;
@@ -1592,10 +1694,6 @@ img .wide {
   -webkit-transform: rotate(90deg) translateX(5px) translateY(-3px);
       -ms-transform: rotate(90deg) translateX(5px) translateY(-3px);
           transform: rotate(90deg) translateX(5px) translateY(-3px); }
-
-@media (min-width: 768px) {
-  .icon-facebook, .icon-twitter {
-    padding-right: 0; } }
 
 .icon-angle-right:before {
   content: "\f105"; }
@@ -2460,26 +2558,10 @@ nav li {
   Video Embeds
 
 -----------------------------------------------------  */
-.video-embed {
-  display: block;
-  width: 100%;
-  height: 0;
-  position: relative;
-  padding-top: 66.666%; }
-  .video-embed iframe {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100% !important;
-    width: 100% !important; }
-
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;
   /* 16/9 ratio */
-  margin: 24px 0;
   height: 0;
   overflow: hidden;
   box-shadow: 0 0 5px #919191; }
@@ -2568,9 +2650,29 @@ nav li {
         height: 200px;
         background: url(img/vogelhuisje.png) 0 0 no-repeat; } }
 
+.figures--parents {
+  width: 100%;
+  margin-bottom: 1.5rem; }
+  .figures--parents__1 {
+    background: url(img/baby-boompje-tractor.png) 50% 0 no-repeat;
+    height: 130px; }
+  .figures--parents__2 {
+    background: url(img/meisje-met-gieter.png) 50% 0 no-repeat;
+    height: 138px; }
+
+.figures--contact {
+  display: none; }
+  @media (min-width: 600px) {
+    .figures--contact {
+      display: block;
+      width: 100%;
+      margin: 1.5rem 0;
+      background: url(img/cirkel-kasteel-kantoor.png) 50% 0 no-repeat;
+      height: 260px; } }
+
 .hidden {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     .hidden--contact {
       display: none; } }
 
