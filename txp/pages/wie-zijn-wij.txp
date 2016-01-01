@@ -1,0 +1,157 @@
+<txp:output_form form="v2_head" />
+
+<body>
+
+<txp:output_form form="v2_header" />
+
+<div class="l-wrapper l-wrapper--about l-wrapper--about--intro">
+  <section class="l-container">
+    <div class="l-main--about--intro content">
+      <txp:article_custom id="XXX">
+        <h1 class="h1 h1--intro"><txp:title /></h1>
+        <txp:body />
+      </txp:article_custom>
+    </div>
+    <div class="figures figures--about figures--about--intro"></div>
+  </section>
+</div>  
+
+<div class="l-wrapper l-wrapper--about l-wrapper--about--1" id="pin__container">
+  <div class="l-container"> 
+    <div class="l-sidebar--about--pinned">
+      <div class="c-block--sidebar" id="pinned">
+        <txp:article_custom section="wie-zijn-wij" offset="1" wraptag="ul" break="li">
+          <a href="#<txp:custom_field name="XXX" />" class="scroll"><txp:custom_field name="XXX" /></a>
+        </txp:article_custom>      
+      </div>
+    </div>
+    <txp:article_custom id="XXX">
+      <section id="<txp:custom_field name="XXX" />">
+        <div class="l-main--about--pinned content"><!-- deze is apart, omdat hier de #pinned in de sidebar zit. -->
+          <h1 class="h1 c-main--about--header"><txp:title /></h1>
+          <div class="c-main--about--text--full content">
+            <txp:body />
+          </div>
+        </div>
+      </section>
+    </txp:article_custom>
+    <div class="figures figures--about figures--about--1"></div>
+  </div>
+
+<!-- LET OP: #pin__container eindigt pas boven de footer -->  
+ 
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--2">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- 75 jaar -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--side-gal content">
+              <txp:body />
+            </div>
+            <div class="c-main--about--gallery--side-gal">
+              <div class="gallery fancybox">
+               gallery
+              </div>
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--2"></div>
+    </div>
+  </div>     
+
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--3">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- in en om -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--full content">
+              <txp:body />
+            </div>
+            <div class="c-main--about--gallery--bottom-gal">
+              <div class="gallery fancybox">
+                gallery
+              </div>
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--3"></div>
+    </div>
+  </div>     
+
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--4">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- stichting -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--full content">
+              <txp:body />
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--4"></div>
+    </div>
+  </div>     
+
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--5">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- schatten -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--full content">
+              <txp:body />
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--5"></div>
+    </div>
+  </div>     
+
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--6">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- groepen -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--full content">
+              <txp:body />
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--6"></div>
+    </div>
+  </div>     
+
+  <div class="l-wrapper l-wrapper--about l-wrapper--about--7">
+    <div class="l-container"> 
+      <txp:article_custom id="xxx"> <!-- praktisch -->
+        <section id="<txp:custom_field name="XXX" />">
+          <div class="l-main--about">
+            <h1 class="h1 c-main--about--header"><txp:title /></h1>
+            <div class="c-main--about--text--full content">
+              <txp:body />
+            </div>
+          </div>
+        </section>
+      </txp:article_custom>
+      <div class="figures figures--about figures--about--7"></div>
+    </div>
+  </div>     
+   
+</div> <!-- end of #pin__container -->  
+
+
+<txp:output_form form="v2_footer" />
+
+<txp:output_form form="v2_js" />
+
+</body>
+</html>

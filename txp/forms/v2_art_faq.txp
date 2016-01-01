@@ -1,0 +1,9 @@
+<txp:if_different>
+  <h1 class="h3 h3--faq" id="cat-<txp:category1 />"><txp:category title="1" /></h1>
+</txp:if_different>
+<dl>
+  <dt class="acc-toggle"><span class="icon icon-angle-right"></span><txp:title /></dt>
+  <dd class="acc-content">
+    <txp:body />
+  </dd>
+</dl>

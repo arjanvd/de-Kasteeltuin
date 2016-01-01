@@ -1,0 +1,36 @@
+<txp:output_form form="v2_head" />
+
+<body>
+
+<txp:output_form form="v2_header" />
+
+<div class="l-wrapper l-wrapper--content">
+  <div class="l-container content">
+    <div class="l-main--contact--left">
+      <txp:article_custom id="XXX" form="v2_art_contact" /> <!-- Adres -->
+      <div class="btn btn--contact-maps hidden--contact">
+        <a class="scroll" href="#google-maps">Ga naar de Google Maps op deze pagina</a>
+      </div>
+      <txp:article_custom id="XXX" form="v2_art_contact" /> <!-- tel.nr -->
+
+      <txp:article_custom id="XXX" form="v2_art_contact" /> <!-- email -->
+
+      <txp:article_custom id="XXX" form="v2_art_contact" /> <!-- social media -->
+
+    </div>
+    <div class="l-main--contact--right">
+      <h1 class="h2" id="google-maps">Google Maps</h1>
+      <div class="embed-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11267.535520788453!2d4.435733591940862!3d51.92020995778007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77374375b8731314!2sDe+Kasteeltuin!5e0!3m2!1snl!2snl!4v1446041956792" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="figures--contact"></div>
+    </div>
+  </div>
+</div>
+
+<txp:output_form form="v2_footer" />
+
+<txp:output_form form="v2_js" />
+
+</body>
+</html>

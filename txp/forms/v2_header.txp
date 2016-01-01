@@ -1,0 +1,59 @@
+<div class="l-wrapper">
+  <div class="js-header">
+  <header class="l-container navbar">
+    <div class="o-logo navbar__logo"><txp:link_to_home><h1><txp:site_name /></h1></txp:link_to_home></div>
+    <nav class="navbar__nav">
+      <input type="checkbox" id="toggle-nav" />
+      <label id="toggle-nav-label" for="toggle-nav">
+      <div class="nav-menu-container">
+        <div class="nav-menu-container__title">Menu</div>
+        <div class="nav-menu-container__button">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </div>
+      </div>
+      </label>
+      <div class="nav-menu">
+        <ul>
+          <li>
+            <a href="<txp:section name="wie-zijn-wij" url="1" />" 
+               <txp:if_section name="wie-zijn-wij">class="active"<txp:else /></txp:if_section>>
+              <txp:section name="wie-zijn-wij" title="1" />
+            </a>
+          </li>
+          <li>
+            <a href="<txp:section name="ouders" url="1" />" 
+               <txp:if_section name="ouders" class="active"<txp:else /></txp:if_section>>
+              <txp:section name="ouders" title="1" />
+            </a>
+          </li><li>
+            <a href="<txp:section name="faq" url="1" />" 
+               <txp:if_section name="faq" class="active"<txp:else /></txp:if_section>>
+              <txp:section name="faq" title="1" />
+            </a>
+          </li><li>
+            <a href="<txp:section name="media" url="1" />" 
+               <txp:if_section name="media">class="active"<txp:else /></txp:if_section>>
+              <txp:section name="media" title="1" />
+            </a>
+          </li><li>
+            <a href="<txp:section name="contact" url="1" />" 
+               <txp:if_section name="contact">class="active"<txp:else /></txp:if_section>>
+              <txp:section name="contact" title="1" />
+            </a>
+          </li>
+          <li><a href="https://www.facebook.com/kdv.dekasteeltuin" rel="me" class="icons"><span class="icon icon--nav icon-facebook"></span><span class="text--hide">Facebook</span></a></li>
+          <li><a href="https://twitter.com/kdvkasteeltuin" rel="me" class="icons"><span class="icon icon--nav icon-twitter"></span><span class="text--hide">Twitter</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  </div>
+  <txp:if_section name="">
+    <img 
+    srcset="images/header.jpg 1920w,
+            images/header-small.jpg 600w"
+    alt="Kinderdagverzorging De Kasteeltuin" />
+  </txp:if_section>
+</div>

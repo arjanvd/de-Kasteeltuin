@@ -1883,7 +1883,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 300219,
+		"initialSize": 362979,
 		"inputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/2_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1949,7 +1949,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 365850,
+		"initialSize": 404966,
 		"inputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2121,17 +2121,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/groepen\/Kasteeltuin_037.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 625193,
-		"inputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_037.jpg",
-		"outputAbbreviatedPath": "\/images\/groepen\/Kasteeltuin_037.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/groepen\/Kasteeltuin_042.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2238,6 +2227,17 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/images\/groepen\/niet\/Kasteeltuin_023.jpg",
 		"outputAbbreviatedPath": "\/images\/groepen\/niet\/Kasteeltuin_023.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/groepen\/niet\/Kasteeltuin_037.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 625193,
+		"inputAbbreviatedPath": "\/images\/groepen\/niet\/Kasteeltuin_037.jpg",
+		"outputAbbreviatedPath": "\/images\/groepen\/niet\/Kasteeltuin_037.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2682,6 +2682,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/nieuw\/Kasteeltuin_137.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 401793,
+		"inputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_137.jpg",
+		"outputAbbreviatedPath": "\/images\/nieuw\/Kasteeltuin_137.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/ouders\/20150910_194311000_iOS.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2748,17 +2759,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/ouders\/Kasteeltuin_137.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 401793,
-		"inputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_137.jpg",
-		"outputAbbreviatedPath": "\/images\/ouders\/Kasteeltuin_137.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/images\/ouders\/Kasteeltuin_dinsdag_006.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2821,17 +2821,6 @@
 		"initialSize": 283852,
 		"inputAbbreviatedPath": "\/images\/team\/Kasteeltuin_091.jpg",
 		"outputAbbreviatedPath": "\/images\/team\/Kasteeltuin_091.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/images\/team\/Kasteeltuin_112.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 558587,
-		"inputAbbreviatedPath": "\/images\/team\/Kasteeltuin_112.jpg",
-		"outputAbbreviatedPath": "\/images\/team\/Kasteeltuin_112.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2909,6 +2898,17 @@
 		"initialSize": 299861,
 		"inputAbbreviatedPath": "\/images\/team\/niet\/Kasteeltuin_097.jpg",
 		"outputAbbreviatedPath": "\/images\/team\/niet\/Kasteeltuin_097.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/team\/niet\/Kasteeltuin_112.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 558587,
+		"inputAbbreviatedPath": "\/images\/team\/niet\/Kasteeltuin_112.jpg",
+		"outputAbbreviatedPath": "\/images\/team\/niet\/Kasteeltuin_112.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -3376,26 +3376,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/ouders.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/txp\/sections\/media.json": {
-		"fileType": 524288,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/txp\/sections\/media.json",
-		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/txp\/sections\/media-min.json",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 1
-		},
-	"\/wie-zijn-wij-2.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wie-zijn-wij-2.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
