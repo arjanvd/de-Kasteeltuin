@@ -7,7 +7,7 @@
 <div class="l-wrapper l-wrapper--content">
   <div class="l-container">
     <section class="l-main--faq__intro">
-      <txp:article_custom id="XXX"> <!-- intro faq -->
+      <txp:article_custom id="11"> <!-- intro faq -->
         <h1 class="h1 h1--intro"><txp:title /></h1>
         <txp:body />
         <div class="figures figures--faq"></div>
@@ -19,18 +19,18 @@
 <div class="l-wrapper l-wrapper--content" id="pin__container">
   <div class="l-container">
     <div class="l-main--faq" id="accordion">
-      <txp:article form="v2_art_faq" sort="Category1 asc, Title asc" />
+      <txp:article form="v2_art_faq" sort="Category1 asc, Title asc" offset="2" />
     </div>
     <div class="l-sidebar--faq">
       <div id="pinned">
         <div class="o-block c-block--categories">
           <h1 class="h4 h4--faq">Categorieën</h1>
-          <txp:article_custom section="faq" sort="Category1 asc" wraptag="ul" class="faq--categories" break="li">
-            <a href="#cat-<txp:category1 />" class="scroll"><txp:category title="1" /></a>
-          </txp:article_custom>
+          <txp:category_list parent="faq-categories" exclude="faq-categories" wraptag="ul" break="li">
+		    <a href="#cat-<txp:category />" class="scroll"><txp:category title="1" /></a>
+	      </txp:category_list>
         </div>
         <div class="o-block c-block--helpdesk"> 
-          <txp:article_custom id="XXX"> <!-- Helpdesk -->
+          <txp:article_custom id="12"> <!-- Helpdesk -->
             <h1 class="h4 h4--faq"><txp:title /></h1>
             <txp:body />
           </txp:article_custom>

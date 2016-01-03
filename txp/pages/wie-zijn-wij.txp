@@ -20,13 +20,13 @@
   <div class="l-container"> 
     <div class="l-sidebar--about--pinned">
       <div class="c-block--sidebar" id="pinned">
-        <txp:article_custom section="wie-zijn-wij" offset="1" wraptag="ul" break="li">
-          <a href="#<txp:custom_field name="XXX" />" class="scroll"><txp:custom_field name="XXX" /></a>
+        <txp:article_custom section="wie-zijn-wij" offset="1" wraptag="ul" break="li" sort="posted asc"> <!-- offset="1" om de introtekst uit te sluiten -->
+          <a href="#<txp:custom_field name="wie-nav" />" class="scroll"><txp:custom_field name="wie-nav" /></a>
         </txp:article_custom>      
       </div>
     </div>
     <txp:article_custom id="XXX">
-      <section id="<txp:custom_field name="XXX" />">
+      <section id="<txp:custom_field name="wie-nav" />">
         <div class="l-main--about--pinned content"><!-- deze is apart, omdat hier de #pinned in de sidebar zit. -->
           <h1 class="h1 c-main--about--header"><txp:title /></h1>
           <div class="c-main--about--text--full content">
@@ -43,7 +43,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--2">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- 75 jaar -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--side-gal content">
@@ -51,7 +51,7 @@
             </div>
             <div class="c-main--about--gallery--side-gal">
               <div class="gallery fancybox">
-               gallery
+                <txp:output_form name="v2_gallery" />
               </div>
             </div>
           </div>
@@ -64,7 +64,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--3">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- in en om -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">
@@ -72,7 +72,7 @@
             </div>
             <div class="c-main--about--gallery--bottom-gal">
               <div class="gallery fancybox">
-                gallery
+                <txp:output_form name="v2_gallery" />
               </div>
             </div>
           </div>
@@ -85,7 +85,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--4">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- stichting -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">
@@ -101,7 +101,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--5">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- schatten -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">
@@ -117,7 +117,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--6">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- groepen -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">
@@ -133,7 +133,7 @@
   <div class="l-wrapper l-wrapper--about l-wrapper--about--7">
     <div class="l-container"> 
       <txp:article_custom id="xxx"> <!-- praktisch -->
-        <section id="<txp:custom_field name="XXX" />">
+        <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">

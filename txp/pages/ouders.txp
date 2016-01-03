@@ -1,0 +1,30 @@
+<txp:output_form form="v2_head" />
+
+<body>
+
+<txp:output_form form="v2_header" />
+
+<div class="l-wrapper l-wrapper--content">
+  <div class="l-container">
+    <div class="l-main--parents">
+      <txp:article>
+        <h1 class="h1 h1--intro"><txp:title /></h1>
+        <div class="c-main--parents__text">
+          <txp:body />
+        </div>
+        <div class="c-main--parents__gallery">
+          <div class="gallery fancybox">
+            <txp:output_form form="v2_gallery" />
+          </div>
+        </div>
+      </txp:article>
+    </div>
+  </div>
+</div>
+
+<txp:output_form form="v2_footer" />
+
+<txp:output_form form="v2_js" />
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<div class="l-wrapper l-wrapper--footer">
+  <footer class="l-container footer">
+    <div class="footer__col-1">
+      <div class="footer__content">
+        <h1 class="h4 h4--footer">Menu</h1>
+        <ul class="no-list">
+          <li><txp:link_to_home>Home</txp:link_to_home></li>
+          <li><txp:section name="wie-zijn-wij" title="1" link="1" /></li>
+          <li><txp:section name="ouders" title="1" link="1" /></li>
+          <li><txp:section name="faq" title="1" link="1" /></li>
+          <li><txp:section name="media" title="1" link="1" /></li>
+          <li><txp:section name="contact" title="1" link="1" /></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <txp:article_custom id="XXX"> <!-- Contactgegevens -->
+          <h1 class="h4 h4--footer"><txp:title /></h1>
+          <txp:body />
+        </txp:article_custom>
+      </div>
+    </div>
+    <div class="footer__col-2">
+      <div class="footer__content">
+        <txp:article_custom id="XXX"> <!-- Kleine lettertjes -->
+          <h1 class="h4 h4--footer"><txp:title /></h1>
+          <txp:body />
+        </txp:article_custom>
+      </div>
+      <div class="footer__content content">
+        <txp:article_custom id="XXX"> <!-- Rustig nalezen -->
+          <h1 class="h4 h4--footer"><txp:title /></h1>
+          <txp:body />
+        </txp:article_custom>
+      </div>
+    </div>
+    <div class="footer__col-3">
+      <txp:if_section name="">
+      <txp:else />
+      <txp:article_custom id="XXX" form="v2_signup" /> <!-- aanmelden -->
+      </txp:if_section>
+    </div>
+  <div class="footer__copyright"><txp:article_custom id="XXX"><txp:body /></txp:article_custom></div> <!-- Copyright -->
+  </footer>
+</div>

@@ -1751,7 +1751,7 @@ button:focus, button:active {
   -webkit-transition: all .35s ease;
   transition: all .35s ease; }
   .btn--signup-form {
-    background-color: #c81f1d;
+    background-color: #d65756;
     color: #fff; }
     .btn--signup-form:hover, .btn--signup-form:focus, .btn--signup-form:active {
       outline: none;
@@ -1767,7 +1767,7 @@ button:focus, button:active {
       box-shadow: inset 0 0 3px #4e4e4e, 0 0 3px #117878; }
   .btn a {
     display: block;
-    padding: 1.5rem; }
+    padding: 0.75rem; }
 
 /**
 

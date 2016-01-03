@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        <txp:page_title />
+    </title>
+
+    <!-- Google font API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
+
+    <!-- CSS -->
+    <txp:css format="link" media="" />
+    <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
+
+    <!-- specify meta description if available -->
+    <txp:meta_description />
+
+    <meta name="generator" content="Textpattern CMS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- specify robots and canonical -->
+    <txp:if_search>
+        <meta name="robots" content="none">
+    <txp:else />
+        <txp:if_category>
+            <meta name="robots" content="noindex, follow, noodp, noydir">
+        <txp:else />
+            <txp:if_author>
+                <meta name="robots" content="noindex, follow, noodp, noydir">
+            <txp:else />
+                <meta name="robots" content="index, follow, noodp, noydir">
+            </txp:if_author>
+        </txp:if_category>
+        <txp:if_section name="">
+            <link rel="canonical" href="<txp:site_url />">
+        <txp:else />
+            <txp:if_individual_article>
+                <link rel="canonical" href="<txp:permlink />">
+            <txp:else />
+                <link rel="canonical" href="<txp:section url="1" />">
+            </txp:if_individual_article>
+        </txp:if_section>
+    </txp:if_search>
+
+    <!-- content feeds -->
+    <txp:feed_link flavor="atom" format="link" label="Atom" />
+    <txp:feed_link flavor="rss" format="link" label="RSS" />
+</head>

@@ -41,7 +41,7 @@ button {
   transition: all .35s ease; 
   
   &--signup-form {
-    background-color: $red;
+    background-color: mix($white, $red, 25%);
     color: $white;
     &:hover,
     &:focus,
@@ -67,7 +67,7 @@ button {
   }
   & a {
     display: block;
-    padding: vr(4);
+    padding: vr(2);
   }
 }
 

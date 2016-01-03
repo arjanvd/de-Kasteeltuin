@@ -1949,7 +1949,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 404966,
+		"initialSize": 365850,
 		"inputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputAbbreviatedPath": "\/images\/5_sq.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1998,7 +1998,7 @@
 		"outputAbbreviatedPath": "\/images\/7.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/75jaar\/Kasteeltuin_75jaar_001-s.jpg": {
 		"fileType": 16384,
@@ -2328,7 +2328,7 @@
 		"outputAbbreviatedPath": "\/images\/header-small.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/header.jpg": {
 		"fileType": 16384,
@@ -2339,7 +2339,7 @@
 		"outputAbbreviatedPath": "\/images\/header.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/header2.png": {
 		"fileType": 32768,
@@ -2350,7 +2350,7 @@
 		"outputAbbreviatedPath": "\/images\/header2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/images\/in\/IMG_5367.JPG": {
 		"fileType": 16384,

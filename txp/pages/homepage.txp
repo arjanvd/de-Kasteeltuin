@@ -1,0 +1,40 @@
+<txp:output_form form="v2_head" />
+
+<body class="homepage">
+
+<txp:output_form form="v2_header" />
+
+<div class="l-wrapper l-wrapper--content">
+  <div class="l-container content">
+    <div class="l-main--home__left">
+      <div class="l-main--home__intro o-element">
+        <txp:article_custom id="XXX">
+          <h1 class="h1"><txp:title /></h1>
+          <txp:body />
+        </txp:article_custom>
+      </div>
+      <txp:article_custom form="v2-signup" id="XXX" /> <!-- Aanmelden -->
+    </div>
+    <div class="l-main--home__right">
+      <txp:article_custom form="v2-facebook" id="XXX" /> <!-- Facebook -->
+      <div class="gallery-slider--home o-element">
+        <h1 class="h2">Fotogalerij</h1>
+        <txp:images category="homepage" wraptag="ul" class="bxslider" break="li" />
+        <!-- Bovenstaande tag is nu per categorie. Maar misschien 'gewoon' een aantal ID's invullen -->
+      </div>
+      <div class="l-main--home__info o-element">
+        <txp:article_custom id="XXX"> <!-- info in het kort -->
+          <h1 class="h2"><txp:title /></h1>
+          <txp:body />
+        </txp:article_custom>
+      </div>
+    </div>
+  </div>
+</div>
+
+<txp:output_form form="v2_footer" />
+
+<txp:output_form form="v2_js" />
+
+</body>
+</html>

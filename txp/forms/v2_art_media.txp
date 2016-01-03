@@ -1,0 +1,10 @@
+<article class="o-media c-media__art">
+  <div class="c-media__medium">
+    <txp:article_image />
+  </div>
+  <div class="c-media__body">
+    <h1 class="h2"><txp:title /></h1>
+    <div class="c-media__info"><txp:rah_replace from="January,February,March,April,May,June,July,August,September,October,November,December" to="januari,februari,maart,april,mei,juni,juli,augustus,september,oktober,november,december"><txp:posted format="%e %B %Y" lang="nl" /></txp:rah_replace> | <txp:custom_field name="media-media" /></div>
+    <txp:body />
+  </div>
+</article>
