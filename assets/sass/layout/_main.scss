@@ -31,6 +31,7 @@
     &--pinned {
     
       @include span(12);
+      padding-bottom: vr(8);
 
      /* @include bp(small) {
         @include span(10 of 12);
@@ -77,7 +78,7 @@
     
     &__intro {
       @include span(12);
-      margin-bottom: vr(4);
+   //   margin-bottom: vr(4);
 
       @include bp(small) {
         @include span(10 of 12);
@@ -131,16 +132,29 @@
 
     }
     
-    &__content {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-    }
+
     
   }
   
   &--parents {
     
+  }
+  
+  &--p404 {
+      @include span(12);
+      margin-bottom: vr(4);
+
+      @include bp(small) {
+        @include pre(1 of 12);
+        @include span(10 of 12);
+        @include post(1 of 12);
+      }
+
+      @include bp(medium) {
+        @include pre(2 of 12);
+        @include span(7 of 12);
+        @include post(3 of 12);
+      }
   }
   
 }
@@ -215,7 +229,7 @@
     
   }
   
-  &--parents__text {
+  &--parents__text, &--media__text {
       @include span(12);
       margin-bottom: vr(4);
 
@@ -229,7 +243,7 @@
       }
   }
   
-  &--parents__gallery {
+  &--parents__gallery, &--media__gallery {
       @include span(12);
       margin-bottom: vr(4);
 

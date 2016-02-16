@@ -47,26 +47,81 @@ Files
 Nieuwsartikelen
 ----
 
-AD - 140123
-Kinderopvangtotaal - 140123
-De Correspondent - 140327
-Rijnmond - 140327
-AD - 140328
-Dichtbij.nl - 140328
-AD - 140411
-Hart van Nederland - 140501
-Kinderopvangtotaal - 140502
-AD - 140527 (Kwast)
-Trouw - 140531
-Metro - 140630
-BNR - 140924
-FD - 141103
-AD - 141203
-De Correspondent - 141231
+AD - 140123 - AD-140123.pdf - 50
+Kinderopvangtotaal - 140123 - http://www.kinderopvangtotaal.nl/Kinderdagverblijven/Actueel/2014/1/Ouders-willen-kinderdagverblijf-zelf-runnen-uit-onvrede-1450055W/
+De Correspondent - 140327 - https://decorrespondent.nl/909/hoe-een-groep-ouders-in-opstand-kwam-en-de-crche-overnam/34471232532-8aa7d87b
+Rijnmond - 140327 - http://www.rijnmond.nl/nieuws/114172/Ontevreden-ouders-openen-eigen-creche
+Dichtbij.nl - 140328 - http://www.dichtbij.nl/rotterdam-centrum-noord/regionaal-nieuws/artikel/3447941/ouders-in-spangen-starten-eigen-creche-uit-onvrede.aspx
+AD - 140411 - AD-140411.pdf - 51
+Hart van Nederland - 140501 - http://www.hartvannederland.nl/algemeen/2014/ouders-nemen-zelf-failliete-creche/
+Kinderopvangtotaal - 140502 - http://www.kinderopvangtotaal.nl/Kinderdagverblijven/Actueel/2014/5/Ouders-openen-hun-eigen-kinderdagverblijf-1514988W/
+AD - 140527 (Kwast) - AD-140527.pdf - 52
+Trouw - 140531 - Trouw-140531.pdf - 55
+Metro - 140630 - Metro-140630.pdf - 54
+Kinderopvangtotaal - 140813 - http://www.kinderopvangtotaal.nl/Kinderdagverblijven/Actueel/2014/8/Kinderopvang-moet-meer-naar-ouders-luisteren-1575677W/
+BNR - 140924 - http://www.bnr.nl/nieuws/politiek/518366-1409/eigen-creche-oprichten-zieltjes-winnen-en-personeel-regelen
+FD - 141103 - FD-141103.pdf - 53
+Dichtbij - 141110 - http://www.dichtbij.nl/rotterdam-centrum-noord/lifestyle/zorg-en-welzijn/artikel/3776978/kinderopvang-de-kasteeltuin-gered-door-ouders-en-exwethouder.aspx
+AD - 141203 AD-141203.pdf - 56
+De Correspondent - 141231 - https://decorrespondent.nl/2263/2014-was-het-jaar-waarin-ouders-een-creche-overnamen-Hoe-doen-zij-het/85817820924-9cd6806e
 
 
 Ideeen voor FAQ
 ----
 
 Wat als de dagen die ik wil niet vrij zijn?
+
+
+Foto's
+----
+
+240px
+
+laatste 2: 460px
+
+
+in: 
+eerste 9: 240px
+10 = 460px
+11 = 600px
+
+ouders:
+
+
+htaccess 
+----
+
+## EXPIRES CACHING ##
+
+ExpiresActive on
+ExpiresByType text/css "access plus 14 days"
+ExpiresByType text/xml "access plus 0 seconds"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"  
+ExpiresByType application/javascript "access plus 1 month"  
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType image/ico "access plus 14 days"
+ExpiresByType image/jpg "access plus 14 days"
+ExpiresByType image/jpeg "access plus 14 days"
+ExpiresByType image/gif "access plus 14 days"
+ExpiresByType image/png "access plus 14 days"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType text/html "access plus 14 days"
+ExpiresByType video/ogg "access plus 1 month"
+ExpiresByType audio/ogg "access plus 1 month"
+ExpiresByType video/mp4  "access plus 1 month"
+ExpiresByType video/webm "access plus 1 month"
+ExpiresByType application/x-font-woff  "access plus 1 month"
+ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+ExpiresByType application/xml  "access plus 0 seconds"
+ExpiresByType application/json "access plus 0 seconds"
+ExpiresByType application/rss+xml   "access plus 1 hour"
+ExpiresByType application/atom+xml  "access plus 1 hour"
+
+## EXPIRES CACHING ##
+
+target=_blank
+----
+https://css-tricks.com/use-target_blank/
+
 

@@ -13,8 +13,11 @@
 
 
 body {
+  background: mix($white, $yellow, 95%);
   line-height: $base-line-height;
   padding-top: $height-header;
 }
 
-
+body.p-404 {
+  padding-top: 10px;
+}

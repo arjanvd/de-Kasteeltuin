@@ -17,58 +17,66 @@
       
       
       &--intro {
-        width: 221px;
+        width: 232px;
         height: 198px;
-        background: url(img/kasteel.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 0 no-repeat;
+      //  background: url(img/kasteel.png) 0 0 no-repeat;
       }
       
       &--1 {
-        width: 212px;
+        width: 232px;
         height: 243px;
-        background: url(img/baby-met-boompje.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -198px no-repeat;
+      //  background: url(img/baby-met-boompje.png) 0 0 no-repeat;
       }
 
       &--2 {
-        width: 203px;
+        width: 232px;
         height: 349px;
-        background: url(img/bloempot.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -441px no-repeat;
+      //  background: url(img/bloempot.png) 0 0 no-repeat;
       }
 
       &--3 {
-        width: 225px;
+        width: 232px;
         height: 192px;
-        background: url(img/meisje-wortel.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -790px no-repeat;
+     //   background: url(img/meisje-wortel.png) 0 0 no-repeat;
       }
 
       &--4 {
-        width: 230px;
+        width: 232px;
         height: 240px;
-        background: url(img/bakfiets.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -982px no-repeat;
+    //    background: url(img/bakfiets.png) 0 0 no-repeat;
       }
       
       &--5 {
         width: 232px;
         height: 397px;
-        background: url(img/moeder-met-beer.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -1222px no-repeat;
+      //  background: url(img/moeder-met-beer.png) 0 0 no-repeat;
       }
 
       &--6 {
-        width: 176px;
+        width: 232px;
         height: 420px;
-        background: url(img/stapelblokken.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -1619px no-repeat;
+    //    background: url(img/stapelblokken.png) 0 0 no-repeat;
       }
     
       &--7 {
-        width: 212px;
+        width: 232px;
         height: 170px;
-        background: url(img/varken-met-kaplaarzen.png) 0 0 no-repeat;
+        background: url(img/sprite-wie.png) 0 -2041px no-repeat;
+     //   background: url(img/varken-met-kaplaarzen.png) 0 0 no-repeat;
       }
     
     }
     
     &--faq { // op faq-pagina
       top: 10px;
-      left: 100px;
+      left: 60px;
       width: 172px;
       height: 200px;
       background: url(img/kar-zandbak.png) 0 0 no-repeat;
@@ -105,12 +113,30 @@
   
   display: none;
   
-  @include bp(small) {
+  @include bp(medium) {
     display: block;
-    width: 100%;
-    margin: vr(4) 0;
-    background: url(img/cirkel-kasteel-kantoor.png) 50% 0 no-repeat;
+    margin: vr(8) 0 0;
     height: 260px;
   }
+  
+  &__1 {
+    @include span(3 of 12);
+    background: url(img/cirkel-kuikentjes.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  &__2 {
+    @include span(3 at 4 of 12);
+    background: url(img/cirkel-kapoentjes.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  &__3 {
+    @include span(3 at 7 of 12);
+    background: url(img/cirkel-kikkers.png) 0 0 no-repeat;
+    background-size: contain;
+  }
+  &__4 {
+    @include span(3 at 10 of 12);
+    background: url(img/cirkel-krekels.png) 0 0 no-repeat;
+    background-size: contain;
+  }
 }
-

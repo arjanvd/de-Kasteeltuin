@@ -1,50 +1,66 @@
-<!DOCTYPE html>
-<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
+<!DOCTYPE HTML>
+
+<!--#if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="nl" class="fonts-loaded">
+<!--#else -->
+<html lang="nl">
+<!--#endif -->
 
 <head>
-    <meta charset="utf-8">
-    <title>
-        <txp:page_title />
-    </title>
-
-    <!-- Google font API -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic">
-
-    <!-- CSS -->
-    <txp:css format="link" media="" />
-    <!-- ...or you can use (faster) external CSS files e.g. <link rel="stylesheet" href="<txp:site_url />css/default.css"> -->
-
-    <!-- specify meta description if available -->
-    <txp:meta_description />
-
-    <meta name="generator" content="Textpattern CMS">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- specify robots and canonical -->
-    <txp:if_search>
-        <meta name="robots" content="none">
+ 
+  <!-- page titles --> 
+  <title>
+    <txp:if_section name="">
+      <txp:site_name /> &middot; <txp:site_slogan />
+	<txp:else />
+      <txp:if_individual_article>
+        <txp:title /> &middot; <txp:site_name />
+      <txp:else />
+		<txp:site_name /> &middot; <txp:section title="1" />
+      </txp:if_individual_article>
+	</txp:if_section>
+  </title>
+  
+  <!-- meta stuff -->
+  <meta charset="utf-8">
+  <meta name="copyright" content="&copy; 2014 Kinderdagverzorging De Kasteeltuin, tenzij anders aangegeven" />
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="author" content="Kinderdagopvang en -verzorging De Kasteeltuin" />
+  <meta name="description" content="Kinderdagverzorging De Kasteeltuin is een zelfstandig en duurzaam kinderdagverblijf waar geborgenheid en plezier van kinderen om te spelen en te groeien bovenaan staan." />
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  
+  <!-- specify robots and canonical -->
+  <txp:if_search>
+    <meta name="robots" content="none">
+  <txp:else />
+    <txp:if_category>
+      <meta name="robots" content="noindex, follow, noodp, noydir">
     <txp:else />
-        <txp:if_category>
-            <meta name="robots" content="noindex, follow, noodp, noydir">
-        <txp:else />
-            <txp:if_author>
-                <meta name="robots" content="noindex, follow, noodp, noydir">
-            <txp:else />
-                <meta name="robots" content="index, follow, noodp, noydir">
-            </txp:if_author>
-        </txp:if_category>
-        <txp:if_section name="">
-            <link rel="canonical" href="<txp:site_url />">
-        <txp:else />
-            <txp:if_individual_article>
-                <link rel="canonical" href="<txp:permlink />">
-            <txp:else />
-                <link rel="canonical" href="<txp:section url="1" />">
-            </txp:if_individual_article>
-        </txp:if_section>
-    </txp:if_search>
+      <txp:if_author>
+        <meta name="robots" content="noindex, follow, noodp, noydir">
+      <txp:else />
+        <meta name="robots" content="index, follow, noodp, noydir">
+      </txp:if_author>
+    </txp:if_category>
+    <txp:if_section name="">
+      <link rel="canonical" href="<txp:site_url />">
+    </txp:if_section>
+    <txp:if_section name="wie-zijn-wij,contact,ouders">
+      <link rel="canonical" href="<txp:site_url /><txp:section />">
+    <txp:else />
+      <txp:if_individual_article>
+          <link rel="canonical" href="<txp:permlink />">
+      <txp:else />
+          <link rel="canonical" href="<txp:section url="1" />">
+      </txp:if_individual_article>
+    </txp:if_section>
+  </txp:if_search>
 
-    <!-- content feeds -->
-    <txp:feed_link flavor="atom" format="link" label="Atom" />
-    <txp:feed_link flavor="rss" format="link" label="RSS" />
+  <!-- js and css -->
+  <txp:if_section name="">
+      <script src="<txp:site_url />assets/js/picturefill-3.0.1.min.js" async></script>
+  </txp:if_section>
+  <script src="<txp:site_url />assets/js/head.js"></script>
+  <link rel="stylesheet" media="screen" href="<txp:site_url />assets/css/site.css">
+  
 </head>

@@ -47,6 +47,7 @@ ol, ul {
   margin-left: vr(4);
 }
 
+
 ul ul, ol ol, dl dl {
   margin-left: 0;
 }
@@ -59,10 +60,13 @@ ul {
     margin-bottom: 0;
   
     & li {
+      padding-left: 1.5rem;
+      
       &:before {
         font-family: 'icomoon';
         display: inline-block;
         width: 1.5em;
+        margin-left: -1.5rem;
         vertical-align: middle;
         color: $black;
         content: '\e900';
@@ -94,8 +98,17 @@ p + ul, p + ol {
       }
     }
     
-    &.list--contact, .bx-pager {
+    &.list--contact, &.bx-pager {
       & li {
+        &:before {
+          display: none;
+        }
+      }
+    }
+    
+    &.no-list {
+      & li {
+        padding-left: 0;
         &:before {
           display: none;
         }

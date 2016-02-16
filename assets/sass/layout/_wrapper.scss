@@ -43,6 +43,11 @@
   &--content {
     padding-top: vr(4); 
     padding-bottom: vr(8);
+    
+    &--faq {
+      padding-top: vr(4);
+      padding-bottom: 0;
+    }
   }
   
   &--about {
@@ -72,6 +77,12 @@
   
   &--footer {
     background-color: mix($white, $red, 50%);
+    border-top: 1px solid mix($white, $green-yellow, 50%);
+  }
+  
+  &--p404 {
+    padding-top: vr(4); 
+    padding-bottom: vr(8);
   }
   
 }

@@ -31,9 +31,9 @@
 
   a {
     display: block;
-    flex: 3 1 200px;
-    padding: 2px;
+    padding: 0px;
     background-color: mix($white, $green-blue, 95%);
+    flex: 3 1 200px;
   
     &.img-up {
       flex: 1 1 90px;
@@ -42,7 +42,8 @@
     img {
       width: 100%; 
       height: auto;
-      vertical-align: middle;
+      border: 2px solid mix($white, $green-blue, 95%);
+      vertical-align: bottom;
     }
 
   }

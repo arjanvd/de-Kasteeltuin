@@ -7,7 +7,7 @@
 <div class="l-wrapper l-wrapper--about l-wrapper--about--intro">
   <section class="l-container">
     <div class="l-main--about--intro content">
-      <txp:article_custom id="XXX">
+      <txp:article_custom id="2">
         <h1 class="h1 h1--intro"><txp:title /></h1>
         <txp:body />
       </txp:article_custom>
@@ -25,7 +25,7 @@
         </txp:article_custom>      
       </div>
     </div>
-    <txp:article_custom id="XXX">
+    <txp:article_custom id="3">
       <section id="<txp:custom_field name="wie-nav" />">
         <div class="l-main--about--pinned content"><!-- deze is apart, omdat hier de #pinned in de sidebar zit. -->
           <h1 class="h1 c-main--about--header"><txp:title /></h1>
@@ -42,7 +42,7 @@
  
   <div class="l-wrapper l-wrapper--about l-wrapper--about--2">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- 75 jaar -->
+      <txp:article_custom id="4"> <!-- 75 jaar -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
@@ -51,7 +51,7 @@
             </div>
             <div class="c-main--about--gallery--side-gal">
               <div class="gallery fancybox">
-                <txp:output_form name="v2_gallery" />
+                <txp:output_form form="v2_gallery" />
               </div>
             </div>
           </div>
@@ -63,7 +63,7 @@
 
   <div class="l-wrapper l-wrapper--about l-wrapper--about--3">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- in en om -->
+      <txp:article_custom id="5"> <!-- in en om -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
@@ -72,7 +72,7 @@
             </div>
             <div class="c-main--about--gallery--bottom-gal">
               <div class="gallery fancybox">
-                <txp:output_form name="v2_gallery" />
+                <txp:output_form form="v2_gallery" />
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
 
   <div class="l-wrapper l-wrapper--about l-wrapper--about--4">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- stichting -->
+      <txp:article_custom id="6"> <!-- stichting -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
@@ -100,7 +100,7 @@
 
   <div class="l-wrapper l-wrapper--about l-wrapper--about--5">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- schatten -->
+      <txp:article_custom id="7"> <!-- schatten -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
@@ -116,12 +116,17 @@
 
   <div class="l-wrapper l-wrapper--about l-wrapper--about--6">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- groepen -->
+      <txp:article_custom id="8"> <!-- groepen -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>
             <div class="c-main--about--text--full content">
               <txp:body />
+            </div>
+            <div class="c-main--about--gallery--bottom-gal">
+              <div class="gallery fancybox">
+                <txp:output_form form="v2_gallery" />
+              </div>
             </div>
           </div>
         </section>
@@ -132,7 +137,7 @@
 
   <div class="l-wrapper l-wrapper--about l-wrapper--about--7">
     <div class="l-container"> 
-      <txp:article_custom id="xxx"> <!-- praktisch -->
+      <txp:article_custom id="9"> <!-- praktisch -->
         <section id="<txp:custom_field name="wie-nav" />">
           <div class="l-main--about">
             <h1 class="h1 c-main--about--header"><txp:title /></h1>

@@ -45,42 +45,15 @@
 ---------------------------------------------------------  */
 
 // The main media object
-.o-media {
-  margin-bottom: vr(8);  // you might end up changing this, either globally or per module
-}
 
 .c-media {
 
   &__art {
-    
-    width: span(12);
-    flex: 0 1 auto;
-    
-    @include bp(medium) {
-      flex: 0 1 calc(50% - (#{span(1)} / 2));   
-    }
+    margin-bottom: vr(8);
   }
-  
-  &__medium {
-    @include bp(x-small) {
-      @include snap-to-baseline(3/2, 24px);
-    }
-
-    @include bp(large) {
-      @include snap-to-baseline(3/2, 27px);
-    }
-
-    @include bp(x-large) {
-      @include snap-to-baseline(3/2, 30px);
-    }
     
-    & img {
-      box-shadow: 0 0 5px mix($white, $black, 50%);
-    }
-  }
-  
   &__info {
-    margin-bottom: vr(4);
+    margin-bottom: vr(2);
     letter-spacing: .1rem;
     font-variant: small-caps;
     text-transform: uppercase;

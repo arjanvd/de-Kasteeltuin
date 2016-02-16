@@ -8,5 +8,10 @@
     }
     
   }
-  .acc-content {display: none;}
+  .acc-content {
+    display: none;
+    &--margin {
+      margin-bottom: vr(4);
+    }
+  }
 

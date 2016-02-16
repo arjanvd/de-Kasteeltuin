@@ -39,14 +39,9 @@ a(h))}}setTimeout(function(){w();y(h)},3E3);t(k,function(a){f=a;x()});r(k,h.fami
   	var fontD = new w.FontFaceObserver( "Lato", {
 		weight: 700
 	});
-
-	var fontE = new w.FontFaceObserver( "Lato", {
-		weight: 700,
-		style: "italic"
-	});
   
 	w.Promise
-		.all([fontA.check(), fontB.check(), fontC.check(), fontD.check(), fontE.check()])
+		.all([fontA.check(), fontB.check(), fontC.check(), fontD.check()])
 		.then(function(){
 			w.document.documentElement.className += " fonts-loaded";
 		});

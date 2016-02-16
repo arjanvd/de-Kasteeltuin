@@ -1,5 +1,5 @@
-<txp:variable name="img-height" value='<txp:image_info type="h" />' />
-<txp:variable name="img-width" value='<txp:image_info type="w" />' />
+<txp:variable name="img-height" value='<txp:images><txp:image_info type="h" /></txp:images>' />
+<txp:variable name="img-width" value='<txp:images><txp:image_info type="w" /></txp:images>' />
 
  <txp:images category='<txp:custom_field name="img-cat" />'>
   <a href="<txp:image_url />"

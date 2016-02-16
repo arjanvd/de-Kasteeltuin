@@ -8,7 +8,7 @@
   <div class="l-container">
     <div class="l-main--media">
       <section class="l-main--media__intro">
-        <txp:article_custom id="XXX"> <!-- intro -->
+        <txp:article_custom id="39"> <!-- intro -->
           <h1 class="h1 h1--intro"><txp:title /></h1>
           <txp:body />
         </txp:article_custom>
@@ -18,8 +18,17 @@
   </div>
   <div class="l-container">
     <div class="l-main--media">
-      <section class="l-main--media__content">
-        <txp:article form="v2_art_media" offset="1" /> <!-- offset om intro eruit te halen. Wel datum op intro voor de datum van het eerste artikel zetten -->
+      <section class="c-main--media__text">
+        <txp:article form="v2_art_media" /> 
+        <div class="btn btn--page-nav"><txp:older>Oudere artikelen</txp:older></div>
+        <div class="btn btn--page-nav"><txp:newer>Nieuwere artikelen</txp:newer></div>
+      </section>
+      <section class="c-main--media__gallery">
+        <txp:article_custom id="39"> <!-- intro -->
+          <div class="gallery fancybox">
+            <txp:output_form form="v2_gallery" />
+          </div>
+        </txp:article_custom>
       </section>
     </div>
   </div>

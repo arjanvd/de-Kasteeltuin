@@ -52,7 +52,7 @@ button {
                         0 0 3px $red;
     }
   }
-  &--contact-maps {
+  &--contact-maps, &--page-nav {
     background-color: $green-blue;
     color: $white;
     margin-bottom: vr(4);

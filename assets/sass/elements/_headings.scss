@@ -107,18 +107,12 @@ h4, .h4 {
   }
 }
 
-
-
-// H5
-h5, .h5 {
-  margin-bottom: 1em;
+.c-media__art h1 {
+  @include set-type($ms-up1);
 }
-
-
-
-// H6
-h6, .h6 {
-  margin-bottom: 1em;
+.c-media__art:nth-of-type(odd) h1 {
+  color: $green-yellow;
 }
-
-
+.c-media__art:nth-of-type(even) h1 {
+  color: $green-blue;
+}

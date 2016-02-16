@@ -1,7 +1,7 @@
 <div class="l-wrapper l-wrapper--footer">
   <footer class="l-container footer">
     <div class="footer__col-1">
-      <div class="footer__content">
+      <div class="footer__content footer__content--link">
         <h1 class="h4 h4--footer">Menu</h1>
         <ul class="no-list">
           <li><txp:link_to_home>Home</txp:link_to_home></li>
@@ -12,7 +12,7 @@
           <li><txp:section name="contact" title="1" link="1" /></li>
         </ul>
       </div>
-      <div class="footer__content">
+      <div class="footer__content footer__content--link">
         <txp:article_custom id="XXX"> <!-- Contactgegevens -->
           <h1 class="h4 h4--footer"><txp:title /></h1>
           <txp:body />
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="footer__col-2">
-      <div class="footer__content">
+      <div class="footer__content footer__content--link">
         <txp:article_custom id="XXX"> <!-- Kleine lettertjes -->
           <h1 class="h4 h4--footer"><txp:title /></h1>
           <txp:body />
